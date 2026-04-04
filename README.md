@@ -47,7 +47,7 @@
 
 ![数据到知识服务流水线](docs/images/end-to-end-pipeline.svg)
 
-### 2）统一检索联动流程（优化版）
+### 2）统一检索联动流程（更新版）
 
 ![统一检索联动流程](docs/images/integrated-search-flow.svg)
 
