@@ -43,11 +43,11 @@
 
 ## 四、业务流程图
 
-### 1）数据到知识服务流水线
+### 1）数据到知识服务流水线（优化版）
 
 ![数据到知识服务流水线](docs/images/end-to-end-pipeline.svg)
 
-### 2）统一检索联动流程
+### 2）统一检索联动流程（优化版）
 
 ![统一检索联动流程](docs/images/integrated-search-flow.svg)
 
