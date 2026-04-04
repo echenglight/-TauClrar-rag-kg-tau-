@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1800" height="960" viewBox="0 0 1800 960">
+  <defs>
+    <style>
+      .bg { fill: #eef4fb; }
+      .title { font: 700 56px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #123861; }
+      .h { font: 700 44px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #1f4d78; }
+      .t { font: 500 30px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #2d5e88; }
+      .note { font: 600 28px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #365f84; }
+      .line { stroke: #3d79aa; stroke-width: 6; fill: none; }
+    </style>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#3d79aa" />
+    </marker>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="1800" height="960" />
+  <text x="900" y="96" text-anchor="middle" class="title">统一检索联动流程（KG + 分子特征 + 候选推理）</text>
+
+  <rect x="90" y="270" rx="18" ry="18" width="290" height="150" fill="#d8e6f8" stroke="#96b5da" stroke-width="2" />
+  <text x="128" y="335" class="h">输入关键词</text>
+  <text x="128" y="388" class="t">基因 / 化合物 / 疾病</text>
+
+  <rect x="480" y="270" rx="18" ry="18" width="350" height="150" fill="#e2f2ef" stroke="#9ecfc6" stroke-width="2" />
+  <text x="520" y="335" class="h">接口编排层</text>
+  <text x="520" y="388" class="t">/api/analysis/search</text>
+
+  <rect x="940" y="170" rx="18" ry="18" width="400" height="120" fill="#f4ead8" stroke="#d5bf9a" stroke-width="2" />
+  <text x="980" y="225" class="h">图谱检索服务</text>
+  <text x="980" y="266" class="t">节点与关系子图返回</text>
+
+  <rect x="940" y="320" rx="18" ry="18" width="400" height="120" fill="#e8e1f7" stroke="#b8aadf" stroke-width="2" />
+  <text x="980" y="375" class="h">分子特征服务</text>
+  <text x="980" y="416" class="t">指纹位点与描述符聚合</text>
+
+  <rect x="940" y="470" rx="18" ry="18" width="400" height="120" fill="#f4dfe6" stroke="#d9afbf" stroke-width="2" />
+  <text x="980" y="525" class="h">候选推理服务</text>
+  <text x="980" y="566" class="t">LightGNN 多跳评分</text>
+
+  <rect x="1460" y="270" rx="18" ry="18" width="280" height="150" fill="#d9e8f8" stroke="#9bb8db" stroke-width="2" />
+  <text x="1496" y="335" class="h">统一响应结果</text>
+  <text x="1496" y="388" class="t">KG + 分子 + GNN</text>
+
+  <rect x="1200" y="640" rx="18" ry="18" width="540" height="180" fill="#e8f3ff" stroke="#a8c6e3" stroke-width="2" />
+  <text x="1236" y="708" class="h">前端联动展示</text>
+  <text x="1236" y="758" class="t">交互图谱 · 分子卡片 · 候选列表 · 问答面板</text>
+
+  <line x1="380" y1="345" x2="480" y2="345" class="line" marker-end="url(#arrow)" />
+
+  <line x1="830" y1="345" x2="940" y2="230" class="line" marker-end="url(#arrow)" />
+  <line x1="830" y1="345" x2="940" y2="380" class="line" marker-end="url(#arrow)" />
+  <line x1="830" y1="345" x2="940" y2="530" class="line" marker-end="url(#arrow)" />
+
+  <line x1="1340" y1="230" x2="1460" y2="305" class="line" marker-end="url(#arrow)" />
+  <line x1="1340" y1="380" x2="1460" y2="345" class="line" marker-end="url(#arrow)" />
+  <line x1="1340" y1="530" x2="1460" y2="385" class="line" marker-end="url(#arrow)" />
+
+  <line x1="1600" y1="420" x2="1600" y2="640" class="line" marker-end="url(#arrow)" />
+
+  <text x="90" y="900" class="note">说明：统一检索接口将三类结果同时返回，保证同一关键词下的数据一致性与可解释性。</text>
+</svg>

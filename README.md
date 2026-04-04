@@ -49,7 +49,7 @@
 
 ### 2）统一检索联动流程（更新版）
 
-![统一检索联动流程](docs/images/integrated-search-flow.svg)
+![统一检索联动流程](docs/images/integrated-search-flow-v2.svg)
 
 ### 3）智能问答工作流
 
