@@ -1,0 +1,1011 @@
+{
+  "meta": {
+    "project": "TauClear Mock Graph",
+    "version": "1.0.0",
+    "description": "Tau 蛋白自噬调控通路 Mock 图谱数据",
+    "generated_at": "2026-03-23"
+  },
+  "nodes": [
+    {
+      "id": "gene_mapt",
+      "name": "MAPT",
+      "type": "Gene",
+      "size": 78,
+      "properties": {
+        "hgnc_id": "HGNC:6893",
+        "uniprot_id": "P10636",
+        "description": "Tau 蛋白编码基因"
+      }
+    },
+    {
+      "id": "gene_mtor",
+      "name": "MTOR",
+      "type": "Gene",
+      "size": 70,
+      "properties": {
+        "hgnc_id": "HGNC:3942",
+        "uniprot_id": "P42345",
+        "description": "mTOR 信号关键节点"
+      }
+    },
+    {
+      "id": "gene_ulk1",
+      "name": "ULK1",
+      "type": "Gene",
+      "size": 65,
+      "properties": {
+        "hgnc_id": "HGNC:12558",
+        "uniprot_id": "O75385",
+        "description": "自噬起始复合体核心激酶"
+      }
+    },
+    {
+      "id": "gene_becn1",
+      "name": "BECN1",
+      "type": "Gene",
+      "size": 62,
+      "properties": {
+        "hgnc_id": "HGNC:1034",
+        "uniprot_id": "Q14457",
+        "description": "自噬囊泡形成相关基因"
+      }
+    },
+    {
+      "id": "gene_sqstm1",
+      "name": "SQSTM1",
+      "type": "Gene",
+      "size": 58,
+      "properties": {
+        "hgnc_id": "HGNC:11280",
+        "uniprot_id": "Q13501",
+        "description": "p62 受体蛋白编码基因"
+      }
+    },
+    {
+      "id": "gene_gsk3b",
+      "name": "GSK3B",
+      "type": "Gene",
+      "size": 60,
+      "properties": {
+        "hgnc_id": "HGNC:4617",
+        "uniprot_id": "P49841",
+        "description": "Tau 磷酸化相关激酶"
+      }
+    },
+    {
+      "id": "gene_tfeb",
+      "name": "TFEB",
+      "type": "Gene",
+      "size": 56,
+      "properties": {
+        "hgnc_id": "HGNC:11752",
+        "uniprot_id": "P19484",
+        "description": "溶酶体生物发生转录因子"
+      }
+    },
+    {
+      "id": "gene_atg5",
+      "name": "ATG5",
+      "type": "Gene",
+      "size": 54,
+      "properties": {
+        "hgnc_id": "HGNC:589",
+        "uniprot_id": "Q9H1Y0",
+        "description": "自噬延伸阶段关键因子"
+      }
+    },
+    {
+      "id": "gene_atg7",
+      "name": "ATG7",
+      "type": "Gene",
+      "size": 54,
+      "properties": {
+        "hgnc_id": "HGNC:16909",
+        "uniprot_id": "O95352",
+        "description": "自噬相关 E1 样酶"
+      }
+    },
+    {
+      "id": "gene_fkbp5",
+      "name": "FKBP5",
+      "type": "Gene",
+      "size": 52,
+      "properties": {
+        "hgnc_id": "HGNC:3719",
+        "uniprot_id": "Q13451",
+        "description": "伴侣蛋白调节因子"
+      }
+    },
+    {
+      "id": "cpd_rapamycin",
+      "name": "雷帕霉素",
+      "type": "Compound",
+      "size": 72,
+      "properties": {
+        "pubchem_cid": "5284616",
+        "formula": "C51H79NO13",
+        "description": "经典 mTOR 抑制剂"
+      }
+    },
+    {
+      "id": "cpd_sirolimus",
+      "name": "西罗莫司",
+      "type": "Compound",
+      "size": 66,
+      "properties": {
+        "pubchem_cid": "5284616",
+        "formula": "C51H79NO13",
+        "description": "雷帕霉素同分异名药物"
+      }
+    },
+    {
+      "id": "cpd_metformin",
+      "name": "二甲双胍",
+      "type": "Compound",
+      "size": 60,
+      "properties": {
+        "pubchem_cid": "4091",
+        "formula": "C4H11N5",
+        "description": "AMPK 激活相关化合物"
+      }
+    },
+    {
+      "id": "cpd_trehalose",
+      "name": "海藻糖",
+      "type": "Compound",
+      "size": 57,
+      "properties": {
+        "pubchem_cid": "7427",
+        "formula": "C12H22O11",
+        "description": "非 mTOR 路径促自噬"
+      }
+    },
+    {
+      "id": "cpd_resveratrol",
+      "name": "白藜芦醇",
+      "type": "Compound",
+      "size": 58,
+      "properties": {
+        "pubchem_cid": "445154",
+        "formula": "C14H12O3",
+        "description": "多靶点天然产物"
+      }
+    },
+    {
+      "id": "cpd_curcumin",
+      "name": "姜黄素",
+      "type": "Compound",
+      "size": 56,
+      "properties": {
+        "pubchem_cid": "969516",
+        "formula": "C21H20O6",
+        "description": "抗炎和抗氧化相关"
+      }
+    },
+    {
+      "id": "cpd_lithium",
+      "name": "锂盐",
+      "type": "Compound",
+      "size": 52,
+      "properties": {
+        "pubchem_cid": "3028194",
+        "formula": "Li",
+        "description": "可能调节 GSK3B"
+      }
+    },
+    {
+      "id": "cpd_methylene_blue",
+      "name": "亚甲蓝",
+      "type": "Compound",
+      "size": 52,
+      "properties": {
+        "pubchem_cid": "6099",
+        "formula": "C16H18ClN3S",
+        "description": "Tau 聚集抑制相关"
+      }
+    },
+    {
+      "id": "path_autophagy",
+      "name": "自噬-溶酶体通路",
+      "type": "Pathway",
+      "size": 76,
+      "properties": {
+        "kegg_id": "hsa04140",
+        "description": "自噬-溶酶体主通路"
+      }
+    },
+    {
+      "id": "path_mtor",
+      "name": "PI3K-AKT-mTOR通路",
+      "type": "Pathway",
+      "size": 70,
+      "properties": {
+        "kegg_id": "hsa04151",
+        "description": "细胞生长与自噬平衡通路"
+      }
+    },
+    {
+      "id": "path_ampk",
+      "name": "AMPK通路",
+      "type": "Pathway",
+      "size": 62,
+      "properties": {
+        "kegg_id": "hsa04152",
+        "description": "能量感知通路"
+      }
+    },
+    {
+      "id": "path_tau_clearance",
+      "name": "Tau清除通路",
+      "type": "Pathway",
+      "size": 72,
+      "properties": {
+        "custom_id": "TC-001",
+        "description": "Tau 清除与降解模块"
+      }
+    },
+    {
+      "id": "path_neuroinflam",
+      "name": "神经炎症通路",
+      "type": "Pathway",
+      "size": 58,
+      "properties": {
+        "custom_id": "TC-002",
+        "description": "神经炎症调控轴"
+      }
+    },
+    {
+      "id": "path_lysosome_bio",
+      "name": "溶酶体生物发生通路",
+      "type": "Pathway",
+      "size": 62,
+      "properties": {
+        "custom_id": "TC-003",
+        "description": "溶酶体生成与功能维护"
+      }
+    },
+    {
+      "id": "dis_ad",
+      "name": "阿尔茨海默病",
+      "type": "Disease",
+      "size": 80,
+      "properties": {
+        "mesh_id": "D000544",
+        "description": "阿尔茨海默病"
+      }
+    },
+    {
+      "id": "dis_ftd",
+      "name": "额颞叶痴呆",
+      "type": "Disease",
+      "size": 64,
+      "properties": {
+        "mesh_id": "D057175",
+        "description": "额颞叶痴呆"
+      }
+    },
+    {
+      "id": "dis_pd",
+      "name": "帕金森病",
+      "type": "Disease",
+      "size": 60,
+      "properties": {
+        "mesh_id": "D010300",
+        "description": "帕金森病"
+      }
+    },
+    {
+      "id": "dis_mci",
+      "name": "轻度认知障碍",
+      "type": "Disease",
+      "size": 55,
+      "properties": {
+        "mesh_id": "D000071236",
+        "description": "轻度认知障碍"
+      }
+    },
+    {
+      "id": "dis_psp",
+      "name": "进行性核上性麻痹",
+      "type": "Disease",
+      "size": 54,
+      "properties": {
+        "mesh_id": "D015866",
+        "description": "进行性核上性麻痹"
+      }
+    },
+    {
+      "id": "dis_cte",
+      "name": "慢性创伤性脑病",
+      "type": "Disease",
+      "size": 53,
+      "properties": {
+        "mesh_id": "D000067476",
+        "description": "慢性创伤性脑病"
+      }
+    },
+    {
+      "id": "prot_tau",
+      "name": "Tau蛋白",
+      "type": "Protein",
+      "size": 74,
+      "properties": {
+        "uniprot_id": "P10636",
+        "description": "微管相关蛋白 Tau"
+      }
+    },
+    {
+      "id": "prot_abeta",
+      "name": "β-淀粉样蛋白",
+      "type": "Protein",
+      "size": 60,
+      "properties": {
+        "uniprot_id": "P05067",
+        "description": "Aβ 蛋白聚集相关"
+      }
+    },
+    {
+      "id": "prot_lc3b",
+      "name": "LC3B蛋白",
+      "type": "Protein",
+      "size": 56,
+      "properties": {
+        "uniprot_id": "Q9GZQ8",
+        "description": "自噬小体标志蛋白"
+      }
+    },
+    {
+      "id": "prot_p62",
+      "name": "p62蛋白",
+      "type": "Protein",
+      "size": 56,
+      "properties": {
+        "uniprot_id": "Q13501",
+        "description": "选择性自噬受体"
+      }
+    },
+    {
+      "id": "cpd_aspirin_2244",
+      "name": "阿司匹林 (CID:2244)",
+      "type": "Compound",
+      "size": 59,
+      "properties": {
+        "pubchem_cid": "2244",
+        "formula": "C9H8O4",
+        "description": "新增分子指纹/描述符样例化合物"
+      }
+    },
+    {
+      "id": "cpd_caffeine_2519",
+      "name": "咖啡因 (CID:2519)",
+      "type": "Compound",
+      "size": 57,
+      "properties": {
+        "pubchem_cid": "2519",
+        "formula": "C8H10N4O2",
+        "description": "新增分子指纹/描述符样例化合物"
+      }
+    },
+    {
+      "id": "cpd_129908365_demo",
+      "name": "化合物 129908365",
+      "type": "Compound",
+      "size": 62,
+      "properties": {
+        "pubchem_cid": "129908365",
+        "formula": "C48H69N3O7",
+        "description": "新增分子指纹/描述符样例化合物"
+      }
+    }
+  ],
+  "edges": [
+    {
+      "id": "e1",
+      "source": "cpd_rapamycin",
+      "target": "gene_mtor",
+      "type": "inhibits",
+      "weight": 0.95,
+      "evidence": "PubMed:20300016"
+    },
+    {
+      "id": "e2",
+      "source": "cpd_sirolimus",
+      "target": "gene_mtor",
+      "type": "inhibits",
+      "weight": 0.93,
+      "evidence": "Clinical report"
+    },
+    {
+      "id": "e3",
+      "source": "cpd_metformin",
+      "target": "path_ampk",
+      "type": "activates",
+      "weight": 0.87,
+      "evidence": "PubMed:23932114"
+    },
+    {
+      "id": "e4",
+      "source": "cpd_metformin",
+      "target": "gene_mtor",
+      "type": "inhibits",
+      "weight": 0.72,
+      "evidence": "Cell study"
+    },
+    {
+      "id": "e5",
+      "source": "cpd_resveratrol",
+      "target": "gene_tfeb",
+      "type": "activates",
+      "weight": 0.69,
+      "evidence": "In vivo model"
+    },
+    {
+      "id": "e6",
+      "source": "cpd_curcumin",
+      "target": "path_neuroinflam",
+      "type": "inhibits",
+      "weight": 0.78,
+      "evidence": "Review evidence"
+    },
+    {
+      "id": "e7",
+      "source": "cpd_lithium",
+      "target": "gene_gsk3b",
+      "type": "inhibits",
+      "weight": 0.74,
+      "evidence": "Mechanism study"
+    },
+    {
+      "id": "e8",
+      "source": "cpd_trehalose",
+      "target": "path_autophagy",
+      "type": "activates",
+      "weight": 0.81,
+      "evidence": "Animal model"
+    },
+    {
+      "id": "e9",
+      "source": "cpd_methylene_blue",
+      "target": "prot_tau",
+      "type": "inhibits",
+      "weight": 0.67,
+      "evidence": "Aggregation assay"
+    },
+    {
+      "id": "e10",
+      "source": "gene_mtor",
+      "target": "path_mtor",
+      "type": "involved_in",
+      "weight": 0.97,
+      "evidence": "KEGG"
+    },
+    {
+      "id": "e11",
+      "source": "gene_ulk1",
+      "target": "path_autophagy",
+      "type": "involved_in",
+      "weight": 0.92,
+      "evidence": "KEGG"
+    },
+    {
+      "id": "e12",
+      "source": "gene_becn1",
+      "target": "path_autophagy",
+      "type": "involved_in",
+      "weight": 0.91,
+      "evidence": "KEGG"
+    },
+    {
+      "id": "e13",
+      "source": "gene_atg5",
+      "target": "path_autophagy",
+      "type": "involved_in",
+      "weight": 0.9,
+      "evidence": "KEGG"
+    },
+    {
+      "id": "e14",
+      "source": "gene_atg7",
+      "target": "path_autophagy",
+      "type": "involved_in",
+      "weight": 0.9,
+      "evidence": "KEGG"
+    },
+    {
+      "id": "e15",
+      "source": "gene_tfeb",
+      "target": "path_lysosome_bio",
+      "type": "involved_in",
+      "weight": 0.89,
+      "evidence": "Literature"
+    },
+    {
+      "id": "e16",
+      "source": "gene_mapt",
+      "target": "path_tau_clearance",
+      "type": "involved_in",
+      "weight": 0.86,
+      "evidence": "Literature"
+    },
+    {
+      "id": "e17",
+      "source": "gene_sqstm1",
+      "target": "path_tau_clearance",
+      "type": "involved_in",
+      "weight": 0.84,
+      "evidence": "Literature"
+    },
+    {
+      "id": "e18",
+      "source": "gene_gsk3b",
+      "target": "path_tau_clearance",
+      "type": "modulates",
+      "weight": 0.77,
+      "evidence": "Literature"
+    },
+    {
+      "id": "e19",
+      "source": "gene_fkbp5",
+      "target": "path_tau_clearance",
+      "type": "modulates",
+      "weight": 0.7,
+      "evidence": "Literature"
+    },
+    {
+      "id": "e20",
+      "source": "path_mtor",
+      "target": "path_autophagy",
+      "type": "upstream_of",
+      "weight": 0.88,
+      "evidence": "Pathway curation"
+    },
+    {
+      "id": "e21",
+      "source": "path_ampk",
+      "target": "path_autophagy",
+      "type": "upstream_of",
+      "weight": 0.86,
+      "evidence": "Pathway curation"
+    },
+    {
+      "id": "e22",
+      "source": "path_autophagy",
+      "target": "path_tau_clearance",
+      "type": "upstream_of",
+      "weight": 0.83,
+      "evidence": "Pathway curation"
+    },
+    {
+      "id": "e23",
+      "source": "path_lysosome_bio",
+      "target": "path_tau_clearance",
+      "type": "upstream_of",
+      "weight": 0.79,
+      "evidence": "Pathway curation"
+    },
+    {
+      "id": "e24",
+      "source": "gene_mapt",
+      "target": "prot_tau",
+      "type": "encodes",
+      "weight": 0.99,
+      "evidence": "UniProt"
+    },
+    {
+      "id": "e25",
+      "source": "gene_sqstm1",
+      "target": "prot_p62",
+      "type": "encodes",
+      "weight": 0.99,
+      "evidence": "UniProt"
+    },
+    {
+      "id": "e26",
+      "source": "gene_atg5",
+      "target": "prot_lc3b",
+      "type": "activates",
+      "weight": 0.63,
+      "evidence": "Autophagy assay"
+    },
+    {
+      "id": "e27",
+      "source": "prot_p62",
+      "target": "prot_tau",
+      "type": "interacts_with",
+      "weight": 0.74,
+      "evidence": "Co-IP"
+    },
+    {
+      "id": "e28",
+      "source": "prot_lc3b",
+      "target": "prot_tau",
+      "type": "interacts_with",
+      "weight": 0.66,
+      "evidence": "Imaging"
+    },
+    {
+      "id": "e29",
+      "source": "gene_gsk3b",
+      "target": "prot_tau",
+      "type": "phosphorylates",
+      "weight": 0.88,
+      "evidence": "Biochemistry"
+    },
+    {
+      "id": "e30",
+      "source": "prot_tau",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.95,
+      "evidence": "Strong clinical evidence"
+    },
+    {
+      "id": "e31",
+      "source": "prot_tau",
+      "target": "dis_ftd",
+      "type": "associated_with",
+      "weight": 0.84,
+      "evidence": "Clinical evidence"
+    },
+    {
+      "id": "e32",
+      "source": "prot_tau",
+      "target": "dis_psp",
+      "type": "associated_with",
+      "weight": 0.79,
+      "evidence": "Clinical evidence"
+    },
+    {
+      "id": "e33",
+      "source": "prot_tau",
+      "target": "dis_cte",
+      "type": "associated_with",
+      "weight": 0.76,
+      "evidence": "Clinical evidence"
+    },
+    {
+      "id": "e34",
+      "source": "prot_abeta",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.93,
+      "evidence": "Strong clinical evidence"
+    },
+    {
+      "id": "e35",
+      "source": "path_neuroinflam",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.73,
+      "evidence": "Review evidence"
+    },
+    {
+      "id": "e36",
+      "source": "path_tau_clearance",
+      "target": "dis_mci",
+      "type": "associated_with",
+      "weight": 0.71,
+      "evidence": "Cohort study"
+    },
+    {
+      "id": "e37",
+      "source": "gene_mapt",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.82,
+      "evidence": "GWAS"
+    },
+    {
+      "id": "e38",
+      "source": "gene_mapt",
+      "target": "dis_ftd",
+      "type": "associated_with",
+      "weight": 0.89,
+      "evidence": "GWAS"
+    },
+    {
+      "id": "e39",
+      "source": "gene_fkbp5",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.66,
+      "evidence": "Expression study"
+    },
+    {
+      "id": "e40",
+      "source": "gene_gsk3b",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.72,
+      "evidence": "Expression study"
+    },
+    {
+      "id": "e41",
+      "source": "gene_becn1",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.68,
+      "evidence": "Transcriptomics"
+    },
+    {
+      "id": "e42",
+      "source": "gene_ulk1",
+      "target": "dis_pd",
+      "type": "associated_with",
+      "weight": 0.61,
+      "evidence": "Experimental model"
+    },
+    {
+      "id": "e43",
+      "source": "cpd_rapamycin",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.82,
+      "evidence": "Animal model"
+    },
+    {
+      "id": "e44",
+      "source": "cpd_sirolimus",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.8,
+      "evidence": "Animal model"
+    },
+    {
+      "id": "e45",
+      "source": "cpd_resveratrol",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.64,
+      "evidence": "In vitro"
+    },
+    {
+      "id": "e46",
+      "source": "cpd_trehalose",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.75,
+      "evidence": "Animal model"
+    },
+    {
+      "id": "e47",
+      "source": "cpd_curcumin",
+      "target": "dis_ad",
+      "type": "modulates",
+      "weight": 0.55,
+      "evidence": "Small cohort"
+    },
+    {
+      "id": "e48",
+      "source": "cpd_metformin",
+      "target": "dis_mci",
+      "type": "modulates",
+      "weight": 0.58,
+      "evidence": "Observational study"
+    },
+    {
+      "id": "e49",
+      "source": "cpd_methylene_blue",
+      "target": "dis_ad",
+      "type": "modulates",
+      "weight": 0.57,
+      "evidence": "Pilot study"
+    },
+    {
+      "id": "e50",
+      "source": "gene_mtor",
+      "target": "gene_ulk1",
+      "type": "inhibits",
+      "weight": 0.91,
+      "evidence": "Canonical mechanism"
+    },
+    {
+      "id": "e51",
+      "source": "gene_ulk1",
+      "target": "gene_becn1",
+      "type": "activates",
+      "weight": 0.81,
+      "evidence": "Canonical mechanism"
+    },
+    {
+      "id": "e52",
+      "source": "gene_atg7",
+      "target": "gene_atg5",
+      "type": "activates",
+      "weight": 0.79,
+      "evidence": "Canonical mechanism"
+    },
+    {
+      "id": "e53",
+      "source": "gene_tfeb",
+      "target": "gene_sqstm1",
+      "type": "activates",
+      "weight": 0.67,
+      "evidence": "Transcriptional regulation"
+    },
+    {
+      "id": "e54",
+      "source": "gene_gsk3b",
+      "target": "gene_mapt",
+      "type": "modulates",
+      "weight": 0.71,
+      "evidence": "Phosphorylation context"
+    },
+    {
+      "id": "e55",
+      "source": "gene_fkbp5",
+      "target": "gene_mapt",
+      "type": "modulates",
+      "weight": 0.63,
+      "evidence": "Chaperone regulation"
+    },
+    {
+      "id": "e56",
+      "source": "cpd_rapamycin",
+      "target": "gene_ulk1",
+      "type": "activates",
+      "weight": 0.7,
+      "evidence": "Signaling inference"
+    },
+    {
+      "id": "e57",
+      "source": "cpd_metformin",
+      "target": "gene_ulk1",
+      "type": "activates",
+      "weight": 0.65,
+      "evidence": "Signaling inference"
+    },
+    {
+      "id": "e58",
+      "source": "cpd_resveratrol",
+      "target": "path_lysosome_bio",
+      "type": "activates",
+      "weight": 0.62,
+      "evidence": "Cell model"
+    },
+    {
+      "id": "e59",
+      "source": "cpd_trehalose",
+      "target": "gene_tfeb",
+      "type": "activates",
+      "weight": 0.61,
+      "evidence": "Cell model"
+    },
+    {
+      "id": "e60",
+      "source": "path_tau_clearance",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.79,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e61",
+      "source": "path_tau_clearance",
+      "target": "dis_ftd",
+      "type": "associated_with",
+      "weight": 0.72,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e62",
+      "source": "path_tau_clearance",
+      "target": "dis_psp",
+      "type": "associated_with",
+      "weight": 0.69,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e63",
+      "source": "path_autophagy",
+      "target": "dis_pd",
+      "type": "associated_with",
+      "weight": 0.63,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e64",
+      "source": "path_neuroinflam",
+      "target": "dis_pd",
+      "type": "associated_with",
+      "weight": 0.57,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e65",
+      "source": "prot_tau",
+      "target": "prot_abeta",
+      "type": "interacts_with",
+      "weight": 0.68,
+      "evidence": "Pathology study"
+    },
+    {
+      "id": "e66",
+      "source": "gene_mtor",
+      "target": "path_tau_clearance",
+      "type": "modulates",
+      "weight": 0.73,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e67",
+      "source": "gene_tfeb",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.76,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e68",
+      "source": "gene_becn1",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.74,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e69",
+      "source": "gene_atg5",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.71,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e70",
+      "source": "gene_atg7",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.71,
+      "evidence": "Integrated evidence"
+    },
+    {
+      "id": "e71",
+      "source": "cpd_aspirin_2244",
+      "target": "path_neuroinflam",
+      "type": "modulates",
+      "weight": 0.52,
+      "evidence": "Literature mining"
+    },
+    {
+      "id": "e72",
+      "source": "cpd_aspirin_2244",
+      "target": "dis_ad",
+      "type": "associated_with",
+      "weight": 0.49,
+      "evidence": "Observational evidence"
+    },
+    {
+      "id": "e73",
+      "source": "cpd_caffeine_2519",
+      "target": "path_autophagy",
+      "type": "modulates",
+      "weight": 0.56,
+      "evidence": "Literature mining"
+    },
+    {
+      "id": "e74",
+      "source": "cpd_caffeine_2519",
+      "target": "gene_mtor",
+      "type": "inhibits",
+      "weight": 0.47,
+      "evidence": "Hypothesis evidence"
+    },
+    {
+      "id": "e75",
+      "source": "cpd_129908365_demo",
+      "target": "path_tau_clearance",
+      "type": "activates",
+      "weight": 0.78,
+      "evidence": "Feature-guided inference"
+    },
+    {
+      "id": "e76",
+      "source": "cpd_129908365_demo",
+      "target": "gene_ulk1",
+      "type": "activates",
+      "weight": 0.69,
+      "evidence": "Feature-guided inference"
+    }
+  ]
+}

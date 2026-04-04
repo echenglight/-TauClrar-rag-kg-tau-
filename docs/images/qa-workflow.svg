@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="760" viewBox="0 0 1400 760">
+  <defs>
+    <linearGradient id="bg3" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fbff"/>
+      <stop offset="100%" stop-color="#f0f5ff"/>
+    </linearGradient>
+    <marker id="arr3" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#284f7a"/>
+    </marker>
+    <style>
+      .title { font: 700 32px 'Microsoft YaHei', sans-serif; fill:#0f2747; }
+      .nodeTitle { font: 700 18px 'Microsoft YaHei', sans-serif; fill:#0f2747; }
+      .nodeText { font: 500 15px 'Microsoft YaHei', sans-serif; fill:#31557d; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="760" fill="url(#bg3)"/>
+  <text x="700" y="62" text-anchor="middle" class="title">智能问答工作流（Dify/本地 LLM）</text>
+
+  <rect x="90" y="180" width="180" height="110" rx="14" fill="#d8ecff" stroke="#5d8ab8"/>
+  <text x="120" y="225" class="nodeTitle">开始</text>
+  <text x="120" y="252" class="nodeText">question</text>
+
+  <rect x="330" y="180" width="220" height="110" rx="14" fill="#dcf7ef" stroke="#58a58d"/>
+  <text x="362" y="225" class="nodeTitle">参数提取器</text>
+  <text x="362" y="252" class="nodeText">实体/关系识别</text>
+
+  <rect x="610" y="100" width="230" height="110" rx="14" fill="#fff1dc" stroke="#d59b53"/>
+  <text x="645" y="145" class="nodeTitle">知识检索</text>
+  <text x="645" y="172" class="nodeText">语料与证据召回</text>
+
+  <rect x="610" y="260" width="230" height="110" rx="14" fill="#efe5ff" stroke="#8f6ec5"/>
+  <text x="645" y="305" class="nodeTitle">HTTP 请求</text>
+  <text x="645" y="332" class="nodeText">调用图谱 API/Neo4j</text>
+
+  <rect x="900" y="180" width="220" height="110" rx="14" fill="#ffe6ee" stroke="#ba6f88"/>
+  <text x="932" y="225" class="nodeTitle">变量聚合器</text>
+  <text x="932" y="252" class="nodeText">统一上下文</text>
+
+  <rect x="1180" y="180" width="170" height="110" rx="14" fill="#dce8ff" stroke="#5f7fbd"/>
+  <text x="1210" y="225" class="nodeTitle">LLM</text>
+  <text x="1210" y="252" class="nodeText">生成回答</text>
+
+  <rect x="1180" y="350" width="170" height="100" rx="14" fill="#dff6ee" stroke="#55a18a"/>
+  <text x="1210" y="392" class="nodeTitle">结束</text>
+  <text x="1210" y="418" class="nodeText">answer</text>
+
+  <line x1="270" y1="235" x2="320" y2="235" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+  <line x1="550" y1="235" x2="600" y2="155" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+  <line x1="550" y1="235" x2="600" y2="315" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+  <line x1="840" y1="155" x2="890" y2="225" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+  <line x1="840" y1="315" x2="890" y2="235" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+  <line x1="1120" y1="235" x2="1170" y2="235" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+  <line x1="1265" y1="290" x2="1265" y2="340" stroke="#284f7a" stroke-width="4" marker-end="url(#arr3)"/>
+
+  <rect x="120" y="520" width="1160" height="130" rx="16" fill="#ffffff" stroke="#b7cdea"/>
+  <text x="150" y="565" class="nodeText">容错策略：HTTP 请求失败重试（建议 3 次）+ 本地回退回答；接口超时建议 10s 内返回可解释降级结果。</text>
+  <text x="150" y="600" class="nodeText">可扩展点：引入会话记忆、证据引用高亮、置信度评分与可追溯来源链接。</text>
+</svg>

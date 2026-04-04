@@ -1,0 +1,141 @@
+{
+  "templates": [
+    {
+      "id": "kg-1",
+      "title": "知识图谱 1：多实体复合关联网络",
+      "description": "展示化合物-靶点-通路-疾病的多簇结构，适合用于项目汇报中的总览图。",
+      "relation_legend": {
+        "targets": "化合物->靶点（基因/蛋白）",
+        "involved_in": "实体->参与通路",
+        "assoc_with": "基因/蛋白->关联疾病"
+      },
+      "nodes": [
+        {"id": "t1_cpd_rapamycin", "name": "Rapamycin", "type": "Compound", "size": 62, "properties": {"cluster": "mTOR"}},
+        {"id": "t1_cpd_sirolimus", "name": "Sirolimus", "type": "Compound", "size": 58, "properties": {"cluster": "mTOR"}},
+        {"id": "t1_gene_mtor", "name": "MTOR", "type": "Gene", "size": 66, "properties": {"cluster": "mTOR"}},
+        {"id": "t1_path_mtor", "name": "PI3K-AKT-mTOR", "type": "Pathway", "size": 60, "properties": {"cluster": "mTOR"}},
+
+        {"id": "t1_cpd_metformin", "name": "Metformin", "type": "Compound", "size": 60, "properties": {"cluster": "AMPK"}},
+        {"id": "t1_cpd_resveratrol", "name": "Resveratrol", "type": "Compound", "size": 56, "properties": {"cluster": "AMPK"}},
+        {"id": "t1_gene_ampk", "name": "AMPK", "type": "Gene", "size": 64, "properties": {"cluster": "AMPK"}},
+        {"id": "t1_path_autophagy", "name": "Autophagy", "type": "Pathway", "size": 62, "properties": {"cluster": "AMPK"}},
+
+        {"id": "t1_cpd_trehalose", "name": "Trehalose", "type": "Compound", "size": 56, "properties": {"cluster": "TFEB"}},
+        {"id": "t1_gene_tfeb", "name": "TFEB", "type": "Gene", "size": 60, "properties": {"cluster": "TFEB"}},
+        {"id": "t1_protein_tau", "name": "Tau蛋白", "type": "Protein", "size": 58, "properties": {"cluster": "TFEB"}},
+        {"id": "t1_disease_ad", "name": "阿尔茨海默病", "type": "Disease", "size": 68, "properties": {"cluster": "Disease"}},
+        {"id": "t1_disease_ftd", "name": "额颞叶痴呆", "type": "Disease", "size": 60, "properties": {"cluster": "Disease"}}
+      ],
+      "edges": [
+        {"id": "t1_e1", "source": "t1_cpd_rapamycin", "target": "t1_gene_mtor", "type": "targets", "weight": 0.9},
+        {"id": "t1_e2", "source": "t1_cpd_sirolimus", "target": "t1_gene_mtor", "type": "targets", "weight": 0.88},
+        {"id": "t1_e3", "source": "t1_gene_mtor", "target": "t1_path_mtor", "type": "involved_in", "weight": 0.84},
+        {"id": "t1_e4", "source": "t1_path_mtor", "target": "t1_disease_ad", "type": "assoc_with", "weight": 0.75},
+
+        {"id": "t1_e5", "source": "t1_cpd_metformin", "target": "t1_gene_ampk", "type": "targets", "weight": 0.85},
+        {"id": "t1_e6", "source": "t1_cpd_resveratrol", "target": "t1_gene_ampk", "type": "targets", "weight": 0.76},
+        {"id": "t1_e7", "source": "t1_gene_ampk", "target": "t1_path_autophagy", "type": "involved_in", "weight": 0.82},
+        {"id": "t1_e8", "source": "t1_path_autophagy", "target": "t1_disease_ad", "type": "assoc_with", "weight": 0.71},
+
+        {"id": "t1_e9", "source": "t1_cpd_trehalose", "target": "t1_gene_tfeb", "type": "targets", "weight": 0.74},
+        {"id": "t1_e10", "source": "t1_gene_tfeb", "target": "t1_path_autophagy", "type": "involved_in", "weight": 0.83},
+        {"id": "t1_e11", "source": "t1_protein_tau", "target": "t1_path_autophagy", "type": "involved_in", "weight": 0.68},
+        {"id": "t1_e12", "source": "t1_protein_tau", "target": "t1_disease_ad", "type": "assoc_with", "weight": 0.9},
+        {"id": "t1_e13", "source": "t1_protein_tau", "target": "t1_disease_ftd", "type": "assoc_with", "weight": 0.74},
+        {"id": "t1_e14", "source": "t1_gene_mtor", "target": "t1_gene_ampk", "type": "assoc_with", "weight": 0.52}
+      ]
+    },
+    {
+      "id": "kg-2",
+      "title": "知识图谱 2：基因-化合物-疾病焦点子图",
+      "description": "聚焦少量关键基因和疾病，突出干预化合物对疾病相关节点的联动关系。",
+      "relation_legend": {
+        "targets": "化合物->靶点（基因/蛋白）",
+        "involved_in": "实体->参与通路",
+        "assoc_with": "基因/蛋白->关联疾病"
+      },
+      "nodes": [
+        {"id": "t2_gene_fkbp5", "name": "FKBP5", "type": "Gene", "size": 66, "properties": {"cluster": "FKBP"}},
+        {"id": "t2_gene_fkbp52", "name": "FKBP52", "type": "Gene", "size": 58, "properties": {"cluster": "FKBP"}},
+        {"id": "t2_disease_ad", "name": "阿尔茨海默病", "type": "Disease", "size": 68, "properties": {"cluster": "AD"}},
+        {"id": "t2_disease_psp", "name": "进行性核上性麻痹", "type": "Disease", "size": 60, "properties": {"cluster": "AD"}},
+
+        {"id": "t2_cpd_clioquinol", "name": "Clioquinol", "type": "Compound", "size": 60, "properties": {"cluster": "Tau"}},
+        {"id": "t2_gene_ist1", "name": "IST1", "type": "Gene", "size": 56, "properties": {"cluster": "Tau"}},
+        {"id": "t2_protein_tau", "name": "Tau蛋白", "type": "Protein", "size": 60, "properties": {"cluster": "Tau"}},
+        {"id": "t2_path_tau_clear", "name": "Tau清除", "type": "Pathway", "size": 58, "properties": {"cluster": "Tau"}},
+
+        {"id": "t2_cpd_methylene_blue", "name": "亚甲蓝", "type": "Compound", "size": 56, "properties": {"cluster": "Mito"}},
+        {"id": "t2_gene_gggccc", "name": "GGGGCC重复", "type": "Gene", "size": 58, "properties": {"cluster": "Mito"}},
+        {"id": "t2_disease_als", "name": "肌萎缩侧索硬化", "type": "Disease", "size": 60, "properties": {"cluster": "Mito"}},
+        {"id": "t2_disease_ftd", "name": "额颞叶痴呆", "type": "Disease", "size": 58, "properties": {"cluster": "Mito"}}
+      ],
+      "edges": [
+        {"id": "t2_e1", "source": "t2_gene_fkbp5", "target": "t2_disease_ad", "type": "assoc_with", "weight": 0.86},
+        {"id": "t2_e2", "source": "t2_gene_fkbp52", "target": "t2_disease_psp", "type": "assoc_with", "weight": 0.82},
+        {"id": "t2_e3", "source": "t2_gene_fkbp5", "target": "t2_gene_fkbp52", "type": "assoc_with", "weight": 0.58},
+        {"id": "t2_e4", "source": "t2_disease_ad", "target": "t2_disease_psp", "type": "assoc_with", "weight": 0.41},
+
+        {"id": "t2_e5", "source": "t2_cpd_clioquinol", "target": "t2_gene_ist1", "type": "targets", "weight": 0.73},
+        {"id": "t2_e6", "source": "t2_gene_ist1", "target": "t2_path_tau_clear", "type": "involved_in", "weight": 0.79},
+        {"id": "t2_e7", "source": "t2_protein_tau", "target": "t2_path_tau_clear", "type": "involved_in", "weight": 0.84},
+        {"id": "t2_e8", "source": "t2_protein_tau", "target": "t2_disease_ad", "type": "assoc_with", "weight": 0.9},
+
+        {"id": "t2_e9", "source": "t2_cpd_methylene_blue", "target": "t2_gene_gggccc", "type": "targets", "weight": 0.65},
+        {"id": "t2_e10", "source": "t2_gene_gggccc", "target": "t2_disease_als", "type": "assoc_with", "weight": 0.76},
+        {"id": "t2_e11", "source": "t2_gene_gggccc", "target": "t2_disease_ftd", "type": "assoc_with", "weight": 0.72},
+        {"id": "t2_e12", "source": "t2_disease_als", "target": "t2_disease_ftd", "type": "assoc_with", "weight": 0.49}
+      ]
+    },
+    {
+      "id": "kg-3",
+      "title": "知识图谱 3：通路协同与拮抗网络",
+      "description": "强调不同通路单元之间的协同/拮抗关系，用于分析候选化合物对 Tau 自噬调控的动态影响。",
+      "relation_legend": {
+        "targets": "化合物->靶点（基因/蛋白）",
+        "involved_in": "实体->参与通路",
+        "assoc_with": "基因/蛋白->关联疾病"
+      },
+      "nodes": [
+        {"id": "t3_gene_sirt1", "name": "SIRT1", "type": "Protein", "size": 58, "properties": {"cluster": "SIRT1"}},
+        {"id": "t3_cpd_resv", "name": "Resveratrol", "type": "Compound", "size": 56, "properties": {"cluster": "SIRT1"}},
+        {"id": "t3_cpd_ptero", "name": "Pterostilbene", "type": "Compound", "size": 52, "properties": {"cluster": "SIRT1"}},
+
+        {"id": "t3_gene_ampk", "name": "AMPK", "type": "Gene", "size": 60, "properties": {"cluster": "AMPK"}},
+        {"id": "t3_cpd_metf", "name": "Metformin", "type": "Compound", "size": 58, "properties": {"cluster": "AMPK"}},
+        {"id": "t3_cpd_aicar", "name": "AICAR", "type": "Compound", "size": 52, "properties": {"cluster": "AMPK"}},
+
+        {"id": "t3_gene_mtor", "name": "MTOR", "type": "Gene", "size": 64, "properties": {"cluster": "mTOR"}},
+        {"id": "t3_cpd_rapa", "name": "Rapamycin", "type": "Compound", "size": 60, "properties": {"cluster": "mTOR"}},
+        {"id": "t3_cpd_evero", "name": "Everolimus", "type": "Compound", "size": 54, "properties": {"cluster": "mTOR"}},
+
+        {"id": "t3_gene_tfeb", "name": "TFEB", "type": "Gene", "size": 58, "properties": {"cluster": "TFEB"}},
+        {"id": "t3_cpd_treh", "name": "Trehalose", "type": "Compound", "size": 54, "properties": {"cluster": "TFEB"}},
+        {"id": "t3_path_autophagy", "name": "Autophagy", "type": "Pathway", "size": 64, "properties": {"cluster": "TFEB"}},
+
+        {"id": "t3_protein_tau", "name": "Tau蛋白", "type": "Protein", "size": 60, "properties": {"cluster": "Tau"}},
+        {"id": "t3_disease_ad", "name": "阿尔茨海默病", "type": "Disease", "size": 68, "properties": {"cluster": "Tau"}}
+      ],
+      "edges": [
+        {"id": "t3_e1", "source": "t3_cpd_resv", "target": "t3_gene_sirt1", "type": "targets", "weight": 0.81},
+        {"id": "t3_e2", "source": "t3_cpd_ptero", "target": "t3_gene_sirt1", "type": "targets", "weight": 0.76},
+        {"id": "t3_e3", "source": "t3_gene_sirt1", "target": "t3_path_autophagy", "type": "involved_in", "weight": 0.68},
+
+        {"id": "t3_e4", "source": "t3_cpd_metf", "target": "t3_gene_ampk", "type": "targets", "weight": 0.84},
+        {"id": "t3_e5", "source": "t3_cpd_aicar", "target": "t3_gene_ampk", "type": "targets", "weight": 0.79},
+        {"id": "t3_e6", "source": "t3_gene_ampk", "target": "t3_path_autophagy", "type": "involved_in", "weight": 0.83},
+
+        {"id": "t3_e7", "source": "t3_cpd_rapa", "target": "t3_gene_mtor", "type": "targets", "weight": 0.9},
+        {"id": "t3_e8", "source": "t3_cpd_evero", "target": "t3_gene_mtor", "type": "targets", "weight": 0.86},
+        {"id": "t3_e9", "source": "t3_gene_mtor", "target": "t3_path_autophagy", "type": "involved_in", "weight": 0.7},
+
+        {"id": "t3_e10", "source": "t3_cpd_treh", "target": "t3_gene_tfeb", "type": "targets", "weight": 0.78},
+        {"id": "t3_e11", "source": "t3_gene_tfeb", "target": "t3_path_autophagy", "type": "involved_in", "weight": 0.86},
+
+        {"id": "t3_e12", "source": "t3_path_autophagy", "target": "t3_protein_tau", "type": "involved_in", "weight": 0.74},
+        {"id": "t3_e13", "source": "t3_protein_tau", "target": "t3_disease_ad", "type": "assoc_with", "weight": 0.91},
+        {"id": "t3_e14", "source": "t3_gene_ampk", "target": "t3_gene_mtor", "type": "assoc_with", "weight": 0.6}
+      ]
+    }
+  ]
+}

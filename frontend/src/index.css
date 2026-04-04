@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Noto+Sans+SC:wght@400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", "Noto Sans SC", "Microsoft YaHei", sans-serif;
+  background: radial-gradient(circle at 10% 10%, #dff4ff 0%, #eef8ff 42%, #f7fbff 70%, #ffffff 100%);
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.prose h3,
+.prose h2,
+.prose h1 {
+  margin-top: 0.5em;
+  margin-bottom: 0.4em;
+}

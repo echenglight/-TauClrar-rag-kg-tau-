@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="700" viewBox="0 0 1400 700">
+  <defs>
+    <linearGradient id="bg2" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f9fcff"/>
+      <stop offset="100%" stop-color="#eff9f8"/>
+    </linearGradient>
+    <marker id="arr2" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#2f5e86"/>
+    </marker>
+    <style>
+      .title { font: 700 32px 'Microsoft YaHei', sans-serif; fill:#0f2747; }
+      .boxTitle { font: 700 20px 'Microsoft YaHei', sans-serif; fill:#0f2747; }
+      .boxText { font: 500 16px 'Microsoft YaHei', sans-serif; fill:#2a486d; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="700" fill="url(#bg2)"/>
+  <text x="700" y="64" text-anchor="middle" class="title">数据到图谱构建流水线</text>
+
+  <rect x="90" y="180" width="230" height="210" rx="18" fill="#d9ecff" stroke="#5e8db8"/>
+  <text x="115" y="220" class="boxTitle">1. 数据采集</text>
+  <text x="115" y="255" class="boxText">文献 / 数据库摘要</text>
+  <text x="115" y="285" class="boxText">Web_spider.py</text>
+
+  <rect x="360" y="180" width="230" height="210" rx="18" fill="#dcf7f0" stroke="#58a78f"/>
+  <text x="385" y="220" class="boxTitle">2. 文本清洗</text>
+  <text x="385" y="255" class="boxText">去噪、分句、归一化</text>
+  <text x="385" y="285" class="boxText">data_clean.py</text>
+
+  <rect x="630" y="180" width="230" height="210" rx="18" fill="#fff1db" stroke="#d09a54"/>
+  <text x="655" y="220" class="boxTitle">3. 结构化抽取</text>
+  <text x="655" y="255" class="boxText">实体关系提取</text>
+  <text x="655" y="285" class="boxText">数据结构化.yml</text>
+
+  <rect x="900" y="180" width="230" height="210" rx="18" fill="#efe5ff" stroke="#8d6bc2"/>
+  <text x="925" y="220" class="boxTitle">4. 图谱构建</text>
+  <text x="925" y="255" class="boxText">节点与关系导入</text>
+  <text x="925" y="285" class="boxText">build_graph.py</text>
+
+  <rect x="1170" y="180" width="230" height="210" rx="18" fill="#ffe6ec" stroke="#b86b80"/>
+  <text x="1195" y="220" class="boxTitle">5. 可视化与问答</text>
+  <text x="1195" y="255" class="boxText">React + FastAPI</text>
+  <text x="1195" y="285" class="boxText">Dify / 本地 LLM</text>
+
+  <line x1="320" y1="285" x2="350" y2="285" stroke="#2f5e86" stroke-width="4" marker-end="url(#arr2)"/>
+  <line x1="590" y1="285" x2="620" y2="285" stroke="#2f5e86" stroke-width="4" marker-end="url(#arr2)"/>
+  <line x1="860" y1="285" x2="890" y2="285" stroke="#2f5e86" stroke-width="4" marker-end="url(#arr2)"/>
+  <line x1="1130" y1="285" x2="1160" y2="285" stroke="#2f5e86" stroke-width="4" marker-end="url(#arr2)"/>
+
+  <rect x="150" y="460" width="1100" height="120" rx="16" fill="#ffffff" stroke="#b9d3ea"/>
+  <text x="180" y="505" class="boxText">输出产物：标准化 JSON、Neo4j 图数据库、图谱 API、前端交互页面、问答服务。</text>
+  <text x="180" y="540" class="boxText">治理要点：命名规范（HGNC/KEGG）、关系类型收敛、数据质量校验、可追溯证据链。</text>
+</svg>

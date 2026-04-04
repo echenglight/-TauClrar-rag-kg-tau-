@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f8fcff"/>
+      <stop offset="100%" stop-color="#f2f8ff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="4" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L12,4 L0,8 Z" fill="#5f87ad"/>
+    </marker>
+    <style>
+      .title { font: 800 52px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#1f4268; }
+      .subtitle { font: 600 24px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#5b7fa3; }
+      .layerTitle { font: 800 46px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#224a70; }
+      .item { font: 600 30px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#3c6388; }
+      .note { font: 600 25px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#4d7498; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1400" height="900" fill="url(#bg)"/>
+
+  <text x="700" y="72" text-anchor="middle" class="title">TauClear 平台分层架构</text>
+  <text x="700" y="112" text-anchor="middle" class="subtitle">前端交互层 → 服务接口层 → 领域服务层 → 数据与知识层</text>
+
+  <rect x="100" y="150" width="1200" height="146" rx="22" fill="#e8f2ff" stroke="#b9d1ea" stroke-width="2"/>
+  <text x="150" y="205" class="layerTitle">L1 交互呈现层</text>
+  <text x="150" y="250" class="item">frontend/src/App.tsx · GraphCanvas.tsx · 智能问答面板 · 过滤与布局控制</text>
+
+  <rect x="100" y="325" width="1200" height="146" rx="22" fill="#e7f6fb" stroke="#b9dfea" stroke-width="2"/>
+  <text x="150" y="380" class="layerTitle">L2 接口编排层</text>
+  <text x="150" y="425" class="item">FastAPI 路由: routes_graph.py / routes_chat.py · 输入校验 · 返回统一结构</text>
+
+  <rect x="100" y="500" width="1200" height="146" rx="22" fill="#e9f8f3" stroke="#b7e2d6" stroke-width="2"/>
+  <text x="150" y="555" class="layerTitle">L3 领域服务层</text>
+  <text x="150" y="600" class="item">mock_graph_service.py · neo4j_service.py · 图谱检索聚合 · 邻居扩展</text>
+
+  <rect x="100" y="675" width="1200" height="146" rx="22" fill="#edf7f5" stroke="#bedcd6" stroke-width="2"/>
+  <text x="150" y="730" class="layerTitle">L4 数据与知识层</text>
+  <text x="150" y="775" class="item">backend/data/mock_data.json · Neo4j 图数据库 · build_graph.py 导入脚本</text>
+
+  <line x1="700" y1="297" x2="700" y2="322" stroke="#7ea2c2" stroke-width="6" marker-end="url(#arrow)"/>
+  <line x1="700" y1="472" x2="700" y2="497" stroke="#7ea2c2" stroke-width="6" marker-end="url(#arrow)"/>
+  <line x1="700" y1="647" x2="700" y2="672" stroke="#7ea2c2" stroke-width="6" marker-end="url(#arrow)"/>
+
+  <text x="92" y="865" class="note">分层原则: UI 不直接访问底层存储; 统一经 API 与服务层解耦, 便于切换 mock / neo4j 与后续接入 Dify/本地 LLM.</text>
+</svg>

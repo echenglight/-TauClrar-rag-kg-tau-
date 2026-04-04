@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="980" viewBox="0 0 1500 980">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7fcff"/>
+      <stop offset="100%" stop-color="#eef7ff"/>
+    </linearGradient>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,3 L0,6 Z" fill="#6b8eaf"/>
+    </marker>
+    <style>
+      .title { font: 700 36px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#1f4268; }
+      .sub { font: 500 18px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#55789b; }
+      .gene { fill:#dff0ff; stroke:#8bb7de; stroke-width:2; }
+      .protein { fill:#dff7ee; stroke:#85cbb0; stroke-width:2; }
+      .node { font: 700 18px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#1f4268; }
+      .edge { stroke:#6b8eaf; stroke-width:2.4; fill:none; marker-end:url(#arrow); }
+      .label { font: 500 14px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#4c6f90; }
+      .legendTitle { font: 700 18px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#1f4268; }
+      .legendText { font: 500 15px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill:#4c6f90; }
+    </style>
+  </defs>
+
+  <rect x="0" y="0" width="1500" height="980" fill="url(#bg)"/>
+  <text x="750" y="56" text-anchor="middle" class="title">蛋白知识图谱子图（基于现有 mock_data.json 自动抽取）</text>
+  <text x="750" y="88" text-anchor="middle" class="sub">节点: Gene + Protein | 关系: encodes / activates / inhibits / modulates / phosphorylates / interacts_with</text>
+
+  <path d="M230 180 L400 160" class="edge"/>
+  <text x="305" y="154" class="label">inhibits (e50)</text>
+
+  <path d="M470 160 L640 180" class="edge"/>
+  <text x="535" y="154" class="label">activates (e51)</text>
+
+  <path d="M230 360 L400 340" class="edge"/>
+  <text x="300" y="334" class="label">activates (e52)</text>
+
+  <path d="M670 360 L820 360" class="edge"/>
+  <text x="725" y="352" class="label">activates (e53)</text>
+
+  <path d="M880 180 L1000 340" class="edge"/>
+  <text x="905" y="270" class="label">modulates (e54)</text>
+
+  <path d="M1060 180 L1040 340" class="edge"/>
+  <text x="1070" y="272" class="label">modulates (e55)</text>
+
+  <path d="M1040 390 L1000 520" class="edge"/>
+  <text x="1050" y="468" class="label">encodes (e24)</text>
+
+  <path d="M850 390 L850 520" class="edge"/>
+  <text x="860" y="468" class="label">encodes (e25)</text>
+
+  <path d="M430 390 L620 520" class="edge"/>
+  <text x="490" y="452" class="label">activates (e26)</text>
+
+  <path d="M880 560 L960 550" class="edge"/>
+  <text x="900" y="540" class="label">interacts_with (e27)</text>
+
+  <path d="M650 560 L960 550" class="edge"/>
+  <text x="760" y="530" class="label">interacts_with (e28)</text>
+
+  <path d="M900 210 L980 520" class="edge"/>
+  <text x="920" y="380" class="label">phosphorylates (e29)</text>
+
+  <path d="M1040 550 L1160 550" class="edge"/>
+  <text x="1068" y="538" class="label">interacts_with (e65)</text>
+
+  <circle cx="200" cy="180" r="32" class="gene"/>
+  <text x="200" y="186" text-anchor="middle" class="node">MTOR</text>
+
+  <circle cx="430" cy="160" r="32" class="gene"/>
+  <text x="430" y="166" text-anchor="middle" class="node">ULK1</text>
+
+  <circle cx="670" cy="180" r="32" class="gene"/>
+  <text x="670" y="186" text-anchor="middle" class="node">BECN1</text>
+
+  <circle cx="200" cy="360" r="32" class="gene"/>
+  <text x="200" y="366" text-anchor="middle" class="node">ATG7</text>
+
+  <circle cx="430" cy="340" r="32" class="gene"/>
+  <text x="430" y="346" text-anchor="middle" class="node">ATG5</text>
+
+  <circle cx="670" cy="360" r="32" class="gene"/>
+  <text x="670" y="366" text-anchor="middle" class="node">TFEB</text>
+
+  <circle cx="850" cy="360" r="32" class="gene"/>
+  <text x="850" y="366" text-anchor="middle" class="node">SQSTM1</text>
+
+  <circle cx="880" cy="180" r="32" class="gene"/>
+  <text x="880" y="186" text-anchor="middle" class="node">GSK3B</text>
+
+  <circle cx="1060" cy="180" r="32" class="gene"/>
+  <text x="1060" y="186" text-anchor="middle" class="node">FKBP5</text>
+
+  <circle cx="1040" cy="340" r="38" class="gene"/>
+  <text x="1040" y="347" text-anchor="middle" class="node">MAPT</text>
+
+  <circle cx="620" cy="550" r="38" class="protein"/>
+  <text x="620" y="556" text-anchor="middle" class="node">LC3B蛋白</text>
+
+  <circle cx="850" cy="550" r="38" class="protein"/>
+  <text x="850" y="556" text-anchor="middle" class="node">p62蛋白</text>
+
+  <circle cx="1000" cy="550" r="44" class="protein"/>
+  <text x="1000" y="556" text-anchor="middle" class="node">Tau蛋白</text>
+
+  <circle cx="1200" cy="550" r="40" class="protein"/>
+  <text x="1200" y="556" text-anchor="middle" class="node">β-淀粉样蛋白</text>
+
+  <rect x="130" y="700" width="1240" height="210" rx="16" fill="#ffffff" stroke="#c2d7ea"/>
+  <text x="170" y="744" class="legendTitle">数据来源与筛选规则</text>
+  <text x="170" y="778" class="legendText">来源文件: backend/data/mock_data.json</text>
+  <text x="170" y="808" class="legendText">筛选策略: 保留 Protein 节点 + Tau 清除关键 Gene 节点及其直接关系，共 14 节点 / 13 条关系。</text>
+  <text x="170" y="838" class="legendText">说明: 该图由现有 mock 数据生成，可在收到 PDF 与结构文件后替换为真实证据增强图谱。</text>
+</svg>
