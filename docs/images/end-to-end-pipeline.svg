@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="760" viewBox="0 0 1600 760">
+  <defs>
+    <style>
+      .title { font: 700 56px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #15385f; }
+      .k { font: 700 44px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #1f4f79; }
+      .d { font: 500 36px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #315f89; }
+      .f { font: 600 34px 'Microsoft YaHei', 'PingFang SC', sans-serif; fill: #2f5f88; }
+    </style>
+    <marker id="arrow" markerWidth="14" markerHeight="14" refX="11" refY="7" orient="auto">
+      <path d="M0,0 L14,7 L0,14 z" fill="#3a79ab" />
+    </marker>
+  </defs>
+
+  <rect width="1600" height="760" fill="#edf4fa" />
+  <text x="800" y="90" text-anchor="middle" class="title">数据到知识服务一体化流程</text>
+
+  <rect x="90" y="190" rx="24" ry="24" width="255" height="280" fill="#d8e7f8" stroke="#9cbce0" stroke-width="2" />
+  <text x="120" y="265" class="k">1. 数据采集</text>
+  <text x="120" y="325" class="d">文献与数据库摘要</text>
+  <text x="120" y="380" class="d">外部结构化数据</text>
+
+  <line x1="345" y1="330" x2="430" y2="330" stroke="#3a79ab" stroke-width="6" marker-end="url(#arrow)" />
+
+  <rect x="430" y="190" rx="24" ry="24" width="255" height="280" fill="#e1f2ef" stroke="#a5cfc8" stroke-width="2" />
+  <text x="460" y="265" class="k">2. 数据清洗</text>
+  <text x="460" y="325" class="d">去噪、标准化</text>
+  <text x="460" y="380" class="d">命名归一与映射</text>
+
+  <line x1="685" y1="330" x2="770" y2="330" stroke="#3a79ab" stroke-width="6" marker-end="url(#arrow)" />
+
+  <rect x="770" y="190" rx="24" ry="24" width="255" height="280" fill="#f4ead8" stroke="#d8c09a" stroke-width="2" />
+  <text x="800" y="265" class="k">3. 结构化抽取</text>
+  <text x="800" y="325" class="d">实体与关系抽取</text>
+  <text x="800" y="380" class="d">标准 JSON 入库</text>
+
+  <line x1="1025" y1="330" x2="1110" y2="330" stroke="#3a79ab" stroke-width="6" marker-end="url(#arrow)" />
+
+  <rect x="1110" y="190" rx="24" ry="24" width="255" height="280" fill="#e8e1f7" stroke="#b8a7dd" stroke-width="2" />
+  <text x="1140" y="265" class="k">4. 图谱构建</text>
+  <text x="1140" y="325" class="d">节点关系写入</text>
+  <text x="1140" y="380" class="d">图数据库持久化</text>
+
+  <line x1="1238" y1="470" x2="1238" y2="560" stroke="#3a79ab" stroke-width="6" marker-end="url(#arrow)" />
+
+  <rect x="880" y="560" rx="24" ry="24" width="720" height="150" fill="#f4dfe6" stroke="#d8a7b8" stroke-width="2" />
+  <text x="920" y="630" class="k">5. 可视化与问答服务</text>
+  <text x="920" y="685" class="d">React 前端 + FastAPI 接口 + RAG 检索增强 + 图谱问答联动</text>
+
+  <text x="90" y="725" class="f">输出成果：可交互图谱平台、分子特征展示、候选推理面板、知识问答服务。</text>
+</svg>
