@@ -13,6 +13,10 @@ export interface GraphEdge {
   type: string;
   weight: number;
   evidence?: string;
+  label?: string;
+  source_ids?: string[];
+  evidence_status?: string;
+  context?: string;
 }
 
 export interface GraphMeta {
@@ -20,6 +24,10 @@ export interface GraphMeta {
   total_edges: number;
   node_type_stats: Record<string, number>;
   edge_type_stats: Record<string, number>;
+  version?: string;
+  as_of?: string;
+  evidence_edges?: number;
+  hypothesis_edges?: number;
 }
 
 export interface GraphResponse {
@@ -28,6 +36,7 @@ export interface GraphResponse {
     edges: GraphEdge[];
   };
   meta: GraphMeta;
+  sources?: Record<string,{title:string;url:string;year?:string;doi?:string}>;
 }
 
 export interface FingerprintSummary {
@@ -51,6 +60,11 @@ export interface GNNPrediction {
   node_type: string;
   score: number;
   explanation: string;
+  path_node_ids?: string[];
+  path_edge_ids?: string[];
+  source_ids?: string[];
+  evidence_status?: string;
+  hops?: number;
 }
 
 export interface IntegratedSearchResponse {

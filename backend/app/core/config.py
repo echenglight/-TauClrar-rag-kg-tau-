@@ -12,7 +12,7 @@ class Settings(BaseSettings):
     neo4j_uri: str = "bolt://localhost:7687"
     neo4j_user: str = "neo4j"
     neo4j_password: str = "change_me"
-    graph_source: str = "mock"
+    graph_source: str = "literature"
     mock_data_file: str = "backend/data/mock_data.json"
     template_graph_file: str = "backend/data/template_graphs.json"
     molecule_descriptor_file: str = "data/molecule/molecule_descriptors.csv"

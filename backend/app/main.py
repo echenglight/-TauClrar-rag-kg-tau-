@@ -28,3 +28,9 @@ app.include_router(graph_router)
 app.include_router(chat_router)
 app.include_router(analysis_router)
 app.include_router(template_router)
+
+from pathlib import Path
+from fastapi.staticfiles import StaticFiles
+frontend_dist=Path(__file__).resolve().parents[2]/"frontend/dist"
+if frontend_dist.is_dir():
+    app.mount("/", StaticFiles(directory=frontend_dist,html=True),name="frontend")

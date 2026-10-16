@@ -12,6 +12,25 @@ node_modules/
 dist/
 .vite/
 
+# Portable production builds included with the release
+!frontend/dist/
+!frontend/dist/**
+!reports/report-app/dist/
+!reports/report-app/dist/**
+
+# Local execution and inspection artifacts
+logs/
+*.log
+*.pid
+*.tsbuildinfo
+.pytest_cache/
+reports/qa/
+docs/images/label-position-check.png
+.data-app-offline/
+publication-manifest.json
+.env.*
+!.env.example
+
 # OS / Editor
 .DS_Store
 Thumbs.db

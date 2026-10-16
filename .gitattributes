@@ -1,0 +1,13 @@
+* text=auto eol=lf
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ico binary
+*.bat text eol=crlf
+*.ps1 text eol=crlf
+# Preserve source snapshots and the report runtime byte-for-byte.
+evidence/raw/** -text
+reports/report-app/** -text
+frontend/dist/** -text
+*.sdf text eol=lf

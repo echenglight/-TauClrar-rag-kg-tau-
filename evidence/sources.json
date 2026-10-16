@@ -1,0 +1,171 @@
+{
+  "29967008": {
+    "id": "29967008",
+    "title": "Aspirin Induces Lysosomal Biogenesis and Attenuates Amyloid Plaque Pathology in a Mouse Model of Alzheimer's Disease via PPARα.",
+    "year": "2018",
+    "doi": "10.1523/JNEUROSCI.0054-18.2018",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+    "source_type": "primary_research"
+  },
+  "21081844": {
+    "id": "21081844",
+    "title": "Caffeine induces apoptosis by enhancement of autophagy via PI3K/Akt/mTOR/p70S6K inhibition.",
+    "year": "2011",
+    "doi": "10.4161/auto.7.2.14074",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+    "source_type": "primary_research"
+  },
+  "20838929": {
+    "id": "20838929",
+    "title": "Caffeine modulates tau phosphorylation and affects Akt signaling in postmitotic neurons.",
+    "year": "2011",
+    "doi": "10.1007/s12031-010-9444-8",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+    "source_type": "primary_research"
+  },
+  "30108137": {
+    "id": "30108137",
+    "title": "TFEB enhances astroglial uptake of extracellular tau species and reduces tau spreading.",
+    "year": "2018",
+    "doi": "10.1084/jem.20172158",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/30108137/",
+    "source_type": "primary_research"
+  },
+  "21617040": {
+    "id": "21617040",
+    "title": "TFEB links autophagy to lysosomal biogenesis.",
+    "year": "2011",
+    "doi": "10.1126/science.1204592",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21617040/",
+    "source_type": "primary_research"
+  },
+  "22343943": {
+    "id": "22343943",
+    "title": "A lysosome-to-nucleus signalling mechanism senses and regulates the lysosome via mTOR and TFEB.",
+    "year": "2012",
+    "doi": "10.1038/emboj.2012.32",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/22343943/",
+    "source_type": "primary_research"
+  },
+  "21258367": {
+    "id": "21258367",
+    "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1.",
+    "year": "2011",
+    "doi": "10.1038/ncb2152",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/",
+    "source_type": "primary_research"
+  },
+  "32366951": {
+    "id": "32366951",
+    "title": "TFEB regulates lysosomal exocytosis of tau and its loss of function exacerbates tau pathology and spreading.",
+    "year": "2021",
+    "doi": "10.1038/s41380-020-0738-0",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/32366951/",
+    "source_type": "primary_research"
+  },
+  "39009859": {
+    "id": "39009859",
+    "title": "Truncated tau interferes with the autophagy and endolysosomal pathway and results in lipid accumulation.",
+    "year": "2024",
+    "doi": "10.1007/s00018-024-05337-6",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/39009859/",
+    "source_type": "primary_research"
+  },
+  "41399158": {
+    "id": "41399158",
+    "title": "Proteomic analysis links truncated tau to lysosome motility, autophagy, and endo-lysosomal dysfunction.",
+    "year": "2025",
+    "doi": "10.1002/alz.70977",
+    "url": "https://pubmed.ncbi.nlm.nih.gov/41399158/",
+    "source_type": "primary_research"
+  },
+  "hsa04140": {
+    "id": "hsa04140",
+    "title": "Autophagy - animal - Homo sapiens (human)",
+    "url": "https://www.kegg.jp/entry/hsa04140",
+    "source_type": "pathway_database"
+  },
+  "hsa04142": {
+    "id": "hsa04142",
+    "title": "Lysosome biogenesis - Homo sapiens (human)",
+    "url": "https://www.kegg.jp/entry/hsa04142",
+    "source_type": "pathway_database"
+  },
+  "hsa04150": {
+    "id": "hsa04150",
+    "title": "mTOR signaling pathway - Homo sapiens (human)",
+    "url": "https://www.kegg.jp/entry/hsa04150",
+    "source_type": "pathway_database"
+  },
+  "hsa04151": {
+    "id": "hsa04151",
+    "title": "PI3K-Akt signaling pathway - Homo sapiens (human)",
+    "url": "https://www.kegg.jp/entry/hsa04151",
+    "source_type": "pathway_database"
+  },
+  "hsa04152": {
+    "id": "hsa04152",
+    "title": "AMPK signaling pathway - Homo sapiens (human)",
+    "url": "https://www.kegg.jp/entry/hsa04152",
+    "source_type": "pathway_database"
+  },
+  "Q07869": {
+    "id": "Q07869",
+    "title": "Peroxisome proliferator-activated receptor alpha",
+    "gene": "PPARA",
+    "url": "https://www.uniprot.org/uniprotkb/Q07869/entry",
+    "source_type": "protein_database"
+  },
+  "P19484": {
+    "id": "P19484",
+    "title": "Transcription factor EB",
+    "gene": "TFEB",
+    "url": "https://www.uniprot.org/uniprotkb/P19484/entry",
+    "source_type": "protein_database"
+  },
+  "P42345": {
+    "id": "P42345",
+    "title": "Serine/threonine-protein kinase mTOR",
+    "gene": "MTOR",
+    "url": "https://www.uniprot.org/uniprotkb/P42345/entry",
+    "source_type": "protein_database"
+  },
+  "P10636": {
+    "id": "P10636",
+    "title": "Microtubule-associated protein tau",
+    "gene": "MAPT",
+    "url": "https://www.uniprot.org/uniprotkb/P10636/entry",
+    "source_type": "protein_database"
+  },
+  "O75385": {
+    "id": "O75385",
+    "title": "Serine/threonine-protein kinase ULK1",
+    "gene": "ULK1",
+    "url": "https://www.uniprot.org/uniprotkb/O75385/entry",
+    "source_type": "protein_database"
+  },
+  "CID:2244": {
+    "id": "CID:2244",
+    "title": "Aspirin",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+    "source_type": "chemical_identity",
+    "formula": "C9H8O4",
+    "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+  },
+  "CID:2519": {
+    "id": "CID:2519",
+    "title": "Caffeine",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519",
+    "source_type": "chemical_identity",
+    "formula": "C8H10N4O2",
+    "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+  },
+  "CID:129908365": {
+    "id": "CID:129908365",
+    "title": "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid",
+    "url": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+    "source_type": "chemical_identity",
+    "formula": "C48H69N3O7",
+    "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N"
+  }
+}

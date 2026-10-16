@@ -1,0 +1,5983 @@
+{
+  "as_of": "2026-10-16",
+  "graph_meta": {
+    "project": "TauClear Literature KG",
+    "version": "2.0.0",
+    "as_of": "2026-10-16",
+    "scope": "selected_primary_literature_and_standard_annotations",
+    "literature_pmids": [
+      "29967008",
+      "21081844",
+      "20838929",
+      "30108137",
+      "21617040",
+      "22343943",
+      "21258367",
+      "32366951",
+      "39009859",
+      "41399158"
+    ],
+    "node_count": 40,
+    "edge_count": 51,
+    "hypothesis_edges": 2,
+    "manual_curation": true
+  },
+  "metrics": [
+    {
+      "指标": "指定 CID 身份匹配",
+      "范围": "3 个指定化合物",
+      "结果": "3/3（100%）",
+      "含义": "身份匹配一致性"
+    },
+    {
+      "指标": "正式关系来源绑定",
+      "范围": "49 条非假设关系",
+      "结果": "49/49（100%）",
+      "含义": "来源标识可定位；不表示实验真实性概率"
+    },
+    {
+      "指标": "候选分数独立重算",
+      "范围": "22 条文献层候选",
+      "结果": "22/22（100%）",
+      "含义": "相对 NetworkX 独立实现的一致性"
+    },
+    {
+      "指标": "最大绝对误差",
+      "范围": "上述候选的四位小数分数",
+      "结果": "0.0000",
+      "含义": "计算结果差异"
+    },
+    {
+      "指标": "关系端点完整性",
+      "范围": "102 个端点引用",
+      "结果": "102/102（100%）",
+      "含义": "无悬空端点"
+    },
+    {
+      "指标": "功能 / 方法测试",
+      "范围": "6 项自动化测试",
+      "结果": "6/6 通过",
+      "含义": "来源、隔离、方向、权重与路径计算"
+    },
+    {
+      "指标": "未知实体误回退",
+      "范围": "不存在的实体查询",
+      "结果": "0 个无关分子 / 0 个候选",
+      "含义": "已取消旧版回退"
+    },
+    {
+      "指标": "假设层隔离",
+      "范围": "CID 129908365",
+      "结果": "默认 0 条；显式启用后 4 条候选",
+      "含义": "待验证关联不混入文献结论"
+    }
+  ],
+  "score_records": [
+    {
+      "cid": "2244",
+      "candidate": "pheno_abeta",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "prot_ppara",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "prot_tfeb",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "path_lysosome",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "path_tau_clearance",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "path_tau_exocytosis",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "pheno_tau_spread",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "path_tau_uptake",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2244",
+      "candidate": "path_autophagy",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "prot_4ebp1",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "prot_akt",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "prot_s6",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "pheno_tau_phospho",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "prot_mtorc1",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "prot_p70",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "path_autophagy",
+      "observed": 1.0,
+      "reference": 1.0,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "pheno_tfeb_nuclear",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "prot_ulk1",
+      "observed": 0.82,
+      "reference": 0.82,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "path_pi3k",
+      "observed": 0.697,
+      "reference": 0.697,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "path_mtor",
+      "observed": 0.697,
+      "reference": 0.697,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "path_lysosome",
+      "observed": 0.6724,
+      "reference": 0.6724,
+      "error": 0.0
+    },
+    {
+      "cid": "2519",
+      "candidate": "pheno_autophagosomes",
+      "observed": 0.6724,
+      "reference": 0.6724,
+      "error": 0.0
+    }
+  ],
+  "responses": {
+    "2244": {
+      "keyword": "2244",
+      "kg": {
+        "data": {
+          "nodes": [
+            {
+              "id": "cpd_2244",
+              "name": "阿司匹林",
+              "type": "Compound",
+              "size": 21,
+              "properties": {
+                "cluster": "ppara",
+                "pubchem_cid": "2244",
+                "formula": "C9H8O4",
+                "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+                "aliases": [
+                  "2244",
+                  "Aspirin"
+                ],
+                "source_ids": [
+                  "CID:2244"
+                ],
+                "layout_x": 328.52,
+                "layout_y": 31.4
+              }
+            },
+            {
+              "id": "cpd_2519",
+              "name": "咖啡因",
+              "type": "Compound",
+              "size": 25,
+              "properties": {
+                "cluster": "mtor",
+                "pubchem_cid": "2519",
+                "formula": "C8H10N4O2",
+                "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+                "aliases": [
+                  "2519",
+                  "Caffeine"
+                ],
+                "source_ids": [
+                  "CID:2519"
+                ],
+                "layout_x": -288.68,
+                "layout_y": 44.95
+              }
+            },
+            {
+              "id": "gene_ppara",
+              "name": "PPARA 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "ppara",
+                "uniprot": "Q07869",
+                "aliases": [
+                  "PPARA"
+                ],
+                "layout_x": 556.14,
+                "layout_y": -0.3
+              }
+            },
+            {
+              "id": "gene_tfeb",
+              "name": "TFEB 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "tfeb",
+                "uniprot": "P19484",
+                "aliases": [
+                  "TFEB"
+                ],
+                "layout_x": 369.34,
+                "layout_y": -49.32
+              }
+            },
+            {
+              "id": "gene_ulk1",
+              "name": "ULK1 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "autophagy",
+                "uniprot": "O75385",
+                "aliases": [
+                  "ULK1"
+                ],
+                "layout_x": -124.92,
+                "layout_y": -211.56
+              }
+            },
+            {
+              "id": "prot_ppara",
+              "name": "PPARα",
+              "type": "Protein",
+              "size": 20,
+              "properties": {
+                "cluster": "ppara",
+                "layout_x": 417.42,
+                "layout_y": -6.83
+              }
+            },
+            {
+              "id": "prot_tfeb",
+              "name": "TFEB",
+              "type": "Protein",
+              "size": 28,
+              "properties": {
+                "cluster": "tfeb",
+                "layout_x": 256.24,
+                "layout_y": -49.6
+              }
+            },
+            {
+              "id": "prot_mtor",
+              "name": "mTOR",
+              "type": "Protein",
+              "size": 20,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -351.1,
+                "layout_y": -109.8
+              }
+            },
+            {
+              "id": "prot_mtorc1",
+              "name": "mTORC1",
+              "type": "Protein",
+              "size": 22,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -202.16,
+                "layout_y": -41.34
+              }
+            },
+            {
+              "id": "prot_akt",
+              "name": "AKT",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -473.41,
+                "layout_y": 90.73
+              }
+            },
+            {
+              "id": "prot_ulk1",
+              "name": "ULK1",
+              "type": "Protein",
+              "size": 24,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": -107.17,
+                "layout_y": -133.02
+              }
+            },
+            {
+              "id": "prot_ampk",
+              "name": "AMPK",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": -172.32,
+                "layout_y": -254.2
+              }
+            },
+            {
+              "id": "prot_lc3",
+              "name": "LC3",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": 21.06,
+                "layout_y": -57.47
+              }
+            },
+            {
+              "id": "prot_p70",
+              "name": "p70S6K",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -407.89,
+                "layout_y": 15.26
+              }
+            },
+            {
+              "id": "prot_4ebp1",
+              "name": "4E-BP1",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -381.75,
+                "layout_y": 107.8
+              }
+            },
+            {
+              "id": "prot_s6",
+              "name": "S6",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -325.0,
+                "layout_y": 125.56
+              }
+            },
+            {
+              "id": "prot_tau",
+              "name": "Tau",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": 58.64,
+                "layout_y": 288.83
+              }
+            },
+            {
+              "id": "prot_tau35",
+              "name": "Tau35",
+              "type": "Protein",
+              "size": 26,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 36.11,
+                "layout_y": 153.78
+              }
+            },
+            {
+              "id": "prot_trpml1",
+              "name": "TRPML1",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": 453.05,
+                "layout_y": -224.25
+              }
+            },
+            {
+              "id": "prot_ctsd",
+              "name": "Cathepsin D",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 117.33,
+                "layout_y": 113.35
+              }
+            },
+            {
+              "id": "prot_lamp2",
+              "name": "LAMP2",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 154.75,
+                "layout_y": 135.25
+              }
+            },
+            {
+              "id": "path_autophagy",
+              "name": "自噬过程",
+              "type": "Pathway",
+              "size": 24,
+              "properties": {
+                "cluster": "autophagy",
+                "standard_id": "hsa04140",
+                "definition": "KEGG 功能条目",
+                "layout_x": -22.99,
+                "layout_y": -5.34
+              }
+            },
+            {
+              "id": "path_lysosome",
+              "name": "溶酶体生物发生",
+              "type": "Pathway",
+              "size": 22,
+              "properties": {
+                "cluster": "tfeb",
+                "standard_id": "hsa04142",
+                "definition": "KEGG 功能条目",
+                "layout_x": 173.32,
+                "layout_y": 49.19
+              }
+            },
+            {
+              "id": "path_mtor",
+              "name": "mTOR 信号",
+              "type": "Pathway",
+              "size": 19,
+              "properties": {
+                "cluster": "mtor",
+                "standard_id": "hsa04150",
+                "definition": "KEGG 功能条目",
+                "layout_x": -299.06,
+                "layout_y": -86.89
+              }
+            },
+            {
+              "id": "path_tau_clearance",
+              "name": "Tau 清除相关过程",
+              "type": "Pathway",
+              "size": 21,
+              "properties": {
+                "cluster": "tau",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 262.88,
+                "layout_y": -149.13
+              }
+            },
+            {
+              "id": "path_tau_uptake",
+              "name": "胞外 Tau 摄取",
+              "type": "Pathway",
+              "size": 19,
+              "properties": {
+                "cluster": "tau",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 297.61,
+                "layout_y": -116.78
+              }
+            },
+            {
+              "id": "path_tau_exocytosis",
+              "name": "Tau 溶酶体外排",
+              "type": "Pathway",
+              "size": 20,
+              "properties": {
+                "cluster": "tau",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 355.55,
+                "layout_y": -156.44
+              }
+            },
+            {
+              "id": "path_endolysosomal",
+              "name": "内体–溶酶体功能",
+              "type": "Pathway",
+              "size": 17,
+              "properties": {
+                "cluster": "tau35",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 23.95,
+                "layout_y": 237.54
+              }
+            },
+            {
+              "id": "pheno_tau_phospho",
+              "name": "Tau 磷酸化",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": -403.34,
+                "layout_y": 60.19
+              }
+            },
+            {
+              "id": "pheno_tau_spread",
+              "name": "Tau 病理传播",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": 378.85,
+                "layout_y": -91.21
+              }
+            },
+            {
+              "id": "pheno_abeta",
+              "name": "Aβ 斑块负荷",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "ppara",
+                "layout_x": 441.72,
+                "layout_y": 83.73
+              }
+            },
+            {
+              "id": "pheno_lipids",
+              "name": "脂滴积累",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": -40.56,
+                "layout_y": 223.24
+              }
+            },
+            {
+              "id": "pheno_tfeb_nuclear",
+              "name": "TFEB 核转位",
+              "type": "Phenotype",
+              "size": 20,
+              "properties": {
+                "cluster": "tfeb",
+                "layout_x": -16.94,
+                "layout_y": 49.53
+              }
+            },
+            {
+              "id": "pheno_autophagosomes",
+              "name": "自噬体形成",
+              "type": "Phenotype",
+              "size": 19,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": -72.08,
+                "layout_y": -79.09
+              }
+            },
+            {
+              "id": "pheno_lysosome_motility",
+              "name": "溶酶体运动",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 106.21,
+                "layout_y": 228.77
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "lit_001",
+              "source": "gene_ppara",
+              "target": "prot_ppara",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "Q07869",
+              "label": "编码",
+              "source_ids": [
+                "Q07869"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_002",
+              "source": "gene_tfeb",
+              "target": "prot_tfeb",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "P19484",
+              "label": "编码",
+              "source_ids": [
+                "P19484"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_005",
+              "source": "gene_ulk1",
+              "target": "prot_ulk1",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "O75385",
+              "label": "编码",
+              "source_ids": [
+                "O75385"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_006",
+              "source": "prot_mtor",
+              "target": "prot_mtorc1",
+              "type": "component_of",
+              "weight": 0.85,
+              "evidence": "hsa04150",
+              "label": "组成",
+              "source_ids": [
+                "hsa04150"
+              ],
+              "evidence_status": "annotation",
+              "context": "mTORC1 复合体成员",
+              "origin": null
+            },
+            {
+              "id": "lit_007",
+              "source": "prot_mtor",
+              "target": "path_mtor",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04150",
+              "label": "参与",
+              "source_ids": [
+                "hsa04150"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_008",
+              "source": "prot_mtorc1",
+              "target": "path_mtor",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04150",
+              "label": "参与",
+              "source_ids": [
+                "hsa04150"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_011",
+              "source": "prot_ulk1",
+              "target": "path_autophagy",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04140",
+              "label": "参与",
+              "source_ids": [
+                "hsa04140"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_012",
+              "source": "prot_lc3",
+              "target": "path_autophagy",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04140",
+              "label": "参与",
+              "source_ids": [
+                "hsa04140"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_013",
+              "source": "prot_ctsd",
+              "target": "path_lysosome",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04142",
+              "label": "参与",
+              "source_ids": [
+                "hsa04142"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_014",
+              "source": "prot_lamp2",
+              "target": "path_lysosome",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04142",
+              "label": "参与",
+              "source_ids": [
+                "hsa04142"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_015",
+              "source": "cpd_2244",
+              "target": "prot_ppara",
+              "type": "activates",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "激活",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "脑细胞 / 5XFAD 小鼠；PPARα 依赖性作用",
+              "origin": null
+            },
+            {
+              "id": "lit_016",
+              "source": "cpd_2244",
+              "target": "prot_tfeb",
+              "type": "upregulates",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "上调表达",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "TFEB 表达上调；不是直接结合实验",
+              "origin": null
+            },
+            {
+              "id": "lit_017",
+              "source": "prot_ppara",
+              "target": "prot_tfeb",
+              "type": "upregulates",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "促进转录",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "PPARα 依赖的 Tfeb 转录",
+              "origin": null
+            },
+            {
+              "id": "lit_018",
+              "source": "cpd_2244",
+              "target": "path_lysosome",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "促进",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞及小鼠溶酶体生物发生终点",
+              "origin": null
+            },
+            {
+              "id": "lit_019",
+              "source": "cpd_2244",
+              "target": "pheno_abeta",
+              "type": "reduces",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "降低",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "5XFAD 小鼠；Aβ 终点，不等同于 Tau",
+              "origin": null
+            },
+            {
+              "id": "lit_020",
+              "source": "prot_tfeb",
+              "target": "path_lysosome",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:29967008; PMID:21617040",
+              "label": "促进",
+              "source_ids": [
+                "29967008",
+                "21617040"
+              ],
+              "evidence_status": "experimental",
+              "context": "TFEB 转录调控与溶酶体生物发生",
+              "origin": null
+            },
+            {
+              "id": "lit_021",
+              "source": "prot_tfeb",
+              "target": "path_autophagy",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:21617040",
+              "label": "调控",
+              "source_ids": [
+                "21617040"
+              ],
+              "evidence_status": "experimental",
+              "context": "TFEB 介导自噬 / 溶酶体协调调控",
+              "origin": null
+            },
+            {
+              "id": "lit_022",
+              "source": "cpd_2519",
+              "target": "prot_akt",
+              "type": "inhibits_signaling",
+              "weight": 1.0,
+              "evidence": "PMID:21081844; PMID:20838929",
+              "label": "降低信号",
+              "source_ids": [
+                "21081844",
+                "20838929"
+              ],
+              "evidence_status": "experimental",
+              "context": "所研究细胞条件；Akt 信号变化，不表示直接靶点结合",
+              "origin": null
+            },
+            {
+              "id": "lit_023",
+              "source": "cpd_2519",
+              "target": "prot_mtorc1",
+              "type": "inhibits_signaling",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低信号",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "高浓度细胞处理；Akt/mTOR 下游信号抑制",
+              "origin": null
+            },
+            {
+              "id": "lit_024",
+              "source": "cpd_2519",
+              "target": "path_autophagy",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "增强自噬",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "高浓度细胞研究伴凋亡；效应依赖剂量与细胞条件",
+              "origin": null
+            },
+            {
+              "id": "lit_025",
+              "source": "cpd_2519",
+              "target": "pheno_tau_phospho",
+              "type": "modulates",
+              "weight": 1.0,
+              "evidence": "PMID:20838929",
+              "label": "调节",
+              "source_ids": [
+                "20838929"
+              ],
+              "evidence_status": "experimental",
+              "context": "神经元 / 神经母细胞瘤；磷酸化终点，不等于 Tau 降解",
+              "origin": null
+            },
+            {
+              "id": "lit_026",
+              "source": "cpd_2519",
+              "target": "prot_p70",
+              "type": "reduces_phosphorylation",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低磷酸化",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞模型中的磷酸化读数，非直接结合证据",
+              "origin": null
+            },
+            {
+              "id": "lit_027",
+              "source": "cpd_2519",
+              "target": "prot_4ebp1",
+              "type": "reduces_phosphorylation",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低磷酸化",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞模型中的磷酸化读数，非直接结合证据",
+              "origin": null
+            },
+            {
+              "id": "lit_028",
+              "source": "cpd_2519",
+              "target": "prot_s6",
+              "type": "reduces_phosphorylation",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低磷酸化",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞模型中的磷酸化读数，非直接结合证据",
+              "origin": null
+            },
+            {
+              "id": "lit_029",
+              "source": "prot_mtorc1",
+              "target": "prot_ulk1",
+              "type": "inhibits",
+              "weight": 1.0,
+              "evidence": "PMID:21258367",
+              "label": "抑制",
+              "source_ids": [
+                "21258367"
+              ],
+              "evidence_status": "experimental",
+              "context": "营养条件依赖；Ulk1 Ser757 磷酸化抑制",
+              "origin": null
+            },
+            {
+              "id": "lit_030",
+              "source": "prot_ampk",
+              "target": "prot_ulk1",
+              "type": "activates",
+              "weight": 1.0,
+              "evidence": "PMID:21258367",
+              "label": "条件性激活",
+              "source_ids": [
+                "21258367"
+              ],
+              "evidence_status": "experimental",
+              "context": "葡萄糖饥饿条件；Ser317 / Ser777；不得外推至所有饥饿条件",
+              "origin": null
+            },
+            {
+              "id": "lit_031",
+              "source": "prot_ulk1",
+              "target": "pheno_autophagosomes",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:21258367",
+              "label": "促进启动",
+              "source_ids": [
+                "21258367"
+              ],
+              "evidence_status": "experimental",
+              "context": "自噬启动激酶；特定营养 / 细胞条件",
+              "origin": null
+            },
+            {
+              "id": "lit_032",
+              "source": "pheno_autophagosomes",
+              "target": "path_autophagy",
+              "type": "part_of",
+              "weight": 0.85,
+              "evidence": "hsa04140",
+              "label": "组成阶段",
+              "source_ids": [
+                "hsa04140"
+              ],
+              "evidence_status": "annotation",
+              "context": "自噬过程的组成阶段",
+              "origin": null
+            },
+            {
+              "id": "lit_033",
+              "source": "prot_mtorc1",
+              "target": "pheno_tfeb_nuclear",
+              "type": "inhibits",
+              "weight": 1.0,
+              "evidence": "PMID:22343943",
+              "label": "抑制核转位",
+              "source_ids": [
+                "22343943"
+              ],
+              "evidence_status": "experimental",
+              "context": "mTORC1–TFEB 溶酶体营养信号机制",
+              "origin": null
+            },
+            {
+              "id": "lit_034",
+              "source": "pheno_tfeb_nuclear",
+              "target": "path_lysosome",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:22343943; PMID:21617040",
+              "label": "促进",
+              "source_ids": [
+                "22343943",
+                "21617040"
+              ],
+              "evidence_status": "experimental",
+              "context": "核内 TFEB 调控溶酶体基因表达",
+              "origin": null
+            },
+            {
+              "id": "lit_035",
+              "source": "prot_tfeb",
+              "target": "path_tau_uptake",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "促进摄取",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "星形胶质细胞 / 小鼠；胞外 Tau 摄取",
+              "origin": null
+            },
+            {
+              "id": "lit_036",
+              "source": "prot_tfeb",
+              "target": "pheno_tau_spread",
+              "type": "reduces",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "减弱传播",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "星形胶质细胞 TFEB 操作；小鼠 Tau 传播模型",
+              "origin": null
+            },
+            {
+              "id": "lit_037",
+              "source": "prot_tfeb",
+              "target": "path_tau_clearance",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "参与清除",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "星形胶质细胞中胞外 Tau 摄取和溶酶体清除",
+              "origin": null
+            },
+            {
+              "id": "lit_038",
+              "source": "path_tau_uptake",
+              "target": "path_tau_clearance",
+              "type": "contributes_to",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "相关环节",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "摄取与降解分别解释；非药物独立验证",
+              "origin": null
+            },
+            {
+              "id": "lit_039",
+              "source": "prot_tfeb",
+              "target": "path_tau_exocytosis",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:32366951",
+              "label": "调控外排",
+              "source_ids": [
+                "32366951"
+              ],
+              "evidence_status": "experimental",
+              "context": "截短突变 Tau、缺 MTBR；不同于野生型 Tau 的一般分泌",
+              "origin": null
+            },
+            {
+              "id": "lit_040",
+              "source": "prot_trpml1",
+              "target": "path_tau_exocytosis",
+              "type": "required_for",
+              "weight": 1.0,
+              "evidence": "PMID:32366951",
+              "label": "依赖",
+              "source_ids": [
+                "32366951"
+              ],
+              "evidence_status": "experimental",
+              "context": "溶酶体钙通道依赖性",
+              "origin": null
+            },
+            {
+              "id": "lit_041",
+              "source": "path_tau_exocytosis",
+              "target": "path_tau_clearance",
+              "type": "contributes_to",
+              "weight": 1.0,
+              "evidence": "PMID:32366951",
+              "label": "相关环节",
+              "source_ids": [
+                "32366951"
+              ],
+              "evidence_status": "experimental",
+              "context": "特定不具播种能力 Tau 物种；不概括所有胞外 Tau",
+              "origin": null
+            },
+            {
+              "id": "lit_042",
+              "source": "prot_tau35",
+              "target": "prot_tau",
+              "type": "fragment_of",
+              "weight": 0.85,
+              "evidence": "PMID:39009859",
+              "label": "片段",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "annotation",
+              "context": "Tau35 为疾病相关 C 端片段；结构关系",
+              "origin": null
+            },
+            {
+              "id": "lit_043",
+              "source": "prot_tau35",
+              "target": "pheno_tfeb_nuclear",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "阻碍核转位",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "Torin 1 诱导条件；CHO 及原代神经元",
+              "origin": null
+            },
+            {
+              "id": "lit_044",
+              "source": "prot_tau35",
+              "target": "pheno_lipids",
+              "type": "increases",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "增加",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "CHO / 原代神经元中脂滴积累",
+              "origin": null
+            },
+            {
+              "id": "lit_045",
+              "source": "prot_tau35",
+              "target": "path_autophagy",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:39009859; PMID:41399158",
+              "label": "扰动通量",
+              "source_ids": [
+                "39009859",
+                "41399158"
+              ],
+              "evidence_status": "experimental",
+              "context": "Tau35 特异模型，自噬通量异常",
+              "origin": null
+            },
+            {
+              "id": "lit_046",
+              "source": "prot_tau35",
+              "target": "path_endolysosomal",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:39009859; PMID:41399158",
+              "label": "扰动功能",
+              "source_ids": [
+                "39009859",
+                "41399158"
+              ],
+              "evidence_status": "experimental",
+              "context": "不同模型存在不同读数，不代表全部 Tau 物种",
+              "origin": null
+            },
+            {
+              "id": "lit_047",
+              "source": "prot_tau35",
+              "target": "pheno_lysosome_motility",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:41399158",
+              "label": "扰动运动",
+              "source_ids": [
+                "41399158"
+              ],
+              "evidence_status": "experimental",
+              "context": "2025：Tau35 小鼠 / SH-SY5Y；溶酶体运动受损",
+              "origin": null
+            },
+            {
+              "id": "lit_048",
+              "source": "prot_tau35",
+              "target": "prot_ctsd",
+              "type": "modulates_readout",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "改变标志物",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "CHO 点状信号 / 原代神经元分布读数存在模型差异",
+              "origin": null
+            },
+            {
+              "id": "lit_049",
+              "source": "prot_tau35",
+              "target": "prot_lamp2",
+              "type": "modulates_readout",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "改变标志物",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "CHO 点状信号 / 原代神经元分布读数存在模型差异",
+              "origin": null
+            }
+          ]
+        },
+        "meta": {
+          "total_nodes": 35,
+          "total_edges": 45,
+          "node_type_stats": {
+            "Compound": 2,
+            "Gene": 3,
+            "Protein": 16,
+            "Pathway": 7,
+            "Phenotype": 7
+          },
+          "edge_type_stats": {
+            "encodes": 3,
+            "component_of": 1,
+            "involved_in": 6,
+            "activates": 2,
+            "upregulates": 2,
+            "promotes": 9,
+            "reduces": 2,
+            "inhibits_signaling": 2,
+            "modulates": 1,
+            "reduces_phosphorylation": 3,
+            "inhibits": 2,
+            "part_of": 1,
+            "contributes_to": 2,
+            "required_for": 1,
+            "fragment_of": 1,
+            "impairs": 4,
+            "increases": 1,
+            "modulates_readout": 2
+          },
+          "version": "2.0.0",
+          "as_of": "2026-10-16",
+          "evidence_edges": 45,
+          "hypothesis_edges": 0
+        },
+        "sources": {
+          "29967008": {
+            "id": "29967008",
+            "title": "Aspirin Induces Lysosomal Biogenesis and Attenuates Amyloid Plaque Pathology in a Mouse Model of Alzheimer's Disease via PPARα.",
+            "year": "2018",
+            "doi": "10.1523/JNEUROSCI.0054-18.2018",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+            "source_type": "primary_research"
+          },
+          "21081844": {
+            "id": "21081844",
+            "title": "Caffeine induces apoptosis by enhancement of autophagy via PI3K/Akt/mTOR/p70S6K inhibition.",
+            "year": "2011",
+            "doi": "10.4161/auto.7.2.14074",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+            "source_type": "primary_research"
+          },
+          "20838929": {
+            "id": "20838929",
+            "title": "Caffeine modulates tau phosphorylation and affects Akt signaling in postmitotic neurons.",
+            "year": "2011",
+            "doi": "10.1007/s12031-010-9444-8",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+            "source_type": "primary_research"
+          },
+          "30108137": {
+            "id": "30108137",
+            "title": "TFEB enhances astroglial uptake of extracellular tau species and reduces tau spreading.",
+            "year": "2018",
+            "doi": "10.1084/jem.20172158",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30108137/",
+            "source_type": "primary_research"
+          },
+          "21617040": {
+            "id": "21617040",
+            "title": "TFEB links autophagy to lysosomal biogenesis.",
+            "year": "2011",
+            "doi": "10.1126/science.1204592",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21617040/",
+            "source_type": "primary_research"
+          },
+          "22343943": {
+            "id": "22343943",
+            "title": "A lysosome-to-nucleus signalling mechanism senses and regulates the lysosome via mTOR and TFEB.",
+            "year": "2012",
+            "doi": "10.1038/emboj.2012.32",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22343943/",
+            "source_type": "primary_research"
+          },
+          "21258367": {
+            "id": "21258367",
+            "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1.",
+            "year": "2011",
+            "doi": "10.1038/ncb2152",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/",
+            "source_type": "primary_research"
+          },
+          "32366951": {
+            "id": "32366951",
+            "title": "TFEB regulates lysosomal exocytosis of tau and its loss of function exacerbates tau pathology and spreading.",
+            "year": "2021",
+            "doi": "10.1038/s41380-020-0738-0",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32366951/",
+            "source_type": "primary_research"
+          },
+          "39009859": {
+            "id": "39009859",
+            "title": "Truncated tau interferes with the autophagy and endolysosomal pathway and results in lipid accumulation.",
+            "year": "2024",
+            "doi": "10.1007/s00018-024-05337-6",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39009859/",
+            "source_type": "primary_research"
+          },
+          "41399158": {
+            "id": "41399158",
+            "title": "Proteomic analysis links truncated tau to lysosome motility, autophagy, and endo-lysosomal dysfunction.",
+            "year": "2025",
+            "doi": "10.1002/alz.70977",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41399158/",
+            "source_type": "primary_research"
+          },
+          "hsa04140": {
+            "id": "hsa04140",
+            "title": "Autophagy - animal - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04140",
+            "source_type": "pathway_database"
+          },
+          "hsa04142": {
+            "id": "hsa04142",
+            "title": "Lysosome biogenesis - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04142",
+            "source_type": "pathway_database"
+          },
+          "hsa04150": {
+            "id": "hsa04150",
+            "title": "mTOR signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04150",
+            "source_type": "pathway_database"
+          },
+          "hsa04151": {
+            "id": "hsa04151",
+            "title": "PI3K-Akt signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04151",
+            "source_type": "pathway_database"
+          },
+          "hsa04152": {
+            "id": "hsa04152",
+            "title": "AMPK signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04152",
+            "source_type": "pathway_database"
+          },
+          "Q07869": {
+            "id": "Q07869",
+            "title": "Peroxisome proliferator-activated receptor alpha",
+            "gene": "PPARA",
+            "url": "https://www.uniprot.org/uniprotkb/Q07869/entry",
+            "source_type": "protein_database"
+          },
+          "P19484": {
+            "id": "P19484",
+            "title": "Transcription factor EB",
+            "gene": "TFEB",
+            "url": "https://www.uniprot.org/uniprotkb/P19484/entry",
+            "source_type": "protein_database"
+          },
+          "P42345": {
+            "id": "P42345",
+            "title": "Serine/threonine-protein kinase mTOR",
+            "gene": "MTOR",
+            "url": "https://www.uniprot.org/uniprotkb/P42345/entry",
+            "source_type": "protein_database"
+          },
+          "P10636": {
+            "id": "P10636",
+            "title": "Microtubule-associated protein tau",
+            "gene": "MAPT",
+            "url": "https://www.uniprot.org/uniprotkb/P10636/entry",
+            "source_type": "protein_database"
+          },
+          "O75385": {
+            "id": "O75385",
+            "title": "Serine/threonine-protein kinase ULK1",
+            "gene": "ULK1",
+            "url": "https://www.uniprot.org/uniprotkb/O75385/entry",
+            "source_type": "protein_database"
+          },
+          "CID:2244": {
+            "id": "CID:2244",
+            "title": "Aspirin",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+            "source_type": "chemical_identity",
+            "formula": "C9H8O4",
+            "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+          },
+          "CID:2519": {
+            "id": "CID:2519",
+            "title": "Caffeine",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519",
+            "source_type": "chemical_identity",
+            "formula": "C8H10N4O2",
+            "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+          },
+          "CID:129908365": {
+            "id": "CID:129908365",
+            "title": "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+            "source_type": "chemical_identity",
+            "formula": "C48H69N3O7",
+            "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N"
+          }
+        }
+      },
+      "molecules": [
+        {
+          "name": "2244",
+          "smiles": "[H]OC(=O)c1c([H])c([H])c([H])c([H])c1OC(=O)C([H])([H])[H]",
+          "molecular_formula": "C9H8O4",
+          "descriptors": {
+            "MolWt": 180.159,
+            "MolLogP": 1.3101,
+            "TPSA": 63.6,
+            "NumHDonors": 1.0,
+            "NumHAcceptors": 4.0,
+            "NumRotatableBonds": 2.0,
+            "RingCount": 1.0,
+            "LipinskiHBA": 4.0,
+            "LipinskiHBD": 1.0
+          },
+          "fingerprint": {
+            "morgan_on_bits": 29,
+            "maccs_on_bits": 22,
+            "morgan_on_indices_preview": [
+              11,
+              24,
+              33,
+              48,
+              49,
+              91,
+              117,
+              126,
+              279,
+              285,
+              341,
+              353,
+              356,
+              363,
+              443,
+              444,
+              456,
+              628,
+              632,
+              646,
+              650,
+              695,
+              705,
+              807
+            ],
+            "maccs_on_indices_preview": [
+              89,
+              112,
+              113,
+              123,
+              126,
+              127,
+              136,
+              139,
+              140,
+              143,
+              144,
+              146,
+              150,
+              152,
+              154,
+              157,
+              159,
+              160,
+              162,
+              163,
+              164,
+              165
+            ]
+          }
+        }
+      ],
+      "gnn": {
+        "model_name": "EvidenceGraphRank-v2",
+        "top_k": 100,
+        "predictions": [
+          {
+            "node_id": "pheno_abeta",
+            "node_name": "Aβ 斑块负荷",
+            "node_type": "Phenotype",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；阿司匹林 → Aβ 斑块负荷",
+            "path_node_ids": [
+              "cpd_2244",
+              "pheno_abeta"
+            ],
+            "path_edge_ids": [
+              "lit_019"
+            ],
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "prot_ppara",
+            "node_name": "PPARα",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；阿司匹林 → PPARα",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_ppara"
+            ],
+            "path_edge_ids": [
+              "lit_015"
+            ],
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "prot_tfeb",
+            "node_name": "TFEB",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；阿司匹林 → TFEB",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_tfeb"
+            ],
+            "path_edge_ids": [
+              "lit_016"
+            ],
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "path_lysosome",
+            "node_name": "溶酶体生物发生",
+            "node_type": "Pathway",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；阿司匹林 → 溶酶体生物发生",
+            "path_node_ids": [
+              "cpd_2244",
+              "path_lysosome"
+            ],
+            "path_edge_ids": [
+              "lit_018"
+            ],
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "path_tau_clearance",
+            "node_name": "Tau 清除相关过程",
+            "node_type": "Pathway",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；阿司匹林 → TFEB → Tau 清除相关过程",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_tfeb",
+              "path_tau_clearance"
+            ],
+            "path_edge_ids": [
+              "lit_016",
+              "lit_037"
+            ],
+            "source_ids": [
+              "29967008",
+              "30108137"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "path_tau_exocytosis",
+            "node_name": "Tau 溶酶体外排",
+            "node_type": "Pathway",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；阿司匹林 → TFEB → Tau 溶酶体外排",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_tfeb",
+              "path_tau_exocytosis"
+            ],
+            "path_edge_ids": [
+              "lit_016",
+              "lit_039"
+            ],
+            "source_ids": [
+              "29967008",
+              "32366951"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "pheno_tau_spread",
+            "node_name": "Tau 病理传播",
+            "node_type": "Phenotype",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；阿司匹林 → TFEB → Tau 病理传播",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_tfeb",
+              "pheno_tau_spread"
+            ],
+            "path_edge_ids": [
+              "lit_016",
+              "lit_036"
+            ],
+            "source_ids": [
+              "29967008",
+              "30108137"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "path_tau_uptake",
+            "node_name": "胞外 Tau 摄取",
+            "node_type": "Pathway",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；阿司匹林 → TFEB → 胞外 Tau 摄取",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_tfeb",
+              "path_tau_uptake"
+            ],
+            "path_edge_ids": [
+              "lit_016",
+              "lit_035"
+            ],
+            "source_ids": [
+              "29967008",
+              "30108137"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "path_autophagy",
+            "node_name": "自噬过程",
+            "node_type": "Pathway",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；阿司匹林 → TFEB → 自噬过程",
+            "path_node_ids": [
+              "cpd_2244",
+              "prot_tfeb",
+              "path_autophagy"
+            ],
+            "path_edge_ids": [
+              "lit_016",
+              "lit_021"
+            ],
+            "source_ids": [
+              "21617040",
+              "29967008"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          }
+        ],
+        "method": "directed_evidence_weighted_graph_ranking",
+        "trained_neural_network": false
+      },
+      "notes": [
+        "有向证据路径排序；分数不是准确率、效应大小或概率。"
+      ]
+    },
+    "2519": {
+      "keyword": "2519",
+      "kg": {
+        "data": {
+          "nodes": [
+            {
+              "id": "cpd_2244",
+              "name": "阿司匹林",
+              "type": "Compound",
+              "size": 21,
+              "properties": {
+                "cluster": "ppara",
+                "pubchem_cid": "2244",
+                "formula": "C9H8O4",
+                "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+                "aliases": [
+                  "2244",
+                  "Aspirin"
+                ],
+                "source_ids": [
+                  "CID:2244"
+                ],
+                "layout_x": 328.52,
+                "layout_y": 31.4
+              }
+            },
+            {
+              "id": "cpd_2519",
+              "name": "咖啡因",
+              "type": "Compound",
+              "size": 25,
+              "properties": {
+                "cluster": "mtor",
+                "pubchem_cid": "2519",
+                "formula": "C8H10N4O2",
+                "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+                "aliases": [
+                  "2519",
+                  "Caffeine"
+                ],
+                "source_ids": [
+                  "CID:2519"
+                ],
+                "layout_x": -288.68,
+                "layout_y": 44.95
+              }
+            },
+            {
+              "id": "gene_ppara",
+              "name": "PPARA 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "ppara",
+                "uniprot": "Q07869",
+                "aliases": [
+                  "PPARA"
+                ],
+                "layout_x": 556.14,
+                "layout_y": -0.3
+              }
+            },
+            {
+              "id": "gene_tfeb",
+              "name": "TFEB 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "tfeb",
+                "uniprot": "P19484",
+                "aliases": [
+                  "TFEB"
+                ],
+                "layout_x": 369.34,
+                "layout_y": -49.32
+              }
+            },
+            {
+              "id": "gene_mtor",
+              "name": "MTOR 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "uniprot": "P42345",
+                "aliases": [
+                  "MTOR"
+                ],
+                "layout_x": -463.87,
+                "layout_y": -159.94
+              }
+            },
+            {
+              "id": "gene_mapt",
+              "name": "MAPT 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "uniprot": "P10636",
+                "aliases": [
+                  "MAPT"
+                ],
+                "layout_x": 74.05,
+                "layout_y": 381.77
+              }
+            },
+            {
+              "id": "gene_ulk1",
+              "name": "ULK1 基因",
+              "type": "Gene",
+              "size": 17,
+              "properties": {
+                "cluster": "autophagy",
+                "uniprot": "O75385",
+                "aliases": [
+                  "ULK1"
+                ],
+                "layout_x": -124.92,
+                "layout_y": -211.56
+              }
+            },
+            {
+              "id": "prot_ppara",
+              "name": "PPARα",
+              "type": "Protein",
+              "size": 20,
+              "properties": {
+                "cluster": "ppara",
+                "layout_x": 417.42,
+                "layout_y": -6.83
+              }
+            },
+            {
+              "id": "prot_tfeb",
+              "name": "TFEB",
+              "type": "Protein",
+              "size": 28,
+              "properties": {
+                "cluster": "tfeb",
+                "layout_x": 256.24,
+                "layout_y": -49.6
+              }
+            },
+            {
+              "id": "prot_mtor",
+              "name": "mTOR",
+              "type": "Protein",
+              "size": 20,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -351.1,
+                "layout_y": -109.8
+              }
+            },
+            {
+              "id": "prot_mtorc1",
+              "name": "mTORC1",
+              "type": "Protein",
+              "size": 22,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -202.16,
+                "layout_y": -41.34
+              }
+            },
+            {
+              "id": "prot_akt",
+              "name": "AKT",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -473.41,
+                "layout_y": 90.73
+              }
+            },
+            {
+              "id": "prot_ulk1",
+              "name": "ULK1",
+              "type": "Protein",
+              "size": 24,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": -107.17,
+                "layout_y": -133.02
+              }
+            },
+            {
+              "id": "prot_ampk",
+              "name": "AMPK",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": -172.32,
+                "layout_y": -254.2
+              }
+            },
+            {
+              "id": "prot_lc3",
+              "name": "LC3",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": 21.06,
+                "layout_y": -57.47
+              }
+            },
+            {
+              "id": "prot_p70",
+              "name": "p70S6K",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -407.89,
+                "layout_y": 15.26
+              }
+            },
+            {
+              "id": "prot_4ebp1",
+              "name": "4E-BP1",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -381.75,
+                "layout_y": 107.8
+              }
+            },
+            {
+              "id": "prot_s6",
+              "name": "S6",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "layout_x": -325.0,
+                "layout_y": 125.56
+              }
+            },
+            {
+              "id": "prot_tau",
+              "name": "Tau",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": 58.64,
+                "layout_y": 288.83
+              }
+            },
+            {
+              "id": "prot_tau35",
+              "name": "Tau35",
+              "type": "Protein",
+              "size": 26,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 36.11,
+                "layout_y": 153.78
+              }
+            },
+            {
+              "id": "prot_trpml1",
+              "name": "TRPML1",
+              "type": "Protein",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": 453.05,
+                "layout_y": -224.25
+              }
+            },
+            {
+              "id": "prot_ctsd",
+              "name": "Cathepsin D",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 117.33,
+                "layout_y": 113.35
+              }
+            },
+            {
+              "id": "prot_lamp2",
+              "name": "LAMP2",
+              "type": "Protein",
+              "size": 19,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 154.75,
+                "layout_y": 135.25
+              }
+            },
+            {
+              "id": "path_autophagy",
+              "name": "自噬过程",
+              "type": "Pathway",
+              "size": 24,
+              "properties": {
+                "cluster": "autophagy",
+                "standard_id": "hsa04140",
+                "definition": "KEGG 功能条目",
+                "layout_x": -22.99,
+                "layout_y": -5.34
+              }
+            },
+            {
+              "id": "path_lysosome",
+              "name": "溶酶体生物发生",
+              "type": "Pathway",
+              "size": 22,
+              "properties": {
+                "cluster": "tfeb",
+                "standard_id": "hsa04142",
+                "definition": "KEGG 功能条目",
+                "layout_x": 173.32,
+                "layout_y": 49.19
+              }
+            },
+            {
+              "id": "path_pi3k",
+              "name": "PI3K–AKT 信号",
+              "type": "Pathway",
+              "size": 17,
+              "properties": {
+                "cluster": "mtor",
+                "standard_id": "hsa04151",
+                "definition": "KEGG 功能条目",
+                "layout_x": -600.0,
+                "layout_y": 122.12
+              }
+            },
+            {
+              "id": "path_mtor",
+              "name": "mTOR 信号",
+              "type": "Pathway",
+              "size": 19,
+              "properties": {
+                "cluster": "mtor",
+                "standard_id": "hsa04150",
+                "definition": "KEGG 功能条目",
+                "layout_x": -299.06,
+                "layout_y": -86.89
+              }
+            },
+            {
+              "id": "path_ampk",
+              "name": "AMPK 信号",
+              "type": "Pathway",
+              "size": 17,
+              "properties": {
+                "cluster": "autophagy",
+                "standard_id": "hsa04152",
+                "definition": "KEGG 功能条目",
+                "layout_x": -216.03,
+                "layout_y": -340.51
+              }
+            },
+            {
+              "id": "path_tau_clearance",
+              "name": "Tau 清除相关过程",
+              "type": "Pathway",
+              "size": 21,
+              "properties": {
+                "cluster": "tau",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 262.88,
+                "layout_y": -149.13
+              }
+            },
+            {
+              "id": "path_tau_uptake",
+              "name": "胞外 Tau 摄取",
+              "type": "Pathway",
+              "size": 19,
+              "properties": {
+                "cluster": "tau",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 297.61,
+                "layout_y": -116.78
+              }
+            },
+            {
+              "id": "path_tau_exocytosis",
+              "name": "Tau 溶酶体外排",
+              "type": "Pathway",
+              "size": 20,
+              "properties": {
+                "cluster": "tau",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 355.55,
+                "layout_y": -156.44
+              }
+            },
+            {
+              "id": "path_endolysosomal",
+              "name": "内体–溶酶体功能",
+              "type": "Pathway",
+              "size": 17,
+              "properties": {
+                "cluster": "tau35",
+                "standard_id": null,
+                "definition": "文献定义的研究过程；非单一 KEGG 通路",
+                "layout_x": 23.95,
+                "layout_y": 237.54
+              }
+            },
+            {
+              "id": "pheno_tau_phospho",
+              "name": "Tau 磷酸化",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": -403.34,
+                "layout_y": 60.19
+              }
+            },
+            {
+              "id": "pheno_tau_spread",
+              "name": "Tau 病理传播",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau",
+                "layout_x": 378.85,
+                "layout_y": -91.21
+              }
+            },
+            {
+              "id": "pheno_abeta",
+              "name": "Aβ 斑块负荷",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "ppara",
+                "layout_x": 441.72,
+                "layout_y": 83.73
+              }
+            },
+            {
+              "id": "pheno_lipids",
+              "name": "脂滴积累",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": -40.56,
+                "layout_y": 223.24
+              }
+            },
+            {
+              "id": "pheno_tfeb_nuclear",
+              "name": "TFEB 核转位",
+              "type": "Phenotype",
+              "size": 20,
+              "properties": {
+                "cluster": "tfeb",
+                "layout_x": -16.94,
+                "layout_y": 49.53
+              }
+            },
+            {
+              "id": "pheno_autophagosomes",
+              "name": "自噬体形成",
+              "type": "Phenotype",
+              "size": 19,
+              "properties": {
+                "cluster": "autophagy",
+                "layout_x": -72.08,
+                "layout_y": -79.09
+              }
+            },
+            {
+              "id": "pheno_lysosome_motility",
+              "name": "溶酶体运动",
+              "type": "Phenotype",
+              "size": 17,
+              "properties": {
+                "cluster": "tau35",
+                "layout_x": 106.21,
+                "layout_y": 228.77
+              }
+            }
+          ],
+          "edges": [
+            {
+              "id": "lit_001",
+              "source": "gene_ppara",
+              "target": "prot_ppara",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "Q07869",
+              "label": "编码",
+              "source_ids": [
+                "Q07869"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_002",
+              "source": "gene_tfeb",
+              "target": "prot_tfeb",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "P19484",
+              "label": "编码",
+              "source_ids": [
+                "P19484"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_003",
+              "source": "gene_mtor",
+              "target": "prot_mtor",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "P42345",
+              "label": "编码",
+              "source_ids": [
+                "P42345"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_004",
+              "source": "gene_mapt",
+              "target": "prot_tau",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "P10636",
+              "label": "编码",
+              "source_ids": [
+                "P10636"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_005",
+              "source": "gene_ulk1",
+              "target": "prot_ulk1",
+              "type": "encodes",
+              "weight": 0.85,
+              "evidence": "O75385",
+              "label": "编码",
+              "source_ids": [
+                "O75385"
+              ],
+              "evidence_status": "annotation",
+              "context": "UniProt 人类基因–蛋白登记",
+              "origin": null
+            },
+            {
+              "id": "lit_006",
+              "source": "prot_mtor",
+              "target": "prot_mtorc1",
+              "type": "component_of",
+              "weight": 0.85,
+              "evidence": "hsa04150",
+              "label": "组成",
+              "source_ids": [
+                "hsa04150"
+              ],
+              "evidence_status": "annotation",
+              "context": "mTORC1 复合体成员",
+              "origin": null
+            },
+            {
+              "id": "lit_007",
+              "source": "prot_mtor",
+              "target": "path_mtor",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04150",
+              "label": "参与",
+              "source_ids": [
+                "hsa04150"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_008",
+              "source": "prot_mtorc1",
+              "target": "path_mtor",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04150",
+              "label": "参与",
+              "source_ids": [
+                "hsa04150"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_009",
+              "source": "prot_akt",
+              "target": "path_pi3k",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04151",
+              "label": "参与",
+              "source_ids": [
+                "hsa04151"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_010",
+              "source": "prot_ampk",
+              "target": "path_ampk",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04152",
+              "label": "参与",
+              "source_ids": [
+                "hsa04152"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_011",
+              "source": "prot_ulk1",
+              "target": "path_autophagy",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04140",
+              "label": "参与",
+              "source_ids": [
+                "hsa04140"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_012",
+              "source": "prot_lc3",
+              "target": "path_autophagy",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04140",
+              "label": "参与",
+              "source_ids": [
+                "hsa04140"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_013",
+              "source": "prot_ctsd",
+              "target": "path_lysosome",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04142",
+              "label": "参与",
+              "source_ids": [
+                "hsa04142"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_014",
+              "source": "prot_lamp2",
+              "target": "path_lysosome",
+              "type": "involved_in",
+              "weight": 0.85,
+              "evidence": "hsa04142",
+              "label": "参与",
+              "source_ids": [
+                "hsa04142"
+              ],
+              "evidence_status": "annotation",
+              "context": "标准功能条目对应；不代表化合物效应",
+              "origin": null
+            },
+            {
+              "id": "lit_015",
+              "source": "cpd_2244",
+              "target": "prot_ppara",
+              "type": "activates",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "激活",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "脑细胞 / 5XFAD 小鼠；PPARα 依赖性作用",
+              "origin": null
+            },
+            {
+              "id": "lit_016",
+              "source": "cpd_2244",
+              "target": "prot_tfeb",
+              "type": "upregulates",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "上调表达",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "TFEB 表达上调；不是直接结合实验",
+              "origin": null
+            },
+            {
+              "id": "lit_017",
+              "source": "prot_ppara",
+              "target": "prot_tfeb",
+              "type": "upregulates",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "促进转录",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "PPARα 依赖的 Tfeb 转录",
+              "origin": null
+            },
+            {
+              "id": "lit_018",
+              "source": "cpd_2244",
+              "target": "path_lysosome",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "促进",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞及小鼠溶酶体生物发生终点",
+              "origin": null
+            },
+            {
+              "id": "lit_019",
+              "source": "cpd_2244",
+              "target": "pheno_abeta",
+              "type": "reduces",
+              "weight": 1.0,
+              "evidence": "PMID:29967008",
+              "label": "降低",
+              "source_ids": [
+                "29967008"
+              ],
+              "evidence_status": "experimental",
+              "context": "5XFAD 小鼠；Aβ 终点，不等同于 Tau",
+              "origin": null
+            },
+            {
+              "id": "lit_020",
+              "source": "prot_tfeb",
+              "target": "path_lysosome",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:29967008; PMID:21617040",
+              "label": "促进",
+              "source_ids": [
+                "29967008",
+                "21617040"
+              ],
+              "evidence_status": "experimental",
+              "context": "TFEB 转录调控与溶酶体生物发生",
+              "origin": null
+            },
+            {
+              "id": "lit_021",
+              "source": "prot_tfeb",
+              "target": "path_autophagy",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:21617040",
+              "label": "调控",
+              "source_ids": [
+                "21617040"
+              ],
+              "evidence_status": "experimental",
+              "context": "TFEB 介导自噬 / 溶酶体协调调控",
+              "origin": null
+            },
+            {
+              "id": "lit_022",
+              "source": "cpd_2519",
+              "target": "prot_akt",
+              "type": "inhibits_signaling",
+              "weight": 1.0,
+              "evidence": "PMID:21081844; PMID:20838929",
+              "label": "降低信号",
+              "source_ids": [
+                "21081844",
+                "20838929"
+              ],
+              "evidence_status": "experimental",
+              "context": "所研究细胞条件；Akt 信号变化，不表示直接靶点结合",
+              "origin": null
+            },
+            {
+              "id": "lit_023",
+              "source": "cpd_2519",
+              "target": "prot_mtorc1",
+              "type": "inhibits_signaling",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低信号",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "高浓度细胞处理；Akt/mTOR 下游信号抑制",
+              "origin": null
+            },
+            {
+              "id": "lit_024",
+              "source": "cpd_2519",
+              "target": "path_autophagy",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "增强自噬",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "高浓度细胞研究伴凋亡；效应依赖剂量与细胞条件",
+              "origin": null
+            },
+            {
+              "id": "lit_025",
+              "source": "cpd_2519",
+              "target": "pheno_tau_phospho",
+              "type": "modulates",
+              "weight": 1.0,
+              "evidence": "PMID:20838929",
+              "label": "调节",
+              "source_ids": [
+                "20838929"
+              ],
+              "evidence_status": "experimental",
+              "context": "神经元 / 神经母细胞瘤；磷酸化终点，不等于 Tau 降解",
+              "origin": null
+            },
+            {
+              "id": "lit_026",
+              "source": "cpd_2519",
+              "target": "prot_p70",
+              "type": "reduces_phosphorylation",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低磷酸化",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞模型中的磷酸化读数，非直接结合证据",
+              "origin": null
+            },
+            {
+              "id": "lit_027",
+              "source": "cpd_2519",
+              "target": "prot_4ebp1",
+              "type": "reduces_phosphorylation",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低磷酸化",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞模型中的磷酸化读数，非直接结合证据",
+              "origin": null
+            },
+            {
+              "id": "lit_028",
+              "source": "cpd_2519",
+              "target": "prot_s6",
+              "type": "reduces_phosphorylation",
+              "weight": 1.0,
+              "evidence": "PMID:21081844",
+              "label": "降低磷酸化",
+              "source_ids": [
+                "21081844"
+              ],
+              "evidence_status": "experimental",
+              "context": "细胞模型中的磷酸化读数，非直接结合证据",
+              "origin": null
+            },
+            {
+              "id": "lit_029",
+              "source": "prot_mtorc1",
+              "target": "prot_ulk1",
+              "type": "inhibits",
+              "weight": 1.0,
+              "evidence": "PMID:21258367",
+              "label": "抑制",
+              "source_ids": [
+                "21258367"
+              ],
+              "evidence_status": "experimental",
+              "context": "营养条件依赖；Ulk1 Ser757 磷酸化抑制",
+              "origin": null
+            },
+            {
+              "id": "lit_030",
+              "source": "prot_ampk",
+              "target": "prot_ulk1",
+              "type": "activates",
+              "weight": 1.0,
+              "evidence": "PMID:21258367",
+              "label": "条件性激活",
+              "source_ids": [
+                "21258367"
+              ],
+              "evidence_status": "experimental",
+              "context": "葡萄糖饥饿条件；Ser317 / Ser777；不得外推至所有饥饿条件",
+              "origin": null
+            },
+            {
+              "id": "lit_031",
+              "source": "prot_ulk1",
+              "target": "pheno_autophagosomes",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:21258367",
+              "label": "促进启动",
+              "source_ids": [
+                "21258367"
+              ],
+              "evidence_status": "experimental",
+              "context": "自噬启动激酶；特定营养 / 细胞条件",
+              "origin": null
+            },
+            {
+              "id": "lit_032",
+              "source": "pheno_autophagosomes",
+              "target": "path_autophagy",
+              "type": "part_of",
+              "weight": 0.85,
+              "evidence": "hsa04140",
+              "label": "组成阶段",
+              "source_ids": [
+                "hsa04140"
+              ],
+              "evidence_status": "annotation",
+              "context": "自噬过程的组成阶段",
+              "origin": null
+            },
+            {
+              "id": "lit_033",
+              "source": "prot_mtorc1",
+              "target": "pheno_tfeb_nuclear",
+              "type": "inhibits",
+              "weight": 1.0,
+              "evidence": "PMID:22343943",
+              "label": "抑制核转位",
+              "source_ids": [
+                "22343943"
+              ],
+              "evidence_status": "experimental",
+              "context": "mTORC1–TFEB 溶酶体营养信号机制",
+              "origin": null
+            },
+            {
+              "id": "lit_034",
+              "source": "pheno_tfeb_nuclear",
+              "target": "path_lysosome",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:22343943; PMID:21617040",
+              "label": "促进",
+              "source_ids": [
+                "22343943",
+                "21617040"
+              ],
+              "evidence_status": "experimental",
+              "context": "核内 TFEB 调控溶酶体基因表达",
+              "origin": null
+            },
+            {
+              "id": "lit_035",
+              "source": "prot_tfeb",
+              "target": "path_tau_uptake",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "促进摄取",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "星形胶质细胞 / 小鼠；胞外 Tau 摄取",
+              "origin": null
+            },
+            {
+              "id": "lit_036",
+              "source": "prot_tfeb",
+              "target": "pheno_tau_spread",
+              "type": "reduces",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "减弱传播",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "星形胶质细胞 TFEB 操作；小鼠 Tau 传播模型",
+              "origin": null
+            },
+            {
+              "id": "lit_037",
+              "source": "prot_tfeb",
+              "target": "path_tau_clearance",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "参与清除",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "星形胶质细胞中胞外 Tau 摄取和溶酶体清除",
+              "origin": null
+            },
+            {
+              "id": "lit_038",
+              "source": "path_tau_uptake",
+              "target": "path_tau_clearance",
+              "type": "contributes_to",
+              "weight": 1.0,
+              "evidence": "PMID:30108137",
+              "label": "相关环节",
+              "source_ids": [
+                "30108137"
+              ],
+              "evidence_status": "experimental",
+              "context": "摄取与降解分别解释；非药物独立验证",
+              "origin": null
+            },
+            {
+              "id": "lit_039",
+              "source": "prot_tfeb",
+              "target": "path_tau_exocytosis",
+              "type": "promotes",
+              "weight": 1.0,
+              "evidence": "PMID:32366951",
+              "label": "调控外排",
+              "source_ids": [
+                "32366951"
+              ],
+              "evidence_status": "experimental",
+              "context": "截短突变 Tau、缺 MTBR；不同于野生型 Tau 的一般分泌",
+              "origin": null
+            },
+            {
+              "id": "lit_040",
+              "source": "prot_trpml1",
+              "target": "path_tau_exocytosis",
+              "type": "required_for",
+              "weight": 1.0,
+              "evidence": "PMID:32366951",
+              "label": "依赖",
+              "source_ids": [
+                "32366951"
+              ],
+              "evidence_status": "experimental",
+              "context": "溶酶体钙通道依赖性",
+              "origin": null
+            },
+            {
+              "id": "lit_041",
+              "source": "path_tau_exocytosis",
+              "target": "path_tau_clearance",
+              "type": "contributes_to",
+              "weight": 1.0,
+              "evidence": "PMID:32366951",
+              "label": "相关环节",
+              "source_ids": [
+                "32366951"
+              ],
+              "evidence_status": "experimental",
+              "context": "特定不具播种能力 Tau 物种；不概括所有胞外 Tau",
+              "origin": null
+            },
+            {
+              "id": "lit_042",
+              "source": "prot_tau35",
+              "target": "prot_tau",
+              "type": "fragment_of",
+              "weight": 0.85,
+              "evidence": "PMID:39009859",
+              "label": "片段",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "annotation",
+              "context": "Tau35 为疾病相关 C 端片段；结构关系",
+              "origin": null
+            },
+            {
+              "id": "lit_043",
+              "source": "prot_tau35",
+              "target": "pheno_tfeb_nuclear",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "阻碍核转位",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "Torin 1 诱导条件；CHO 及原代神经元",
+              "origin": null
+            },
+            {
+              "id": "lit_044",
+              "source": "prot_tau35",
+              "target": "pheno_lipids",
+              "type": "increases",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "增加",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "CHO / 原代神经元中脂滴积累",
+              "origin": null
+            },
+            {
+              "id": "lit_045",
+              "source": "prot_tau35",
+              "target": "path_autophagy",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:39009859; PMID:41399158",
+              "label": "扰动通量",
+              "source_ids": [
+                "39009859",
+                "41399158"
+              ],
+              "evidence_status": "experimental",
+              "context": "Tau35 特异模型，自噬通量异常",
+              "origin": null
+            },
+            {
+              "id": "lit_046",
+              "source": "prot_tau35",
+              "target": "path_endolysosomal",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:39009859; PMID:41399158",
+              "label": "扰动功能",
+              "source_ids": [
+                "39009859",
+                "41399158"
+              ],
+              "evidence_status": "experimental",
+              "context": "不同模型存在不同读数，不代表全部 Tau 物种",
+              "origin": null
+            },
+            {
+              "id": "lit_047",
+              "source": "prot_tau35",
+              "target": "pheno_lysosome_motility",
+              "type": "impairs",
+              "weight": 1.0,
+              "evidence": "PMID:41399158",
+              "label": "扰动运动",
+              "source_ids": [
+                "41399158"
+              ],
+              "evidence_status": "experimental",
+              "context": "2025：Tau35 小鼠 / SH-SY5Y；溶酶体运动受损",
+              "origin": null
+            },
+            {
+              "id": "lit_048",
+              "source": "prot_tau35",
+              "target": "prot_ctsd",
+              "type": "modulates_readout",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "改变标志物",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "CHO 点状信号 / 原代神经元分布读数存在模型差异",
+              "origin": null
+            },
+            {
+              "id": "lit_049",
+              "source": "prot_tau35",
+              "target": "prot_lamp2",
+              "type": "modulates_readout",
+              "weight": 1.0,
+              "evidence": "PMID:39009859",
+              "label": "改变标志物",
+              "source_ids": [
+                "39009859"
+              ],
+              "evidence_status": "experimental",
+              "context": "CHO 点状信号 / 原代神经元分布读数存在模型差异",
+              "origin": null
+            }
+          ]
+        },
+        "meta": {
+          "total_nodes": 39,
+          "total_edges": 49,
+          "node_type_stats": {
+            "Compound": 2,
+            "Gene": 5,
+            "Protein": 16,
+            "Pathway": 9,
+            "Phenotype": 7
+          },
+          "edge_type_stats": {
+            "encodes": 5,
+            "component_of": 1,
+            "involved_in": 8,
+            "activates": 2,
+            "upregulates": 2,
+            "promotes": 9,
+            "reduces": 2,
+            "inhibits_signaling": 2,
+            "modulates": 1,
+            "reduces_phosphorylation": 3,
+            "inhibits": 2,
+            "part_of": 1,
+            "contributes_to": 2,
+            "required_for": 1,
+            "fragment_of": 1,
+            "impairs": 4,
+            "increases": 1,
+            "modulates_readout": 2
+          },
+          "version": "2.0.0",
+          "as_of": "2026-10-16",
+          "evidence_edges": 49,
+          "hypothesis_edges": 0
+        },
+        "sources": {
+          "29967008": {
+            "id": "29967008",
+            "title": "Aspirin Induces Lysosomal Biogenesis and Attenuates Amyloid Plaque Pathology in a Mouse Model of Alzheimer's Disease via PPARα.",
+            "year": "2018",
+            "doi": "10.1523/JNEUROSCI.0054-18.2018",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+            "source_type": "primary_research"
+          },
+          "21081844": {
+            "id": "21081844",
+            "title": "Caffeine induces apoptosis by enhancement of autophagy via PI3K/Akt/mTOR/p70S6K inhibition.",
+            "year": "2011",
+            "doi": "10.4161/auto.7.2.14074",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+            "source_type": "primary_research"
+          },
+          "20838929": {
+            "id": "20838929",
+            "title": "Caffeine modulates tau phosphorylation and affects Akt signaling in postmitotic neurons.",
+            "year": "2011",
+            "doi": "10.1007/s12031-010-9444-8",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+            "source_type": "primary_research"
+          },
+          "30108137": {
+            "id": "30108137",
+            "title": "TFEB enhances astroglial uptake of extracellular tau species and reduces tau spreading.",
+            "year": "2018",
+            "doi": "10.1084/jem.20172158",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30108137/",
+            "source_type": "primary_research"
+          },
+          "21617040": {
+            "id": "21617040",
+            "title": "TFEB links autophagy to lysosomal biogenesis.",
+            "year": "2011",
+            "doi": "10.1126/science.1204592",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21617040/",
+            "source_type": "primary_research"
+          },
+          "22343943": {
+            "id": "22343943",
+            "title": "A lysosome-to-nucleus signalling mechanism senses and regulates the lysosome via mTOR and TFEB.",
+            "year": "2012",
+            "doi": "10.1038/emboj.2012.32",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22343943/",
+            "source_type": "primary_research"
+          },
+          "21258367": {
+            "id": "21258367",
+            "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1.",
+            "year": "2011",
+            "doi": "10.1038/ncb2152",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/",
+            "source_type": "primary_research"
+          },
+          "32366951": {
+            "id": "32366951",
+            "title": "TFEB regulates lysosomal exocytosis of tau and its loss of function exacerbates tau pathology and spreading.",
+            "year": "2021",
+            "doi": "10.1038/s41380-020-0738-0",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32366951/",
+            "source_type": "primary_research"
+          },
+          "39009859": {
+            "id": "39009859",
+            "title": "Truncated tau interferes with the autophagy and endolysosomal pathway and results in lipid accumulation.",
+            "year": "2024",
+            "doi": "10.1007/s00018-024-05337-6",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39009859/",
+            "source_type": "primary_research"
+          },
+          "41399158": {
+            "id": "41399158",
+            "title": "Proteomic analysis links truncated tau to lysosome motility, autophagy, and endo-lysosomal dysfunction.",
+            "year": "2025",
+            "doi": "10.1002/alz.70977",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41399158/",
+            "source_type": "primary_research"
+          },
+          "hsa04140": {
+            "id": "hsa04140",
+            "title": "Autophagy - animal - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04140",
+            "source_type": "pathway_database"
+          },
+          "hsa04142": {
+            "id": "hsa04142",
+            "title": "Lysosome biogenesis - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04142",
+            "source_type": "pathway_database"
+          },
+          "hsa04150": {
+            "id": "hsa04150",
+            "title": "mTOR signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04150",
+            "source_type": "pathway_database"
+          },
+          "hsa04151": {
+            "id": "hsa04151",
+            "title": "PI3K-Akt signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04151",
+            "source_type": "pathway_database"
+          },
+          "hsa04152": {
+            "id": "hsa04152",
+            "title": "AMPK signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04152",
+            "source_type": "pathway_database"
+          },
+          "Q07869": {
+            "id": "Q07869",
+            "title": "Peroxisome proliferator-activated receptor alpha",
+            "gene": "PPARA",
+            "url": "https://www.uniprot.org/uniprotkb/Q07869/entry",
+            "source_type": "protein_database"
+          },
+          "P19484": {
+            "id": "P19484",
+            "title": "Transcription factor EB",
+            "gene": "TFEB",
+            "url": "https://www.uniprot.org/uniprotkb/P19484/entry",
+            "source_type": "protein_database"
+          },
+          "P42345": {
+            "id": "P42345",
+            "title": "Serine/threonine-protein kinase mTOR",
+            "gene": "MTOR",
+            "url": "https://www.uniprot.org/uniprotkb/P42345/entry",
+            "source_type": "protein_database"
+          },
+          "P10636": {
+            "id": "P10636",
+            "title": "Microtubule-associated protein tau",
+            "gene": "MAPT",
+            "url": "https://www.uniprot.org/uniprotkb/P10636/entry",
+            "source_type": "protein_database"
+          },
+          "O75385": {
+            "id": "O75385",
+            "title": "Serine/threonine-protein kinase ULK1",
+            "gene": "ULK1",
+            "url": "https://www.uniprot.org/uniprotkb/O75385/entry",
+            "source_type": "protein_database"
+          },
+          "CID:2244": {
+            "id": "CID:2244",
+            "title": "Aspirin",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+            "source_type": "chemical_identity",
+            "formula": "C9H8O4",
+            "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+          },
+          "CID:2519": {
+            "id": "CID:2519",
+            "title": "Caffeine",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519",
+            "source_type": "chemical_identity",
+            "formula": "C8H10N4O2",
+            "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+          },
+          "CID:129908365": {
+            "id": "CID:129908365",
+            "title": "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+            "source_type": "chemical_identity",
+            "formula": "C48H69N3O7",
+            "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N"
+          }
+        }
+      },
+      "molecules": [
+        {
+          "name": "2519",
+          "smiles": "[H]c1nc2c(c(=O)n(C([H])([H])[H])c(=O)n2C([H])([H])[H])n1C([H])([H])[H]",
+          "molecular_formula": "C8H10N4O2",
+          "descriptors": {
+            "MolWt": 194.194,
+            "MolLogP": -1.0293,
+            "TPSA": 61.82,
+            "NumHDonors": 0.0,
+            "NumHAcceptors": 3.0,
+            "NumRotatableBonds": 0.0,
+            "RingCount": 2.0,
+            "LipinskiHBA": 3.0,
+            "LipinskiHBD": 0.0
+          },
+          "fingerprint": {
+            "morgan_on_bits": 29,
+            "maccs_on_bits": 47,
+            "morgan_on_indices_preview": [
+              33,
+              60,
+              70,
+              91,
+              283,
+              298,
+              314,
+              330,
+              356,
+              363,
+              374,
+              377,
+              378,
+              385,
+              400,
+              416,
+              428,
+              430,
+              504,
+              564,
+              566,
+              616,
+              628,
+              650
+            ],
+            "maccs_on_indices_preview": [
+              37,
+              38,
+              65,
+              75,
+              77,
+              79,
+              80,
+              83,
+              85,
+              89,
+              92,
+              93,
+              95,
+              96,
+              97,
+              98,
+              101,
+              105,
+              106,
+              110,
+              112,
+              113,
+              117,
+              120
+            ]
+          }
+        }
+      ],
+      "gnn": {
+        "model_name": "EvidenceGraphRank-v2",
+        "top_k": 100,
+        "predictions": [
+          {
+            "node_id": "prot_4ebp1",
+            "node_name": "4E-BP1",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → 4E-BP1",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_4ebp1"
+            ],
+            "path_edge_ids": [
+              "lit_027"
+            ],
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "prot_akt",
+            "node_name": "AKT",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → AKT",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_akt"
+            ],
+            "path_edge_ids": [
+              "lit_022"
+            ],
+            "source_ids": [
+              "20838929",
+              "21081844"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "prot_s6",
+            "node_name": "S6",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → S6",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_s6"
+            ],
+            "path_edge_ids": [
+              "lit_028"
+            ],
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "pheno_tau_phospho",
+            "node_name": "Tau 磷酸化",
+            "node_type": "Phenotype",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → Tau 磷酸化",
+            "path_node_ids": [
+              "cpd_2519",
+              "pheno_tau_phospho"
+            ],
+            "path_edge_ids": [
+              "lit_025"
+            ],
+            "source_ids": [
+              "20838929"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "prot_mtorc1",
+            "node_name": "mTORC1",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → mTORC1",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_mtorc1"
+            ],
+            "path_edge_ids": [
+              "lit_023"
+            ],
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "prot_p70",
+            "node_name": "p70S6K",
+            "node_type": "Protein",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → p70S6K",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_p70"
+            ],
+            "path_edge_ids": [
+              "lit_026"
+            ],
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "path_autophagy",
+            "node_name": "自噬过程",
+            "node_type": "Pathway",
+            "score": 1.0,
+            "explanation": "1 跳有向证据路径；咖啡因 → 自噬过程",
+            "path_node_ids": [
+              "cpd_2519",
+              "path_autophagy"
+            ],
+            "path_edge_ids": [
+              "lit_024"
+            ],
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "direct_literature",
+            "hops": 1
+          },
+          {
+            "node_id": "pheno_tfeb_nuclear",
+            "node_name": "TFEB 核转位",
+            "node_type": "Phenotype",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；咖啡因 → mTORC1 → TFEB 核转位",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_mtorc1",
+              "pheno_tfeb_nuclear"
+            ],
+            "path_edge_ids": [
+              "lit_023",
+              "lit_033"
+            ],
+            "source_ids": [
+              "21081844",
+              "22343943"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "prot_ulk1",
+            "node_name": "ULK1",
+            "node_type": "Protein",
+            "score": 0.82,
+            "explanation": "2 跳有向证据路径；咖啡因 → mTORC1 → ULK1",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_mtorc1",
+              "prot_ulk1"
+            ],
+            "path_edge_ids": [
+              "lit_023",
+              "lit_029"
+            ],
+            "source_ids": [
+              "21081844",
+              "21258367"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "path_pi3k",
+            "node_name": "PI3K–AKT 信号",
+            "node_type": "Pathway",
+            "score": 0.697,
+            "explanation": "2 跳有向证据路径；咖啡因 → AKT → PI3K–AKT 信号",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_akt",
+              "path_pi3k"
+            ],
+            "path_edge_ids": [
+              "lit_022",
+              "lit_009"
+            ],
+            "source_ids": [
+              "20838929",
+              "21081844",
+              "hsa04151"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "path_mtor",
+            "node_name": "mTOR 信号",
+            "node_type": "Pathway",
+            "score": 0.697,
+            "explanation": "2 跳有向证据路径；咖啡因 → mTORC1 → mTOR 信号",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_mtorc1",
+              "path_mtor"
+            ],
+            "path_edge_ids": [
+              "lit_023",
+              "lit_008"
+            ],
+            "source_ids": [
+              "21081844",
+              "hsa04150"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 2
+          },
+          {
+            "node_id": "path_lysosome",
+            "node_name": "溶酶体生物发生",
+            "node_type": "Pathway",
+            "score": 0.6724,
+            "explanation": "3 跳有向证据路径；咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_mtorc1",
+              "pheno_tfeb_nuclear",
+              "path_lysosome"
+            ],
+            "path_edge_ids": [
+              "lit_023",
+              "lit_033",
+              "lit_034"
+            ],
+            "source_ids": [
+              "21081844",
+              "21617040",
+              "22343943"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 3
+          },
+          {
+            "node_id": "pheno_autophagosomes",
+            "node_name": "自噬体形成",
+            "node_type": "Phenotype",
+            "score": 0.6724,
+            "explanation": "3 跳有向证据路径；咖啡因 → mTORC1 → ULK1 → 自噬体形成",
+            "path_node_ids": [
+              "cpd_2519",
+              "prot_mtorc1",
+              "prot_ulk1",
+              "pheno_autophagosomes"
+            ],
+            "path_edge_ids": [
+              "lit_023",
+              "lit_029",
+              "lit_031"
+            ],
+            "source_ids": [
+              "21081844",
+              "21258367"
+            ],
+            "evidence_status": "cross_study_inference",
+            "hops": 3
+          }
+        ],
+        "method": "directed_evidence_weighted_graph_ranking",
+        "trained_neural_network": false
+      },
+      "notes": [
+        "有向证据路径排序；分数不是准确率、效应大小或概率。"
+      ]
+    },
+    "129908365": {
+      "keyword": "129908365",
+      "kg": {
+        "data": {
+          "nodes": [
+            {
+              "id": "cpd_129908365",
+              "name": "CID 129908365",
+              "type": "Compound",
+              "size": 19,
+              "properties": {
+                "cluster": "candidate",
+                "pubchem_cid": "129908365",
+                "formula": "C48H69N3O7",
+                "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N",
+                "aliases": [
+                  "129908365",
+                  "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid"
+                ],
+                "source_ids": [
+                  "CID:129908365"
+                ],
+                "layout_x": 86.55,
+                "layout_y": -219.96
+              }
+            }
+          ],
+          "edges": []
+        },
+        "meta": {
+          "total_nodes": 1,
+          "total_edges": 0,
+          "node_type_stats": {
+            "Compound": 1
+          },
+          "edge_type_stats": {},
+          "version": "2.0.0",
+          "as_of": "2026-10-16",
+          "evidence_edges": 0,
+          "hypothesis_edges": 0
+        },
+        "sources": {
+          "29967008": {
+            "id": "29967008",
+            "title": "Aspirin Induces Lysosomal Biogenesis and Attenuates Amyloid Plaque Pathology in a Mouse Model of Alzheimer's Disease via PPARα.",
+            "year": "2018",
+            "doi": "10.1523/JNEUROSCI.0054-18.2018",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+            "source_type": "primary_research"
+          },
+          "21081844": {
+            "id": "21081844",
+            "title": "Caffeine induces apoptosis by enhancement of autophagy via PI3K/Akt/mTOR/p70S6K inhibition.",
+            "year": "2011",
+            "doi": "10.4161/auto.7.2.14074",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+            "source_type": "primary_research"
+          },
+          "20838929": {
+            "id": "20838929",
+            "title": "Caffeine modulates tau phosphorylation and affects Akt signaling in postmitotic neurons.",
+            "year": "2011",
+            "doi": "10.1007/s12031-010-9444-8",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+            "source_type": "primary_research"
+          },
+          "30108137": {
+            "id": "30108137",
+            "title": "TFEB enhances astroglial uptake of extracellular tau species and reduces tau spreading.",
+            "year": "2018",
+            "doi": "10.1084/jem.20172158",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/30108137/",
+            "source_type": "primary_research"
+          },
+          "21617040": {
+            "id": "21617040",
+            "title": "TFEB links autophagy to lysosomal biogenesis.",
+            "year": "2011",
+            "doi": "10.1126/science.1204592",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21617040/",
+            "source_type": "primary_research"
+          },
+          "22343943": {
+            "id": "22343943",
+            "title": "A lysosome-to-nucleus signalling mechanism senses and regulates the lysosome via mTOR and TFEB.",
+            "year": "2012",
+            "doi": "10.1038/emboj.2012.32",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/22343943/",
+            "source_type": "primary_research"
+          },
+          "21258367": {
+            "id": "21258367",
+            "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1.",
+            "year": "2011",
+            "doi": "10.1038/ncb2152",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/",
+            "source_type": "primary_research"
+          },
+          "32366951": {
+            "id": "32366951",
+            "title": "TFEB regulates lysosomal exocytosis of tau and its loss of function exacerbates tau pathology and spreading.",
+            "year": "2021",
+            "doi": "10.1038/s41380-020-0738-0",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/32366951/",
+            "source_type": "primary_research"
+          },
+          "39009859": {
+            "id": "39009859",
+            "title": "Truncated tau interferes with the autophagy and endolysosomal pathway and results in lipid accumulation.",
+            "year": "2024",
+            "doi": "10.1007/s00018-024-05337-6",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/39009859/",
+            "source_type": "primary_research"
+          },
+          "41399158": {
+            "id": "41399158",
+            "title": "Proteomic analysis links truncated tau to lysosome motility, autophagy, and endo-lysosomal dysfunction.",
+            "year": "2025",
+            "doi": "10.1002/alz.70977",
+            "url": "https://pubmed.ncbi.nlm.nih.gov/41399158/",
+            "source_type": "primary_research"
+          },
+          "hsa04140": {
+            "id": "hsa04140",
+            "title": "Autophagy - animal - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04140",
+            "source_type": "pathway_database"
+          },
+          "hsa04142": {
+            "id": "hsa04142",
+            "title": "Lysosome biogenesis - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04142",
+            "source_type": "pathway_database"
+          },
+          "hsa04150": {
+            "id": "hsa04150",
+            "title": "mTOR signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04150",
+            "source_type": "pathway_database"
+          },
+          "hsa04151": {
+            "id": "hsa04151",
+            "title": "PI3K-Akt signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04151",
+            "source_type": "pathway_database"
+          },
+          "hsa04152": {
+            "id": "hsa04152",
+            "title": "AMPK signaling pathway - Homo sapiens (human)",
+            "url": "https://www.kegg.jp/entry/hsa04152",
+            "source_type": "pathway_database"
+          },
+          "Q07869": {
+            "id": "Q07869",
+            "title": "Peroxisome proliferator-activated receptor alpha",
+            "gene": "PPARA",
+            "url": "https://www.uniprot.org/uniprotkb/Q07869/entry",
+            "source_type": "protein_database"
+          },
+          "P19484": {
+            "id": "P19484",
+            "title": "Transcription factor EB",
+            "gene": "TFEB",
+            "url": "https://www.uniprot.org/uniprotkb/P19484/entry",
+            "source_type": "protein_database"
+          },
+          "P42345": {
+            "id": "P42345",
+            "title": "Serine/threonine-protein kinase mTOR",
+            "gene": "MTOR",
+            "url": "https://www.uniprot.org/uniprotkb/P42345/entry",
+            "source_type": "protein_database"
+          },
+          "P10636": {
+            "id": "P10636",
+            "title": "Microtubule-associated protein tau",
+            "gene": "MAPT",
+            "url": "https://www.uniprot.org/uniprotkb/P10636/entry",
+            "source_type": "protein_database"
+          },
+          "O75385": {
+            "id": "O75385",
+            "title": "Serine/threonine-protein kinase ULK1",
+            "gene": "ULK1",
+            "url": "https://www.uniprot.org/uniprotkb/O75385/entry",
+            "source_type": "protein_database"
+          },
+          "CID:2244": {
+            "id": "CID:2244",
+            "title": "Aspirin",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+            "source_type": "chemical_identity",
+            "formula": "C9H8O4",
+            "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+          },
+          "CID:2519": {
+            "id": "CID:2519",
+            "title": "Caffeine",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519",
+            "source_type": "chemical_identity",
+            "formula": "C8H10N4O2",
+            "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+          },
+          "CID:129908365": {
+            "id": "CID:129908365",
+            "title": "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid",
+            "url": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+            "source_type": "chemical_identity",
+            "formula": "C48H69N3O7",
+            "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N"
+          }
+        }
+      },
+      "molecules": [
+        {
+          "name": "129908365",
+          "smiles": "[H]OC(=O)[C@]1([H])C([H])([H])C([H])(C(=O)O[C@@]2([H])C([H])([H])C([H])([H])[C@@]3(C([H])([H])[H])[C@@]([H])(C([H])([H])C([H])([H])[C@]4(C([H])([H])[H])[C@]3([H])C([H])([H])C([H])([H])[C@]3([H])C5=C(C([H])(C([H])([H])[H])C([H])([H])[H])C(=O)C([H])([H])[C@]5(N([H])C(=O)C(N([H])C(=O)c5c([H])nc(C([H])([H])[H])c([H])c5[H])(C([H])([H])[H])C([H])([H])[H])C([H])([H])C([H])([H])[C@@]43C([H])([H])[H])C2(C([H])([H])[H])C([H])([H])[H])C1(C([H])([H])[H])C([H])([H])[H]",
+          "molecular_formula": "C48H69N3O7",
+          "descriptors": {
+            "MolWt": 800.094,
+            "MolLogP": 8.4064,
+            "TPSA": 151.76,
+            "NumHDonors": 3.0,
+            "NumHAcceptors": 8.0,
+            "NumRotatableBonds": 8.0,
+            "RingCount": 7.0,
+            "LipinskiHBA": 10.0,
+            "LipinskiHBD": 3.0
+          },
+          "fingerprint": {
+            "morgan_on_bits": 103,
+            "maccs_on_bits": 67,
+            "morgan_on_indices_preview": [
+              1,
+              33,
+              43,
+              49,
+              91,
+              106,
+              114,
+              126,
+              134,
+              203,
+              228,
+              259,
+              282,
+              302,
+              314,
+              315,
+              318,
+              363,
+              378,
+              379,
+              388,
+              400,
+              458,
+              473
+            ],
+            "maccs_on_indices_preview": [
+              11,
+              26,
+              50,
+              54,
+              65,
+              66,
+              74,
+              76,
+              79,
+              80,
+              90,
+              91,
+              92,
+              95,
+              96,
+              97,
+              98,
+              99,
+              101,
+              104,
+              105,
+              108,
+              110,
+              111
+            ]
+          }
+        }
+      ],
+      "gnn": {
+        "model_name": "EvidenceGraphRank-v2",
+        "top_k": 100,
+        "predictions": [],
+        "method": "directed_evidence_weighted_graph_ranking",
+        "trained_neural_network": false
+      },
+      "notes": [
+        "有向证据路径排序；分数不是准确率、效应大小或概率。",
+        "身份已匹配；当前文献证据层无可追溯机制候选。待验证关系可单独查看。"
+      ]
+    }
+  },
+  "optional_hypothesis_response": {
+    "keyword": "129908365",
+    "kg": {
+      "data": {
+        "nodes": [
+          {
+            "id": "cpd_2244",
+            "name": "阿司匹林",
+            "type": "Compound",
+            "size": 21,
+            "properties": {
+              "cluster": "ppara",
+              "pubchem_cid": "2244",
+              "formula": "C9H8O4",
+              "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N",
+              "aliases": [
+                "2244",
+                "Aspirin"
+              ],
+              "source_ids": [
+                "CID:2244"
+              ],
+              "layout_x": 328.52,
+              "layout_y": 31.4
+            }
+          },
+          {
+            "id": "cpd_2519",
+            "name": "咖啡因",
+            "type": "Compound",
+            "size": 25,
+            "properties": {
+              "cluster": "mtor",
+              "pubchem_cid": "2519",
+              "formula": "C8H10N4O2",
+              "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+              "aliases": [
+                "2519",
+                "Caffeine"
+              ],
+              "source_ids": [
+                "CID:2519"
+              ],
+              "layout_x": -288.68,
+              "layout_y": 44.95
+            }
+          },
+          {
+            "id": "cpd_129908365",
+            "name": "CID 129908365",
+            "type": "Compound",
+            "size": 19,
+            "properties": {
+              "cluster": "candidate",
+              "pubchem_cid": "129908365",
+              "formula": "C48H69N3O7",
+              "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N",
+              "aliases": [
+                "129908365",
+                "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid"
+              ],
+              "source_ids": [
+                "CID:129908365"
+              ],
+              "layout_x": 86.55,
+              "layout_y": -219.96
+            }
+          },
+          {
+            "id": "gene_ppara",
+            "name": "PPARA 基因",
+            "type": "Gene",
+            "size": 17,
+            "properties": {
+              "cluster": "ppara",
+              "uniprot": "Q07869",
+              "aliases": [
+                "PPARA"
+              ],
+              "layout_x": 556.14,
+              "layout_y": -0.3
+            }
+          },
+          {
+            "id": "gene_tfeb",
+            "name": "TFEB 基因",
+            "type": "Gene",
+            "size": 17,
+            "properties": {
+              "cluster": "tfeb",
+              "uniprot": "P19484",
+              "aliases": [
+                "TFEB"
+              ],
+              "layout_x": 369.34,
+              "layout_y": -49.32
+            }
+          },
+          {
+            "id": "gene_mtor",
+            "name": "MTOR 基因",
+            "type": "Gene",
+            "size": 17,
+            "properties": {
+              "cluster": "mtor",
+              "uniprot": "P42345",
+              "aliases": [
+                "MTOR"
+              ],
+              "layout_x": -463.87,
+              "layout_y": -159.94
+            }
+          },
+          {
+            "id": "gene_ulk1",
+            "name": "ULK1 基因",
+            "type": "Gene",
+            "size": 17,
+            "properties": {
+              "cluster": "autophagy",
+              "uniprot": "O75385",
+              "aliases": [
+                "ULK1"
+              ],
+              "layout_x": -124.92,
+              "layout_y": -211.56
+            }
+          },
+          {
+            "id": "prot_ppara",
+            "name": "PPARα",
+            "type": "Protein",
+            "size": 20,
+            "properties": {
+              "cluster": "ppara",
+              "layout_x": 417.42,
+              "layout_y": -6.83
+            }
+          },
+          {
+            "id": "prot_tfeb",
+            "name": "TFEB",
+            "type": "Protein",
+            "size": 28,
+            "properties": {
+              "cluster": "tfeb",
+              "layout_x": 256.24,
+              "layout_y": -49.6
+            }
+          },
+          {
+            "id": "prot_mtor",
+            "name": "mTOR",
+            "type": "Protein",
+            "size": 20,
+            "properties": {
+              "cluster": "mtor",
+              "layout_x": -351.1,
+              "layout_y": -109.8
+            }
+          },
+          {
+            "id": "prot_mtorc1",
+            "name": "mTORC1",
+            "type": "Protein",
+            "size": 22,
+            "properties": {
+              "cluster": "mtor",
+              "layout_x": -202.16,
+              "layout_y": -41.34
+            }
+          },
+          {
+            "id": "prot_akt",
+            "name": "AKT",
+            "type": "Protein",
+            "size": 19,
+            "properties": {
+              "cluster": "mtor",
+              "layout_x": -473.41,
+              "layout_y": 90.73
+            }
+          },
+          {
+            "id": "prot_ulk1",
+            "name": "ULK1",
+            "type": "Protein",
+            "size": 24,
+            "properties": {
+              "cluster": "autophagy",
+              "layout_x": -107.17,
+              "layout_y": -133.02
+            }
+          },
+          {
+            "id": "prot_ampk",
+            "name": "AMPK",
+            "type": "Protein",
+            "size": 19,
+            "properties": {
+              "cluster": "autophagy",
+              "layout_x": -172.32,
+              "layout_y": -254.2
+            }
+          },
+          {
+            "id": "prot_lc3",
+            "name": "LC3",
+            "type": "Protein",
+            "size": 17,
+            "properties": {
+              "cluster": "autophagy",
+              "layout_x": 21.06,
+              "layout_y": -57.47
+            }
+          },
+          {
+            "id": "prot_p70",
+            "name": "p70S6K",
+            "type": "Protein",
+            "size": 17,
+            "properties": {
+              "cluster": "mtor",
+              "layout_x": -407.89,
+              "layout_y": 15.26
+            }
+          },
+          {
+            "id": "prot_4ebp1",
+            "name": "4E-BP1",
+            "type": "Protein",
+            "size": 17,
+            "properties": {
+              "cluster": "mtor",
+              "layout_x": -381.75,
+              "layout_y": 107.8
+            }
+          },
+          {
+            "id": "prot_s6",
+            "name": "S6",
+            "type": "Protein",
+            "size": 17,
+            "properties": {
+              "cluster": "mtor",
+              "layout_x": -325.0,
+              "layout_y": 125.56
+            }
+          },
+          {
+            "id": "prot_tau",
+            "name": "Tau",
+            "type": "Protein",
+            "size": 19,
+            "properties": {
+              "cluster": "tau",
+              "layout_x": 58.64,
+              "layout_y": 288.83
+            }
+          },
+          {
+            "id": "prot_tau35",
+            "name": "Tau35",
+            "type": "Protein",
+            "size": 26,
+            "properties": {
+              "cluster": "tau35",
+              "layout_x": 36.11,
+              "layout_y": 153.78
+            }
+          },
+          {
+            "id": "prot_trpml1",
+            "name": "TRPML1",
+            "type": "Protein",
+            "size": 17,
+            "properties": {
+              "cluster": "tau",
+              "layout_x": 453.05,
+              "layout_y": -224.25
+            }
+          },
+          {
+            "id": "prot_ctsd",
+            "name": "Cathepsin D",
+            "type": "Protein",
+            "size": 19,
+            "properties": {
+              "cluster": "tau35",
+              "layout_x": 117.33,
+              "layout_y": 113.35
+            }
+          },
+          {
+            "id": "prot_lamp2",
+            "name": "LAMP2",
+            "type": "Protein",
+            "size": 19,
+            "properties": {
+              "cluster": "tau35",
+              "layout_x": 154.75,
+              "layout_y": 135.25
+            }
+          },
+          {
+            "id": "path_autophagy",
+            "name": "自噬过程",
+            "type": "Pathway",
+            "size": 24,
+            "properties": {
+              "cluster": "autophagy",
+              "standard_id": "hsa04140",
+              "definition": "KEGG 功能条目",
+              "layout_x": -22.99,
+              "layout_y": -5.34
+            }
+          },
+          {
+            "id": "path_lysosome",
+            "name": "溶酶体生物发生",
+            "type": "Pathway",
+            "size": 22,
+            "properties": {
+              "cluster": "tfeb",
+              "standard_id": "hsa04142",
+              "definition": "KEGG 功能条目",
+              "layout_x": 173.32,
+              "layout_y": 49.19
+            }
+          },
+          {
+            "id": "path_mtor",
+            "name": "mTOR 信号",
+            "type": "Pathway",
+            "size": 19,
+            "properties": {
+              "cluster": "mtor",
+              "standard_id": "hsa04150",
+              "definition": "KEGG 功能条目",
+              "layout_x": -299.06,
+              "layout_y": -86.89
+            }
+          },
+          {
+            "id": "path_ampk",
+            "name": "AMPK 信号",
+            "type": "Pathway",
+            "size": 17,
+            "properties": {
+              "cluster": "autophagy",
+              "standard_id": "hsa04152",
+              "definition": "KEGG 功能条目",
+              "layout_x": -216.03,
+              "layout_y": -340.51
+            }
+          },
+          {
+            "id": "path_tau_clearance",
+            "name": "Tau 清除相关过程",
+            "type": "Pathway",
+            "size": 21,
+            "properties": {
+              "cluster": "tau",
+              "standard_id": null,
+              "definition": "文献定义的研究过程；非单一 KEGG 通路",
+              "layout_x": 262.88,
+              "layout_y": -149.13
+            }
+          },
+          {
+            "id": "path_tau_uptake",
+            "name": "胞外 Tau 摄取",
+            "type": "Pathway",
+            "size": 19,
+            "properties": {
+              "cluster": "tau",
+              "standard_id": null,
+              "definition": "文献定义的研究过程；非单一 KEGG 通路",
+              "layout_x": 297.61,
+              "layout_y": -116.78
+            }
+          },
+          {
+            "id": "path_tau_exocytosis",
+            "name": "Tau 溶酶体外排",
+            "type": "Pathway",
+            "size": 20,
+            "properties": {
+              "cluster": "tau",
+              "standard_id": null,
+              "definition": "文献定义的研究过程；非单一 KEGG 通路",
+              "layout_x": 355.55,
+              "layout_y": -156.44
+            }
+          },
+          {
+            "id": "path_endolysosomal",
+            "name": "内体–溶酶体功能",
+            "type": "Pathway",
+            "size": 17,
+            "properties": {
+              "cluster": "tau35",
+              "standard_id": null,
+              "definition": "文献定义的研究过程；非单一 KEGG 通路",
+              "layout_x": 23.95,
+              "layout_y": 237.54
+            }
+          },
+          {
+            "id": "pheno_tau_phospho",
+            "name": "Tau 磷酸化",
+            "type": "Phenotype",
+            "size": 17,
+            "properties": {
+              "cluster": "tau",
+              "layout_x": -403.34,
+              "layout_y": 60.19
+            }
+          },
+          {
+            "id": "pheno_tau_spread",
+            "name": "Tau 病理传播",
+            "type": "Phenotype",
+            "size": 17,
+            "properties": {
+              "cluster": "tau",
+              "layout_x": 378.85,
+              "layout_y": -91.21
+            }
+          },
+          {
+            "id": "pheno_abeta",
+            "name": "Aβ 斑块负荷",
+            "type": "Phenotype",
+            "size": 17,
+            "properties": {
+              "cluster": "ppara",
+              "layout_x": 441.72,
+              "layout_y": 83.73
+            }
+          },
+          {
+            "id": "pheno_lipids",
+            "name": "脂滴积累",
+            "type": "Phenotype",
+            "size": 17,
+            "properties": {
+              "cluster": "tau35",
+              "layout_x": -40.56,
+              "layout_y": 223.24
+            }
+          },
+          {
+            "id": "pheno_tfeb_nuclear",
+            "name": "TFEB 核转位",
+            "type": "Phenotype",
+            "size": 20,
+            "properties": {
+              "cluster": "tfeb",
+              "layout_x": -16.94,
+              "layout_y": 49.53
+            }
+          },
+          {
+            "id": "pheno_autophagosomes",
+            "name": "自噬体形成",
+            "type": "Phenotype",
+            "size": 19,
+            "properties": {
+              "cluster": "autophagy",
+              "layout_x": -72.08,
+              "layout_y": -79.09
+            }
+          },
+          {
+            "id": "pheno_lysosome_motility",
+            "name": "溶酶体运动",
+            "type": "Phenotype",
+            "size": 17,
+            "properties": {
+              "cluster": "tau35",
+              "layout_x": 106.21,
+              "layout_y": 228.77
+            }
+          }
+        ],
+        "edges": [
+          {
+            "id": "lit_001",
+            "source": "gene_ppara",
+            "target": "prot_ppara",
+            "type": "encodes",
+            "weight": 0.85,
+            "evidence": "Q07869",
+            "label": "编码",
+            "source_ids": [
+              "Q07869"
+            ],
+            "evidence_status": "annotation",
+            "context": "UniProt 人类基因–蛋白登记",
+            "origin": null
+          },
+          {
+            "id": "lit_002",
+            "source": "gene_tfeb",
+            "target": "prot_tfeb",
+            "type": "encodes",
+            "weight": 0.85,
+            "evidence": "P19484",
+            "label": "编码",
+            "source_ids": [
+              "P19484"
+            ],
+            "evidence_status": "annotation",
+            "context": "UniProt 人类基因–蛋白登记",
+            "origin": null
+          },
+          {
+            "id": "lit_003",
+            "source": "gene_mtor",
+            "target": "prot_mtor",
+            "type": "encodes",
+            "weight": 0.85,
+            "evidence": "P42345",
+            "label": "编码",
+            "source_ids": [
+              "P42345"
+            ],
+            "evidence_status": "annotation",
+            "context": "UniProt 人类基因–蛋白登记",
+            "origin": null
+          },
+          {
+            "id": "lit_005",
+            "source": "gene_ulk1",
+            "target": "prot_ulk1",
+            "type": "encodes",
+            "weight": 0.85,
+            "evidence": "O75385",
+            "label": "编码",
+            "source_ids": [
+              "O75385"
+            ],
+            "evidence_status": "annotation",
+            "context": "UniProt 人类基因–蛋白登记",
+            "origin": null
+          },
+          {
+            "id": "lit_006",
+            "source": "prot_mtor",
+            "target": "prot_mtorc1",
+            "type": "component_of",
+            "weight": 0.85,
+            "evidence": "hsa04150",
+            "label": "组成",
+            "source_ids": [
+              "hsa04150"
+            ],
+            "evidence_status": "annotation",
+            "context": "mTORC1 复合体成员",
+            "origin": null
+          },
+          {
+            "id": "lit_007",
+            "source": "prot_mtor",
+            "target": "path_mtor",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04150",
+            "label": "参与",
+            "source_ids": [
+              "hsa04150"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_008",
+            "source": "prot_mtorc1",
+            "target": "path_mtor",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04150",
+            "label": "参与",
+            "source_ids": [
+              "hsa04150"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_010",
+            "source": "prot_ampk",
+            "target": "path_ampk",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04152",
+            "label": "参与",
+            "source_ids": [
+              "hsa04152"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_011",
+            "source": "prot_ulk1",
+            "target": "path_autophagy",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04140",
+            "label": "参与",
+            "source_ids": [
+              "hsa04140"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_012",
+            "source": "prot_lc3",
+            "target": "path_autophagy",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04140",
+            "label": "参与",
+            "source_ids": [
+              "hsa04140"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_013",
+            "source": "prot_ctsd",
+            "target": "path_lysosome",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04142",
+            "label": "参与",
+            "source_ids": [
+              "hsa04142"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_014",
+            "source": "prot_lamp2",
+            "target": "path_lysosome",
+            "type": "involved_in",
+            "weight": 0.85,
+            "evidence": "hsa04142",
+            "label": "参与",
+            "source_ids": [
+              "hsa04142"
+            ],
+            "evidence_status": "annotation",
+            "context": "标准功能条目对应；不代表化合物效应",
+            "origin": null
+          },
+          {
+            "id": "lit_015",
+            "source": "cpd_2244",
+            "target": "prot_ppara",
+            "type": "activates",
+            "weight": 1.0,
+            "evidence": "PMID:29967008",
+            "label": "激活",
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "experimental",
+            "context": "脑细胞 / 5XFAD 小鼠；PPARα 依赖性作用",
+            "origin": null
+          },
+          {
+            "id": "lit_016",
+            "source": "cpd_2244",
+            "target": "prot_tfeb",
+            "type": "upregulates",
+            "weight": 1.0,
+            "evidence": "PMID:29967008",
+            "label": "上调表达",
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "experimental",
+            "context": "TFEB 表达上调；不是直接结合实验",
+            "origin": null
+          },
+          {
+            "id": "lit_017",
+            "source": "prot_ppara",
+            "target": "prot_tfeb",
+            "type": "upregulates",
+            "weight": 1.0,
+            "evidence": "PMID:29967008",
+            "label": "促进转录",
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "experimental",
+            "context": "PPARα 依赖的 Tfeb 转录",
+            "origin": null
+          },
+          {
+            "id": "lit_018",
+            "source": "cpd_2244",
+            "target": "path_lysosome",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:29967008",
+            "label": "促进",
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "experimental",
+            "context": "细胞及小鼠溶酶体生物发生终点",
+            "origin": null
+          },
+          {
+            "id": "lit_019",
+            "source": "cpd_2244",
+            "target": "pheno_abeta",
+            "type": "reduces",
+            "weight": 1.0,
+            "evidence": "PMID:29967008",
+            "label": "降低",
+            "source_ids": [
+              "29967008"
+            ],
+            "evidence_status": "experimental",
+            "context": "5XFAD 小鼠；Aβ 终点，不等同于 Tau",
+            "origin": null
+          },
+          {
+            "id": "lit_020",
+            "source": "prot_tfeb",
+            "target": "path_lysosome",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:29967008; PMID:21617040",
+            "label": "促进",
+            "source_ids": [
+              "29967008",
+              "21617040"
+            ],
+            "evidence_status": "experimental",
+            "context": "TFEB 转录调控与溶酶体生物发生",
+            "origin": null
+          },
+          {
+            "id": "lit_021",
+            "source": "prot_tfeb",
+            "target": "path_autophagy",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:21617040",
+            "label": "调控",
+            "source_ids": [
+              "21617040"
+            ],
+            "evidence_status": "experimental",
+            "context": "TFEB 介导自噬 / 溶酶体协调调控",
+            "origin": null
+          },
+          {
+            "id": "lit_022",
+            "source": "cpd_2519",
+            "target": "prot_akt",
+            "type": "inhibits_signaling",
+            "weight": 1.0,
+            "evidence": "PMID:21081844; PMID:20838929",
+            "label": "降低信号",
+            "source_ids": [
+              "21081844",
+              "20838929"
+            ],
+            "evidence_status": "experimental",
+            "context": "所研究细胞条件；Akt 信号变化，不表示直接靶点结合",
+            "origin": null
+          },
+          {
+            "id": "lit_023",
+            "source": "cpd_2519",
+            "target": "prot_mtorc1",
+            "type": "inhibits_signaling",
+            "weight": 1.0,
+            "evidence": "PMID:21081844",
+            "label": "降低信号",
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "experimental",
+            "context": "高浓度细胞处理；Akt/mTOR 下游信号抑制",
+            "origin": null
+          },
+          {
+            "id": "lit_024",
+            "source": "cpd_2519",
+            "target": "path_autophagy",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:21081844",
+            "label": "增强自噬",
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "experimental",
+            "context": "高浓度细胞研究伴凋亡；效应依赖剂量与细胞条件",
+            "origin": null
+          },
+          {
+            "id": "lit_025",
+            "source": "cpd_2519",
+            "target": "pheno_tau_phospho",
+            "type": "modulates",
+            "weight": 1.0,
+            "evidence": "PMID:20838929",
+            "label": "调节",
+            "source_ids": [
+              "20838929"
+            ],
+            "evidence_status": "experimental",
+            "context": "神经元 / 神经母细胞瘤；磷酸化终点，不等于 Tau 降解",
+            "origin": null
+          },
+          {
+            "id": "lit_026",
+            "source": "cpd_2519",
+            "target": "prot_p70",
+            "type": "reduces_phosphorylation",
+            "weight": 1.0,
+            "evidence": "PMID:21081844",
+            "label": "降低磷酸化",
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "experimental",
+            "context": "细胞模型中的磷酸化读数，非直接结合证据",
+            "origin": null
+          },
+          {
+            "id": "lit_027",
+            "source": "cpd_2519",
+            "target": "prot_4ebp1",
+            "type": "reduces_phosphorylation",
+            "weight": 1.0,
+            "evidence": "PMID:21081844",
+            "label": "降低磷酸化",
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "experimental",
+            "context": "细胞模型中的磷酸化读数，非直接结合证据",
+            "origin": null
+          },
+          {
+            "id": "lit_028",
+            "source": "cpd_2519",
+            "target": "prot_s6",
+            "type": "reduces_phosphorylation",
+            "weight": 1.0,
+            "evidence": "PMID:21081844",
+            "label": "降低磷酸化",
+            "source_ids": [
+              "21081844"
+            ],
+            "evidence_status": "experimental",
+            "context": "细胞模型中的磷酸化读数，非直接结合证据",
+            "origin": null
+          },
+          {
+            "id": "lit_029",
+            "source": "prot_mtorc1",
+            "target": "prot_ulk1",
+            "type": "inhibits",
+            "weight": 1.0,
+            "evidence": "PMID:21258367",
+            "label": "抑制",
+            "source_ids": [
+              "21258367"
+            ],
+            "evidence_status": "experimental",
+            "context": "营养条件依赖；Ulk1 Ser757 磷酸化抑制",
+            "origin": null
+          },
+          {
+            "id": "lit_030",
+            "source": "prot_ampk",
+            "target": "prot_ulk1",
+            "type": "activates",
+            "weight": 1.0,
+            "evidence": "PMID:21258367",
+            "label": "条件性激活",
+            "source_ids": [
+              "21258367"
+            ],
+            "evidence_status": "experimental",
+            "context": "葡萄糖饥饿条件；Ser317 / Ser777；不得外推至所有饥饿条件",
+            "origin": null
+          },
+          {
+            "id": "lit_031",
+            "source": "prot_ulk1",
+            "target": "pheno_autophagosomes",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:21258367",
+            "label": "促进启动",
+            "source_ids": [
+              "21258367"
+            ],
+            "evidence_status": "experimental",
+            "context": "自噬启动激酶；特定营养 / 细胞条件",
+            "origin": null
+          },
+          {
+            "id": "lit_032",
+            "source": "pheno_autophagosomes",
+            "target": "path_autophagy",
+            "type": "part_of",
+            "weight": 0.85,
+            "evidence": "hsa04140",
+            "label": "组成阶段",
+            "source_ids": [
+              "hsa04140"
+            ],
+            "evidence_status": "annotation",
+            "context": "自噬过程的组成阶段",
+            "origin": null
+          },
+          {
+            "id": "lit_033",
+            "source": "prot_mtorc1",
+            "target": "pheno_tfeb_nuclear",
+            "type": "inhibits",
+            "weight": 1.0,
+            "evidence": "PMID:22343943",
+            "label": "抑制核转位",
+            "source_ids": [
+              "22343943"
+            ],
+            "evidence_status": "experimental",
+            "context": "mTORC1–TFEB 溶酶体营养信号机制",
+            "origin": null
+          },
+          {
+            "id": "lit_034",
+            "source": "pheno_tfeb_nuclear",
+            "target": "path_lysosome",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:22343943; PMID:21617040",
+            "label": "促进",
+            "source_ids": [
+              "22343943",
+              "21617040"
+            ],
+            "evidence_status": "experimental",
+            "context": "核内 TFEB 调控溶酶体基因表达",
+            "origin": null
+          },
+          {
+            "id": "lit_035",
+            "source": "prot_tfeb",
+            "target": "path_tau_uptake",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:30108137",
+            "label": "促进摄取",
+            "source_ids": [
+              "30108137"
+            ],
+            "evidence_status": "experimental",
+            "context": "星形胶质细胞 / 小鼠；胞外 Tau 摄取",
+            "origin": null
+          },
+          {
+            "id": "lit_036",
+            "source": "prot_tfeb",
+            "target": "pheno_tau_spread",
+            "type": "reduces",
+            "weight": 1.0,
+            "evidence": "PMID:30108137",
+            "label": "减弱传播",
+            "source_ids": [
+              "30108137"
+            ],
+            "evidence_status": "experimental",
+            "context": "星形胶质细胞 TFEB 操作；小鼠 Tau 传播模型",
+            "origin": null
+          },
+          {
+            "id": "lit_037",
+            "source": "prot_tfeb",
+            "target": "path_tau_clearance",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:30108137",
+            "label": "参与清除",
+            "source_ids": [
+              "30108137"
+            ],
+            "evidence_status": "experimental",
+            "context": "星形胶质细胞中胞外 Tau 摄取和溶酶体清除",
+            "origin": null
+          },
+          {
+            "id": "lit_038",
+            "source": "path_tau_uptake",
+            "target": "path_tau_clearance",
+            "type": "contributes_to",
+            "weight": 1.0,
+            "evidence": "PMID:30108137",
+            "label": "相关环节",
+            "source_ids": [
+              "30108137"
+            ],
+            "evidence_status": "experimental",
+            "context": "摄取与降解分别解释；非药物独立验证",
+            "origin": null
+          },
+          {
+            "id": "lit_039",
+            "source": "prot_tfeb",
+            "target": "path_tau_exocytosis",
+            "type": "promotes",
+            "weight": 1.0,
+            "evidence": "PMID:32366951",
+            "label": "调控外排",
+            "source_ids": [
+              "32366951"
+            ],
+            "evidence_status": "experimental",
+            "context": "截短突变 Tau、缺 MTBR；不同于野生型 Tau 的一般分泌",
+            "origin": null
+          },
+          {
+            "id": "lit_040",
+            "source": "prot_trpml1",
+            "target": "path_tau_exocytosis",
+            "type": "required_for",
+            "weight": 1.0,
+            "evidence": "PMID:32366951",
+            "label": "依赖",
+            "source_ids": [
+              "32366951"
+            ],
+            "evidence_status": "experimental",
+            "context": "溶酶体钙通道依赖性",
+            "origin": null
+          },
+          {
+            "id": "lit_041",
+            "source": "path_tau_exocytosis",
+            "target": "path_tau_clearance",
+            "type": "contributes_to",
+            "weight": 1.0,
+            "evidence": "PMID:32366951",
+            "label": "相关环节",
+            "source_ids": [
+              "32366951"
+            ],
+            "evidence_status": "experimental",
+            "context": "特定不具播种能力 Tau 物种；不概括所有胞外 Tau",
+            "origin": null
+          },
+          {
+            "id": "lit_042",
+            "source": "prot_tau35",
+            "target": "prot_tau",
+            "type": "fragment_of",
+            "weight": 0.85,
+            "evidence": "PMID:39009859",
+            "label": "片段",
+            "source_ids": [
+              "39009859"
+            ],
+            "evidence_status": "annotation",
+            "context": "Tau35 为疾病相关 C 端片段；结构关系",
+            "origin": null
+          },
+          {
+            "id": "lit_043",
+            "source": "prot_tau35",
+            "target": "pheno_tfeb_nuclear",
+            "type": "impairs",
+            "weight": 1.0,
+            "evidence": "PMID:39009859",
+            "label": "阻碍核转位",
+            "source_ids": [
+              "39009859"
+            ],
+            "evidence_status": "experimental",
+            "context": "Torin 1 诱导条件；CHO 及原代神经元",
+            "origin": null
+          },
+          {
+            "id": "lit_044",
+            "source": "prot_tau35",
+            "target": "pheno_lipids",
+            "type": "increases",
+            "weight": 1.0,
+            "evidence": "PMID:39009859",
+            "label": "增加",
+            "source_ids": [
+              "39009859"
+            ],
+            "evidence_status": "experimental",
+            "context": "CHO / 原代神经元中脂滴积累",
+            "origin": null
+          },
+          {
+            "id": "lit_045",
+            "source": "prot_tau35",
+            "target": "path_autophagy",
+            "type": "impairs",
+            "weight": 1.0,
+            "evidence": "PMID:39009859; PMID:41399158",
+            "label": "扰动通量",
+            "source_ids": [
+              "39009859",
+              "41399158"
+            ],
+            "evidence_status": "experimental",
+            "context": "Tau35 特异模型，自噬通量异常",
+            "origin": null
+          },
+          {
+            "id": "lit_046",
+            "source": "prot_tau35",
+            "target": "path_endolysosomal",
+            "type": "impairs",
+            "weight": 1.0,
+            "evidence": "PMID:39009859; PMID:41399158",
+            "label": "扰动功能",
+            "source_ids": [
+              "39009859",
+              "41399158"
+            ],
+            "evidence_status": "experimental",
+            "context": "不同模型存在不同读数，不代表全部 Tau 物种",
+            "origin": null
+          },
+          {
+            "id": "lit_047",
+            "source": "prot_tau35",
+            "target": "pheno_lysosome_motility",
+            "type": "impairs",
+            "weight": 1.0,
+            "evidence": "PMID:41399158",
+            "label": "扰动运动",
+            "source_ids": [
+              "41399158"
+            ],
+            "evidence_status": "experimental",
+            "context": "2025：Tau35 小鼠 / SH-SY5Y；溶酶体运动受损",
+            "origin": null
+          },
+          {
+            "id": "lit_048",
+            "source": "prot_tau35",
+            "target": "prot_ctsd",
+            "type": "modulates_readout",
+            "weight": 1.0,
+            "evidence": "PMID:39009859",
+            "label": "改变标志物",
+            "source_ids": [
+              "39009859"
+            ],
+            "evidence_status": "experimental",
+            "context": "CHO 点状信号 / 原代神经元分布读数存在模型差异",
+            "origin": null
+          },
+          {
+            "id": "lit_049",
+            "source": "prot_tau35",
+            "target": "prot_lamp2",
+            "type": "modulates_readout",
+            "weight": 1.0,
+            "evidence": "PMID:39009859",
+            "label": "改变标志物",
+            "source_ids": [
+              "39009859"
+            ],
+            "evidence_status": "experimental",
+            "context": "CHO 点状信号 / 原代神经元分布读数存在模型差异",
+            "origin": null
+          },
+          {
+            "id": "lit_050",
+            "source": "cpd_129908365",
+            "target": "prot_ulk1",
+            "type": "predicted_association",
+            "weight": 0.25,
+            "evidence": "Legacy hypothesis; not experimentally validated",
+            "label": "待验证关联",
+            "source_ids": [],
+            "evidence_status": "hypothesis",
+            "context": "旧版本预置推断；没有本化合物直接机制实验定位",
+            "origin": "legacy e75/e76"
+          },
+          {
+            "id": "lit_051",
+            "source": "cpd_129908365",
+            "target": "path_tau_clearance",
+            "type": "predicted_association",
+            "weight": 0.25,
+            "evidence": "Legacy hypothesis; not experimentally validated",
+            "label": "待验证关联",
+            "source_ids": [],
+            "evidence_status": "hypothesis",
+            "context": "旧版本预置推断；没有本化合物直接机制实验定位",
+            "origin": "legacy e75/e76"
+          }
+        ]
+      },
+      "meta": {
+        "total_nodes": 38,
+        "total_edges": 49,
+        "node_type_stats": {
+          "Compound": 3,
+          "Gene": 4,
+          "Protein": 16,
+          "Pathway": 8,
+          "Phenotype": 7
+        },
+        "edge_type_stats": {
+          "encodes": 4,
+          "component_of": 1,
+          "involved_in": 7,
+          "activates": 2,
+          "upregulates": 2,
+          "promotes": 9,
+          "reduces": 2,
+          "inhibits_signaling": 2,
+          "modulates": 1,
+          "reduces_phosphorylation": 3,
+          "inhibits": 2,
+          "part_of": 1,
+          "contributes_to": 2,
+          "required_for": 1,
+          "fragment_of": 1,
+          "impairs": 4,
+          "increases": 1,
+          "modulates_readout": 2,
+          "predicted_association": 2
+        },
+        "version": "2.0.0",
+        "as_of": "2026-10-16",
+        "evidence_edges": 47,
+        "hypothesis_edges": 2
+      },
+      "sources": {
+        "29967008": {
+          "id": "29967008",
+          "title": "Aspirin Induces Lysosomal Biogenesis and Attenuates Amyloid Plaque Pathology in a Mouse Model of Alzheimer's Disease via PPARα.",
+          "year": "2018",
+          "doi": "10.1523/JNEUROSCI.0054-18.2018",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "source_type": "primary_research"
+        },
+        "21081844": {
+          "id": "21081844",
+          "title": "Caffeine induces apoptosis by enhancement of autophagy via PI3K/Akt/mTOR/p70S6K inhibition.",
+          "year": "2011",
+          "doi": "10.4161/auto.7.2.14074",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "source_type": "primary_research"
+        },
+        "20838929": {
+          "id": "20838929",
+          "title": "Caffeine modulates tau phosphorylation and affects Akt signaling in postmitotic neurons.",
+          "year": "2011",
+          "doi": "10.1007/s12031-010-9444-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+          "source_type": "primary_research"
+        },
+        "30108137": {
+          "id": "30108137",
+          "title": "TFEB enhances astroglial uptake of extracellular tau species and reduces tau spreading.",
+          "year": "2018",
+          "doi": "10.1084/jem.20172158",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "source_type": "primary_research"
+        },
+        "21617040": {
+          "id": "21617040",
+          "title": "TFEB links autophagy to lysosomal biogenesis.",
+          "year": "2011",
+          "doi": "10.1126/science.1204592",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21617040/",
+          "source_type": "primary_research"
+        },
+        "22343943": {
+          "id": "22343943",
+          "title": "A lysosome-to-nucleus signalling mechanism senses and regulates the lysosome via mTOR and TFEB.",
+          "year": "2012",
+          "doi": "10.1038/emboj.2012.32",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22343943/",
+          "source_type": "primary_research"
+        },
+        "21258367": {
+          "id": "21258367",
+          "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1.",
+          "year": "2011",
+          "doi": "10.1038/ncb2152",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/",
+          "source_type": "primary_research"
+        },
+        "32366951": {
+          "id": "32366951",
+          "title": "TFEB regulates lysosomal exocytosis of tau and its loss of function exacerbates tau pathology and spreading.",
+          "year": "2021",
+          "doi": "10.1038/s41380-020-0738-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32366951/",
+          "source_type": "primary_research"
+        },
+        "39009859": {
+          "id": "39009859",
+          "title": "Truncated tau interferes with the autophagy and endolysosomal pathway and results in lipid accumulation.",
+          "year": "2024",
+          "doi": "10.1007/s00018-024-05337-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39009859/",
+          "source_type": "primary_research"
+        },
+        "41399158": {
+          "id": "41399158",
+          "title": "Proteomic analysis links truncated tau to lysosome motility, autophagy, and endo-lysosomal dysfunction.",
+          "year": "2025",
+          "doi": "10.1002/alz.70977",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41399158/",
+          "source_type": "primary_research"
+        },
+        "hsa04140": {
+          "id": "hsa04140",
+          "title": "Autophagy - animal - Homo sapiens (human)",
+          "url": "https://www.kegg.jp/entry/hsa04140",
+          "source_type": "pathway_database"
+        },
+        "hsa04142": {
+          "id": "hsa04142",
+          "title": "Lysosome biogenesis - Homo sapiens (human)",
+          "url": "https://www.kegg.jp/entry/hsa04142",
+          "source_type": "pathway_database"
+        },
+        "hsa04150": {
+          "id": "hsa04150",
+          "title": "mTOR signaling pathway - Homo sapiens (human)",
+          "url": "https://www.kegg.jp/entry/hsa04150",
+          "source_type": "pathway_database"
+        },
+        "hsa04151": {
+          "id": "hsa04151",
+          "title": "PI3K-Akt signaling pathway - Homo sapiens (human)",
+          "url": "https://www.kegg.jp/entry/hsa04151",
+          "source_type": "pathway_database"
+        },
+        "hsa04152": {
+          "id": "hsa04152",
+          "title": "AMPK signaling pathway - Homo sapiens (human)",
+          "url": "https://www.kegg.jp/entry/hsa04152",
+          "source_type": "pathway_database"
+        },
+        "Q07869": {
+          "id": "Q07869",
+          "title": "Peroxisome proliferator-activated receptor alpha",
+          "gene": "PPARA",
+          "url": "https://www.uniprot.org/uniprotkb/Q07869/entry",
+          "source_type": "protein_database"
+        },
+        "P19484": {
+          "id": "P19484",
+          "title": "Transcription factor EB",
+          "gene": "TFEB",
+          "url": "https://www.uniprot.org/uniprotkb/P19484/entry",
+          "source_type": "protein_database"
+        },
+        "P42345": {
+          "id": "P42345",
+          "title": "Serine/threonine-protein kinase mTOR",
+          "gene": "MTOR",
+          "url": "https://www.uniprot.org/uniprotkb/P42345/entry",
+          "source_type": "protein_database"
+        },
+        "P10636": {
+          "id": "P10636",
+          "title": "Microtubule-associated protein tau",
+          "gene": "MAPT",
+          "url": "https://www.uniprot.org/uniprotkb/P10636/entry",
+          "source_type": "protein_database"
+        },
+        "O75385": {
+          "id": "O75385",
+          "title": "Serine/threonine-protein kinase ULK1",
+          "gene": "ULK1",
+          "url": "https://www.uniprot.org/uniprotkb/O75385/entry",
+          "source_type": "protein_database"
+        },
+        "CID:2244": {
+          "id": "CID:2244",
+          "title": "Aspirin",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2244",
+          "source_type": "chemical_identity",
+          "formula": "C9H8O4",
+          "inchikey": "BSYNRYMUTXBXSQ-UHFFFAOYSA-N"
+        },
+        "CID:2519": {
+          "id": "CID:2519",
+          "title": "Caffeine",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/2519",
+          "source_type": "chemical_identity",
+          "formula": "C8H10N4O2",
+          "inchikey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N"
+        },
+        "CID:129908365": {
+          "id": "CID:129908365",
+          "title": "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid",
+          "url": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+          "source_type": "chemical_identity",
+          "formula": "C48H69N3O7",
+          "inchikey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N"
+        }
+      }
+    },
+    "molecules": [
+      {
+        "name": "129908365",
+        "smiles": "[H]OC(=O)[C@]1([H])C([H])([H])C([H])(C(=O)O[C@@]2([H])C([H])([H])C([H])([H])[C@@]3(C([H])([H])[H])[C@@]([H])(C([H])([H])C([H])([H])[C@]4(C([H])([H])[H])[C@]3([H])C([H])([H])C([H])([H])[C@]3([H])C5=C(C([H])(C([H])([H])[H])C([H])([H])[H])C(=O)C([H])([H])[C@]5(N([H])C(=O)C(N([H])C(=O)c5c([H])nc(C([H])([H])[H])c([H])c5[H])(C([H])([H])[H])C([H])([H])[H])C([H])([H])C([H])([H])[C@@]43C([H])([H])[H])C2(C([H])([H])[H])C([H])([H])[H])C1(C([H])([H])[H])C([H])([H])[H]",
+        "molecular_formula": "C48H69N3O7",
+        "descriptors": {
+          "MolWt": 800.094,
+          "MolLogP": 8.4064,
+          "TPSA": 151.76,
+          "NumHDonors": 3.0,
+          "NumHAcceptors": 8.0,
+          "NumRotatableBonds": 8.0,
+          "RingCount": 7.0,
+          "LipinskiHBA": 10.0,
+          "LipinskiHBD": 3.0
+        },
+        "fingerprint": {
+          "morgan_on_bits": 103,
+          "maccs_on_bits": 67,
+          "morgan_on_indices_preview": [
+            1,
+            33,
+            43,
+            49,
+            91,
+            106,
+            114,
+            126,
+            134,
+            203,
+            228,
+            259,
+            282,
+            302,
+            314,
+            315,
+            318,
+            363,
+            378,
+            379,
+            388,
+            400,
+            458,
+            473
+          ],
+          "maccs_on_indices_preview": [
+            11,
+            26,
+            50,
+            54,
+            65,
+            66,
+            74,
+            76,
+            79,
+            80,
+            90,
+            91,
+            92,
+            95,
+            96,
+            97,
+            98,
+            99,
+            101,
+            104,
+            105,
+            108,
+            110,
+            111
+          ]
+        }
+      }
+    ],
+    "gnn": {
+      "model_name": "EvidenceGraphRank-v2",
+      "top_k": 100,
+      "predictions": [
+        {
+          "node_id": "path_tau_clearance",
+          "node_name": "Tau 清除相关过程",
+          "node_type": "Pathway",
+          "score": 0.25,
+          "explanation": "1 跳有向证据路径；CID 129908365 → Tau 清除相关过程",
+          "path_node_ids": [
+            "cpd_129908365",
+            "path_tau_clearance"
+          ],
+          "path_edge_ids": [
+            "lit_051"
+          ],
+          "source_ids": [],
+          "evidence_status": "hypothesis",
+          "hops": 1
+        },
+        {
+          "node_id": "prot_ulk1",
+          "node_name": "ULK1",
+          "node_type": "Protein",
+          "score": 0.25,
+          "explanation": "1 跳有向证据路径；CID 129908365 → ULK1",
+          "path_node_ids": [
+            "cpd_129908365",
+            "prot_ulk1"
+          ],
+          "path_edge_ids": [
+            "lit_050"
+          ],
+          "source_ids": [],
+          "evidence_status": "hypothesis",
+          "hops": 1
+        },
+        {
+          "node_id": "pheno_autophagosomes",
+          "node_name": "自噬体形成",
+          "node_type": "Phenotype",
+          "score": 0.205,
+          "explanation": "2 跳有向证据路径；CID 129908365 → ULK1 → 自噬体形成",
+          "path_node_ids": [
+            "cpd_129908365",
+            "prot_ulk1",
+            "pheno_autophagosomes"
+          ],
+          "path_edge_ids": [
+            "lit_050",
+            "lit_031"
+          ],
+          "source_ids": [
+            "21258367"
+          ],
+          "evidence_status": "hypothesis",
+          "hops": 2
+        },
+        {
+          "node_id": "path_autophagy",
+          "node_name": "自噬过程",
+          "node_type": "Pathway",
+          "score": 0.1742,
+          "explanation": "2 跳有向证据路径；CID 129908365 → ULK1 → 自噬过程",
+          "path_node_ids": [
+            "cpd_129908365",
+            "prot_ulk1",
+            "path_autophagy"
+          ],
+          "path_edge_ids": [
+            "lit_050",
+            "lit_011"
+          ],
+          "source_ids": [
+            "hsa04140"
+          ],
+          "evidence_status": "hypothesis",
+          "hops": 2
+        }
+      ],
+      "method": "directed_evidence_weighted_graph_ranking",
+      "trained_neural_network": false
+    },
+    "notes": [
+      "有向证据路径排序；分数不是准确率、效应大小或概率。"
+    ]
+  },
+  "candidate_counts": {
+    "2244": 9,
+    "2519": 13,
+    "129908365": 0
+  },
+  "pathway_counts": {
+    "2244": 5,
+    "2519": 4,
+    "129908365": 0
+  },
+  "candidate_rows": [
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "Aβ 斑块负荷",
+      "实体类型": "实验终点",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "阿司匹林 → Aβ 斑块负荷",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "PPARα",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "阿司匹林 → PPARα",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "TFEB",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "阿司匹林 → TFEB",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "溶酶体生物发生",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "阿司匹林 → 溶酶体生物发生",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "Tau 清除相关过程",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → Tau 清除相关过程",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "Tau 溶酶体外排",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → Tau 溶酶体外排",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/32366951/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "Tau 病理传播",
+      "实体类型": "实验终点",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → Tau 病理传播",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "胞外 Tau 摄取",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → 胞外 Tau 摄取",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "候选实体": "自噬过程",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → 自噬过程",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "4E-BP1",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → 4E-BP1",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "AKT",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → AKT",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "S6",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → S6",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "Tau 磷酸化",
+      "实体类型": "实验终点",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → Tau 磷酸化",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "mTORC1",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → mTORC1",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "p70S6K",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → p70S6K",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "自噬过程",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → 自噬过程",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "TFEB 核转位",
+      "实体类型": "实验终点",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → TFEB 核转位",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/22343943/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "ULK1",
+      "实体类型": "蛋白 / 复合体",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → ULK1",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21258367/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "PI3K–AKT 信号",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.6970",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → AKT → PI3K–AKT 信号",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04151",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "mTOR 信号",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.6970",
+      "跳数": 2,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → mTOR 信号",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04150",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "溶酶体生物发生",
+      "实体类型": "通路 / 生物过程",
+      "规则分数": "0.6724",
+      "跳数": 3,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/22343943/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "候选实体": "自噬体形成",
+      "实体类型": "实验终点",
+      "规则分数": "0.6724",
+      "跳数": 3,
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → ULK1 → 自噬体形成",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21258367/",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+    },
+    {
+      "化合物": "CID 129908365",
+      "PubChem CID": "129908365",
+      "候选实体": "文献证据层未建立机制路径",
+      "实体类型": "候选状态",
+      "规则分数": "",
+      "跳数": "",
+      "证据属性": "化学身份已核实；机制为待验证假设",
+      "有向路径": "",
+      "来源": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+      "模型模块": "EvidenceGraphRank-v2",
+      "解释范围": "旧版两条预测关系隔离在假设层，不纳入文献排序"
+    }
+  ],
+  "pathway_rows": [
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "通路 / 生物过程": "溶酶体生物发生",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "标准条目": "hsa04142",
+      "证据属性": "直接文献关系",
+      "有向路径": "阿司匹林 → 溶酶体生物发生",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "研究定位": "原始研究条件下的机制依据"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "通路 / 生物过程": "Tau 清除相关过程",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "标准条目": "文献功能过程；非单一 KEGG 编号",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → Tau 清除相关过程",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "通路 / 生物过程": "Tau 溶酶体外排",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "标准条目": "文献功能过程；非单一 KEGG 编号",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → Tau 溶酶体外排",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/32366951/",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "通路 / 生物过程": "胞外 Tau 摄取",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "标准条目": "文献功能过程；非单一 KEGG 编号",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → 胞外 Tau 摄取",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "阿司匹林",
+      "PubChem CID": "2244",
+      "通路 / 生物过程": "自噬过程",
+      "规则分数": "0.8200",
+      "跳数": 2,
+      "标准条目": "hsa04140",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "阿司匹林 → TFEB → 自噬过程",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/29967008/",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "通路 / 生物过程": "自噬过程",
+      "规则分数": "1.0000",
+      "跳数": 1,
+      "标准条目": "hsa04140",
+      "证据属性": "直接文献关系",
+      "有向路径": "咖啡因 → 自噬过程",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+      "研究定位": "原始研究条件下的机制依据"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "通路 / 生物过程": "PI3K–AKT 信号",
+      "规则分数": "0.6970",
+      "跳数": 2,
+      "标准条目": "hsa04151",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → AKT → PI3K–AKT 信号",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04151",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "通路 / 生物过程": "mTOR 信号",
+      "规则分数": "0.6970",
+      "跳数": 2,
+      "标准条目": "hsa04150",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → mTOR 信号",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04150",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "咖啡因",
+      "PubChem CID": "2519",
+      "通路 / 生物过程": "溶酶体生物发生",
+      "规则分数": "0.6724",
+      "跳数": 3,
+      "标准条目": "hsa04142",
+      "证据属性": "跨关系机制推断",
+      "有向路径": "咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生",
+      "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/22343943/",
+      "研究定位": "跨关系推断；需按实验背景解释"
+    },
+    {
+      "化合物": "CID 129908365",
+      "PubChem CID": "129908365",
+      "通路 / 生物过程": "文献证据层未建立机制路径",
+      "规则分数": "",
+      "跳数": "",
+      "标准条目": "",
+      "证据属性": "探索性候选",
+      "有向路径": "",
+      "来源": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+      "研究定位": "结构登记不作为 Tau 清除或 ULK1 激活证据"
+    }
+  ],
+  "source_hashes": [
+    {
+      "path": "backend\\data\\literature_graph.json",
+      "sha256": "780143d160530d82bb329d61c4c67b1d9393d82818af1ee2e9036bf0bde99408"
+    },
+    {
+      "path": "backend\\app\\services\\evidence_rank_service.py",
+      "sha256": "fb76dfb46e14b81a833fcf30b784d03ba982fd1ec3b35ff065b2b4f9e9dd0f82"
+    },
+    {
+      "path": "backend\\app\\services\\literature_graph_service.py",
+      "sha256": "ae66ad04ed8adb21fd84a3cb6eaa01da61e09b9eff5ae109eab6beb6c0d35c11"
+    },
+    {
+      "path": "backend\\app\\api\\routes_v2.py",
+      "sha256": "8c8563b025a6d606202d619c061bc2c85a8c1d50a0a34e7dde4da8e48b9c8d5e"
+    },
+    {
+      "path": "scripts\\build_literature_kg.py",
+      "sha256": "247f6414d88cd88ba2239ac4b2e6fe93226bf98729939a040beb501c3b94f070"
+    }
+  ],
+  "test_count": 6,
+  "tests_passed": true,
+  "biological_performance": "not independently evaluated; no Accuracy/Precision/Recall/F1/AUC claim"
+}

@@ -1,0 +1,84 @@
+{
+  "old_nodes": 37,
+  "old_edges": 76,
+  "new_nodes": 40,
+  "new_edges": 51,
+  "strategy": "focused literature rebuild; former unverified relationships are not silently inherited",
+  "changes": [
+    "增加 PPARα–TFEB 机制",
+    "区分 Tau 摄取、传播、磷酸化与外排",
+    "纳入 Tau35 2024/2025 研究",
+    "CID 129908365 旧机制关系降为可选假设层",
+    "每条正式边绑定来源及实验背景"
+  ],
+  "source_files": [
+    {
+      "file": "KEGG_hsa04140.txt",
+      "sha256": "3920ed5ee6719ad50e76f9040cc03e631434c697075411bc43bce36aad7e44a3"
+    },
+    {
+      "file": "KEGG_hsa04142.txt",
+      "sha256": "bec91e52ef430803da68e015d69c1aaece27549dc0888a08d7aff8f3e7e4c703"
+    },
+    {
+      "file": "KEGG_hsa04150.txt",
+      "sha256": "1b39eb50cb3ecd3da4106c21ee0ff441a9f31a0dce546ca2fba2daffb65829bc"
+    },
+    {
+      "file": "KEGG_hsa04151.txt",
+      "sha256": "72fdcdc07edd4387f1e2284185e265951bdb27fc76f98b6fc350669dbbcf9526"
+    },
+    {
+      "file": "KEGG_hsa04152.txt",
+      "sha256": "6f2d53e8057863d7272c143807d1441c3f56012d79cb3db9dc29bff5a04bd41d"
+    },
+    {
+      "file": "PubChem_129908365.txt",
+      "sha256": "6f181333c55755fc1862c06c5df9d5f5e1568d321e0fc8406f48b57af7ffe872"
+    },
+    {
+      "file": "PubChem_129908365_description.txt",
+      "sha256": "3a959e7250cea56efdf63845fb934289a71045ec85955b514fc6223d2e2792b3"
+    },
+    {
+      "file": "PubChem_129908365_synonyms.txt",
+      "sha256": "432f2ea8b9e88123220109b6d85df05f7cf3298903a2a5aa4e7c4c08132adbd7"
+    },
+    {
+      "file": "PubChem_2244.txt",
+      "sha256": "d18b58fe100540fb9db863bafa9cffa742b79e9c122bbb927f6a12ff34ae258a"
+    },
+    {
+      "file": "PubChem_2519.txt",
+      "sha256": "25370a71eb162c432c98179dcda9718dde1fc8c3ec29bcbad50d8ad3e4526ce4"
+    },
+    {
+      "file": "pubmed_selected.xml",
+      "sha256": "651b8934f4a7e339fd96ba35e00c6a87d27428c05cef6ee6dd217fd47c4fddfe"
+    },
+    {
+      "file": "PubMed_原始研究.xml",
+      "sha256": "89d1fc9840faa6af7af5f4cb24cf0c60d58193e4c5b33ac1fac530f347fb2516"
+    },
+    {
+      "file": "uniprot_O75385.json",
+      "sha256": "1b52a13d93baa814c68e604fe5cfd2d228a571b6f165e5e481421ec4e62c4f36"
+    },
+    {
+      "file": "uniprot_P10636.json",
+      "sha256": "4a8ccd959ef3ff7a026fe5642708f246c1b46b8edf4333f3e0b1596ed20b4a59"
+    },
+    {
+      "file": "uniprot_P19484.json",
+      "sha256": "c6b620d37ff2fe07720d9d98ab95ff6a9a372bb66fd4f0ffb76427b0f45a744b"
+    },
+    {
+      "file": "uniprot_P42345.json",
+      "sha256": "82373d43429ec699452383204ce9bea0d124eb18a7a6ec922581463f50ec2d84"
+    },
+    {
+      "file": "uniprot_Q07869.json",
+      "sha256": "4ae95c3de5f0206dcd30afa9aaaf4b356ba959e2a91f43878f12785a6f71518a"
+    }
+  ]
+}

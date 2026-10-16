@@ -1,0 +1,1183 @@
+{
+  "surface": "report",
+  "title": "Tau 自噬相关通路筛选与系统验证报告 · KG v2.0",
+  "generatedAt": "2026-10-16",
+  "status": "reviewed",
+  "buildStatus": "complete",
+  "filters": [],
+  "queries": {
+    "overview": {
+      "rows": [
+        {
+          "化合物": "阿司匹林（2244）",
+          "文献层候选": 9,
+          "通路 / 生物过程": 5,
+          "研究重点": "PPARα–TFEB–溶酶体；Tau 相关关系为跨研究推断"
+        },
+        {
+          "化合物": "咖啡因（2519）",
+          "文献层候选": 13,
+          "通路 / 生物过程": 4,
+          "研究重点": "Akt/mTOR 与自噬；Tau 磷酸化单独记录"
+        },
+        {
+          "化合物": "CID 129908365",
+          "文献层候选": 0,
+          "通路 / 生物过程": 0,
+          "研究重点": "结构身份核实；旧机制关系仅保留在假设层"
+        }
+      ],
+      "source": {
+        "title": "KG v2.0 筛选结果",
+        "provider": "Local reproducible analysis + primary sources",
+        "files": [
+          "D:\\UserFiles\\Desktop\\new\\evidence\\evaluation.json"
+        ],
+        "caveats": [
+          "固定规则排序；分数不是概率或模型精度。"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "复现",
+            "detail": "scripts/build_literature_kg.py 构图；scripts/evaluate_and_export.py 运行当前 API、NetworkX 参考计算和测试；原始来源快照位于 evidence/raw。"
+          }
+        ]
+      }
+    },
+    "graph": {
+      "rows": [
+        {
+          "来源节点": "gene_ppara",
+          "目标节点": "prot_ppara",
+          "关系": "编码",
+          "证据类型": "annotation",
+          "来源标识": "Q07869",
+          "实验背景": "UniProt 人类基因–蛋白登记"
+        },
+        {
+          "来源节点": "gene_tfeb",
+          "目标节点": "prot_tfeb",
+          "关系": "编码",
+          "证据类型": "annotation",
+          "来源标识": "P19484",
+          "实验背景": "UniProt 人类基因–蛋白登记"
+        },
+        {
+          "来源节点": "gene_mtor",
+          "目标节点": "prot_mtor",
+          "关系": "编码",
+          "证据类型": "annotation",
+          "来源标识": "P42345",
+          "实验背景": "UniProt 人类基因–蛋白登记"
+        },
+        {
+          "来源节点": "gene_mapt",
+          "目标节点": "prot_tau",
+          "关系": "编码",
+          "证据类型": "annotation",
+          "来源标识": "P10636",
+          "实验背景": "UniProt 人类基因–蛋白登记"
+        },
+        {
+          "来源节点": "gene_ulk1",
+          "目标节点": "prot_ulk1",
+          "关系": "编码",
+          "证据类型": "annotation",
+          "来源标识": "O75385",
+          "实验背景": "UniProt 人类基因–蛋白登记"
+        },
+        {
+          "来源节点": "prot_mtor",
+          "目标节点": "prot_mtorc1",
+          "关系": "组成",
+          "证据类型": "annotation",
+          "来源标识": "hsa04150",
+          "实验背景": "mTORC1 复合体成员"
+        },
+        {
+          "来源节点": "prot_mtor",
+          "目标节点": "path_mtor",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04150",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_mtorc1",
+          "目标节点": "path_mtor",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04150",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_akt",
+          "目标节点": "path_pi3k",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04151",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_ampk",
+          "目标节点": "path_ampk",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04152",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_ulk1",
+          "目标节点": "path_autophagy",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04140",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_lc3",
+          "目标节点": "path_autophagy",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04140",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_ctsd",
+          "目标节点": "path_lysosome",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04142",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "prot_lamp2",
+          "目标节点": "path_lysosome",
+          "关系": "参与",
+          "证据类型": "annotation",
+          "来源标识": "hsa04142",
+          "实验背景": "标准功能条目对应；不代表化合物效应"
+        },
+        {
+          "来源节点": "cpd_2244",
+          "目标节点": "prot_ppara",
+          "关系": "激活",
+          "证据类型": "experimental",
+          "来源标识": "29967008",
+          "实验背景": "脑细胞 / 5XFAD 小鼠；PPARα 依赖性作用"
+        },
+        {
+          "来源节点": "cpd_2244",
+          "目标节点": "prot_tfeb",
+          "关系": "上调表达",
+          "证据类型": "experimental",
+          "来源标识": "29967008",
+          "实验背景": "TFEB 表达上调；不是直接结合实验"
+        },
+        {
+          "来源节点": "prot_ppara",
+          "目标节点": "prot_tfeb",
+          "关系": "促进转录",
+          "证据类型": "experimental",
+          "来源标识": "29967008",
+          "实验背景": "PPARα 依赖的 Tfeb 转录"
+        },
+        {
+          "来源节点": "cpd_2244",
+          "目标节点": "path_lysosome",
+          "关系": "促进",
+          "证据类型": "experimental",
+          "来源标识": "29967008",
+          "实验背景": "细胞及小鼠溶酶体生物发生终点"
+        },
+        {
+          "来源节点": "cpd_2244",
+          "目标节点": "pheno_abeta",
+          "关系": "降低",
+          "证据类型": "experimental",
+          "来源标识": "29967008",
+          "实验背景": "5XFAD 小鼠；Aβ 终点，不等同于 Tau"
+        },
+        {
+          "来源节点": "prot_tfeb",
+          "目标节点": "path_lysosome",
+          "关系": "促进",
+          "证据类型": "experimental",
+          "来源标识": "29967008; 21617040",
+          "实验背景": "TFEB 转录调控与溶酶体生物发生"
+        },
+        {
+          "来源节点": "prot_tfeb",
+          "目标节点": "path_autophagy",
+          "关系": "调控",
+          "证据类型": "experimental",
+          "来源标识": "21617040",
+          "实验背景": "TFEB 介导自噬 / 溶酶体协调调控"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "prot_akt",
+          "关系": "降低信号",
+          "证据类型": "experimental",
+          "来源标识": "21081844; 20838929",
+          "实验背景": "所研究细胞条件；Akt 信号变化，不表示直接靶点结合"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "prot_mtorc1",
+          "关系": "降低信号",
+          "证据类型": "experimental",
+          "来源标识": "21081844",
+          "实验背景": "高浓度细胞处理；Akt/mTOR 下游信号抑制"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "path_autophagy",
+          "关系": "增强自噬",
+          "证据类型": "experimental",
+          "来源标识": "21081844",
+          "实验背景": "高浓度细胞研究伴凋亡；效应依赖剂量与细胞条件"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "pheno_tau_phospho",
+          "关系": "调节",
+          "证据类型": "experimental",
+          "来源标识": "20838929",
+          "实验背景": "神经元 / 神经母细胞瘤；磷酸化终点，不等于 Tau 降解"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "prot_p70",
+          "关系": "降低磷酸化",
+          "证据类型": "experimental",
+          "来源标识": "21081844",
+          "实验背景": "细胞模型中的磷酸化读数，非直接结合证据"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "prot_4ebp1",
+          "关系": "降低磷酸化",
+          "证据类型": "experimental",
+          "来源标识": "21081844",
+          "实验背景": "细胞模型中的磷酸化读数，非直接结合证据"
+        },
+        {
+          "来源节点": "cpd_2519",
+          "目标节点": "prot_s6",
+          "关系": "降低磷酸化",
+          "证据类型": "experimental",
+          "来源标识": "21081844",
+          "实验背景": "细胞模型中的磷酸化读数，非直接结合证据"
+        },
+        {
+          "来源节点": "prot_mtorc1",
+          "目标节点": "prot_ulk1",
+          "关系": "抑制",
+          "证据类型": "experimental",
+          "来源标识": "21258367",
+          "实验背景": "营养条件依赖；Ulk1 Ser757 磷酸化抑制"
+        },
+        {
+          "来源节点": "prot_ampk",
+          "目标节点": "prot_ulk1",
+          "关系": "条件性激活",
+          "证据类型": "experimental",
+          "来源标识": "21258367",
+          "实验背景": "葡萄糖饥饿条件；Ser317 / Ser777；不得外推至所有饥饿条件"
+        },
+        {
+          "来源节点": "prot_ulk1",
+          "目标节点": "pheno_autophagosomes",
+          "关系": "促进启动",
+          "证据类型": "experimental",
+          "来源标识": "21258367",
+          "实验背景": "自噬启动激酶；特定营养 / 细胞条件"
+        },
+        {
+          "来源节点": "pheno_autophagosomes",
+          "目标节点": "path_autophagy",
+          "关系": "组成阶段",
+          "证据类型": "annotation",
+          "来源标识": "hsa04140",
+          "实验背景": "自噬过程的组成阶段"
+        },
+        {
+          "来源节点": "prot_mtorc1",
+          "目标节点": "pheno_tfeb_nuclear",
+          "关系": "抑制核转位",
+          "证据类型": "experimental",
+          "来源标识": "22343943",
+          "实验背景": "mTORC1–TFEB 溶酶体营养信号机制"
+        },
+        {
+          "来源节点": "pheno_tfeb_nuclear",
+          "目标节点": "path_lysosome",
+          "关系": "促进",
+          "证据类型": "experimental",
+          "来源标识": "22343943; 21617040",
+          "实验背景": "核内 TFEB 调控溶酶体基因表达"
+        },
+        {
+          "来源节点": "prot_tfeb",
+          "目标节点": "path_tau_uptake",
+          "关系": "促进摄取",
+          "证据类型": "experimental",
+          "来源标识": "30108137",
+          "实验背景": "星形胶质细胞 / 小鼠；胞外 Tau 摄取"
+        },
+        {
+          "来源节点": "prot_tfeb",
+          "目标节点": "pheno_tau_spread",
+          "关系": "减弱传播",
+          "证据类型": "experimental",
+          "来源标识": "30108137",
+          "实验背景": "星形胶质细胞 TFEB 操作；小鼠 Tau 传播模型"
+        },
+        {
+          "来源节点": "prot_tfeb",
+          "目标节点": "path_tau_clearance",
+          "关系": "参与清除",
+          "证据类型": "experimental",
+          "来源标识": "30108137",
+          "实验背景": "星形胶质细胞中胞外 Tau 摄取和溶酶体清除"
+        },
+        {
+          "来源节点": "path_tau_uptake",
+          "目标节点": "path_tau_clearance",
+          "关系": "相关环节",
+          "证据类型": "experimental",
+          "来源标识": "30108137",
+          "实验背景": "摄取与降解分别解释；非药物独立验证"
+        },
+        {
+          "来源节点": "prot_tfeb",
+          "目标节点": "path_tau_exocytosis",
+          "关系": "调控外排",
+          "证据类型": "experimental",
+          "来源标识": "32366951",
+          "实验背景": "截短突变 Tau、缺 MTBR；不同于野生型 Tau 的一般分泌"
+        },
+        {
+          "来源节点": "prot_trpml1",
+          "目标节点": "path_tau_exocytosis",
+          "关系": "依赖",
+          "证据类型": "experimental",
+          "来源标识": "32366951",
+          "实验背景": "溶酶体钙通道依赖性"
+        },
+        {
+          "来源节点": "path_tau_exocytosis",
+          "目标节点": "path_tau_clearance",
+          "关系": "相关环节",
+          "证据类型": "experimental",
+          "来源标识": "32366951",
+          "实验背景": "特定不具播种能力 Tau 物种；不概括所有胞外 Tau"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "prot_tau",
+          "关系": "片段",
+          "证据类型": "annotation",
+          "来源标识": "39009859",
+          "实验背景": "Tau35 为疾病相关 C 端片段；结构关系"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "pheno_tfeb_nuclear",
+          "关系": "阻碍核转位",
+          "证据类型": "experimental",
+          "来源标识": "39009859",
+          "实验背景": "Torin 1 诱导条件；CHO 及原代神经元"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "pheno_lipids",
+          "关系": "增加",
+          "证据类型": "experimental",
+          "来源标识": "39009859",
+          "实验背景": "CHO / 原代神经元中脂滴积累"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "path_autophagy",
+          "关系": "扰动通量",
+          "证据类型": "experimental",
+          "来源标识": "39009859; 41399158",
+          "实验背景": "Tau35 特异模型，自噬通量异常"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "path_endolysosomal",
+          "关系": "扰动功能",
+          "证据类型": "experimental",
+          "来源标识": "39009859; 41399158",
+          "实验背景": "不同模型存在不同读数，不代表全部 Tau 物种"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "pheno_lysosome_motility",
+          "关系": "扰动运动",
+          "证据类型": "experimental",
+          "来源标识": "41399158",
+          "实验背景": "2025：Tau35 小鼠 / SH-SY5Y；溶酶体运动受损"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "prot_ctsd",
+          "关系": "改变标志物",
+          "证据类型": "experimental",
+          "来源标识": "39009859",
+          "实验背景": "CHO 点状信号 / 原代神经元分布读数存在模型差异"
+        },
+        {
+          "来源节点": "prot_tau35",
+          "目标节点": "prot_lamp2",
+          "关系": "改变标志物",
+          "证据类型": "experimental",
+          "来源标识": "39009859",
+          "实验背景": "CHO 点状信号 / 原代神经元分布读数存在模型差异"
+        },
+        {
+          "来源节点": "cpd_129908365",
+          "目标节点": "prot_ulk1",
+          "关系": "待验证关联",
+          "证据类型": "hypothesis",
+          "来源标识": "",
+          "实验背景": "旧版本预置推断；没有本化合物直接机制实验定位"
+        },
+        {
+          "来源节点": "cpd_129908365",
+          "目标节点": "path_tau_clearance",
+          "关系": "待验证关联",
+          "证据类型": "hypothesis",
+          "来源标识": "",
+          "实验背景": "旧版本预置推断；没有本化合物直接机制实验定位"
+        }
+      ],
+      "source": {
+        "title": "新版文献知识图谱",
+        "provider": "Local reproducible analysis + primary sources",
+        "files": [
+          "D:\\UserFiles\\Desktop\\new\\backend\\data\\literature_graph.json"
+        ],
+        "caveats": [
+          "固定规则排序；分数不是概率或模型精度。"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "复现",
+            "detail": "scripts/build_literature_kg.py 构图；scripts/evaluate_and_export.py 运行当前 API、NetworkX 参考计算和测试；原始来源快照位于 evidence/raw。"
+          }
+        ]
+      }
+    },
+    "candidates": {
+      "rows": [
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "Aβ 斑块负荷",
+          "实体类型": "实验终点",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "阿司匹林 → Aβ 斑块负荷",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "PPARα",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "阿司匹林 → PPARα",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "TFEB",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "阿司匹林 → TFEB",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "溶酶体生物发生",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "阿司匹林 → 溶酶体生物发生",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "Tau 清除相关过程",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → Tau 清除相关过程",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "Tau 溶酶体外排",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → Tau 溶酶体外排",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/32366951/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "Tau 病理传播",
+          "实体类型": "实验终点",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → Tau 病理传播",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "胞外 Tau 摄取",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → 胞外 Tau 摄取",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "候选实体": "自噬过程",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → 自噬过程",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "4E-BP1",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → 4E-BP1",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "AKT",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → AKT",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "S6",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → S6",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "Tau 磷酸化",
+          "实体类型": "实验终点",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → Tau 磷酸化",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "mTORC1",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → mTORC1",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "p70S6K",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → p70S6K",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "自噬过程",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → 自噬过程",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "TFEB 核转位",
+          "实体类型": "实验终点",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → TFEB 核转位",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/22343943/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "ULK1",
+          "实体类型": "蛋白 / 复合体",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → ULK1",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21258367/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "PI3K–AKT 信号",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.6970",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → AKT → PI3K–AKT 信号",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04151",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "mTOR 信号",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.6970",
+          "跳数": 2,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → mTOR 信号",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04150",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "溶酶体生物发生",
+          "实体类型": "通路 / 生物过程",
+          "规则分数": "0.6724",
+          "跳数": 3,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/22343943/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "候选实体": "自噬体形成",
+          "实体类型": "实验终点",
+          "规则分数": "0.6724",
+          "跳数": 3,
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → ULK1 → 自噬体形成",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21258367/",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "机制关联排序；不代表药效、概率或训练型 GNN 精度"
+        },
+        {
+          "化合物": "CID 129908365",
+          "PubChem CID": "129908365",
+          "候选实体": "文献证据层未建立机制路径",
+          "实体类型": "候选状态",
+          "规则分数": "",
+          "跳数": "",
+          "证据属性": "化学身份已核实；机制为待验证假设",
+          "有向路径": "",
+          "来源": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+          "模型模块": "EvidenceGraphRank-v2",
+          "解释范围": "旧版两条预测关系隔离在假设层，不纳入文献排序"
+        }
+      ],
+      "source": {
+        "title": "当前 API 候选输出",
+        "provider": "Local reproducible analysis + primary sources",
+        "files": [
+          "D:\\UserFiles\\Desktop\\new\\审阅材料\\系统图神经网络模块结果.csv"
+        ],
+        "caveats": [
+          "固定规则排序；分数不是概率或模型精度。"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "复现",
+            "detail": "scripts/build_literature_kg.py 构图；scripts/evaluate_and_export.py 运行当前 API、NetworkX 参考计算和测试；原始来源快照位于 evidence/raw。"
+          }
+        ]
+      }
+    },
+    "pathways": {
+      "rows": [
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "通路 / 生物过程": "溶酶体生物发生",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "标准条目": "hsa04142",
+          "证据属性": "直接文献关系",
+          "有向路径": "阿司匹林 → 溶酶体生物发生",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "研究定位": "原始研究条件下的机制依据"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "通路 / 生物过程": "Tau 清除相关过程",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "标准条目": "文献功能过程；非单一 KEGG 编号",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → Tau 清除相关过程",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "通路 / 生物过程": "Tau 溶酶体外排",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "标准条目": "文献功能过程；非单一 KEGG 编号",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → Tau 溶酶体外排",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/32366951/",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "通路 / 生物过程": "胞外 Tau 摄取",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "标准条目": "文献功能过程；非单一 KEGG 编号",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → 胞外 Tau 摄取",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "阿司匹林",
+          "PubChem CID": "2244",
+          "通路 / 生物过程": "自噬过程",
+          "规则分数": "0.8200",
+          "跳数": 2,
+          "标准条目": "hsa04140",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "阿司匹林 → TFEB → 自噬过程",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "通路 / 生物过程": "自噬过程",
+          "规则分数": "1.0000",
+          "跳数": 1,
+          "标准条目": "hsa04140",
+          "证据属性": "直接文献关系",
+          "有向路径": "咖啡因 → 自噬过程",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "研究定位": "原始研究条件下的机制依据"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "通路 / 生物过程": "PI3K–AKT 信号",
+          "规则分数": "0.6970",
+          "跳数": 2,
+          "标准条目": "hsa04151",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → AKT → PI3K–AKT 信号",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04151",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "通路 / 生物过程": "mTOR 信号",
+          "规则分数": "0.6970",
+          "跳数": 2,
+          "标准条目": "hsa04150",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → mTOR 信号",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04150",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "咖啡因",
+          "PubChem CID": "2519",
+          "通路 / 生物过程": "溶酶体生物发生",
+          "规则分数": "0.6724",
+          "跳数": 3,
+          "标准条目": "hsa04142",
+          "证据属性": "跨关系机制推断",
+          "有向路径": "咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生",
+          "来源": "https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/22343943/",
+          "研究定位": "跨关系推断；需按实验背景解释"
+        },
+        {
+          "化合物": "CID 129908365",
+          "PubChem CID": "129908365",
+          "通路 / 生物过程": "文献证据层未建立机制路径",
+          "规则分数": "",
+          "跳数": "",
+          "标准条目": "",
+          "证据属性": "探索性候选",
+          "有向路径": "",
+          "来源": "https://pubchem.ncbi.nlm.nih.gov/compound/129908365",
+          "研究定位": "结构登记不作为 Tau 清除或 ULK1 激活证据"
+        }
+      ],
+      "source": {
+        "title": "当前 API 通路筛选",
+        "provider": "Local reproducible analysis + primary sources",
+        "files": [
+          "D:\\UserFiles\\Desktop\\new\\审阅材料\\三个化合物通路筛选结果.csv"
+        ],
+        "caveats": [
+          "固定规则排序；分数不是概率或模型精度。"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "复现",
+            "detail": "scripts/build_literature_kg.py 构图；scripts/evaluate_and_export.py 运行当前 API、NetworkX 参考计算和测试；原始来源快照位于 evidence/raw。"
+          }
+        ]
+      }
+    },
+    "metrics": {
+      "rows": [
+        {
+          "指标": "指定 CID 身份匹配",
+          "范围": "3 个指定化合物",
+          "结果": "3/3（100%）",
+          "含义": "身份匹配一致性"
+        },
+        {
+          "指标": "正式关系来源绑定",
+          "范围": "49 条非假设关系",
+          "结果": "49/49（100%）",
+          "含义": "来源标识可定位；不表示实验真实性概率"
+        },
+        {
+          "指标": "候选分数独立重算",
+          "范围": "22 条文献层候选",
+          "结果": "22/22（100%）",
+          "含义": "相对 NetworkX 独立实现的一致性"
+        },
+        {
+          "指标": "最大绝对误差",
+          "范围": "上述候选的四位小数分数",
+          "结果": "0.0000",
+          "含义": "计算结果差异"
+        },
+        {
+          "指标": "关系端点完整性",
+          "范围": "102 个端点引用",
+          "结果": "102/102（100%）",
+          "含义": "无悬空端点"
+        },
+        {
+          "指标": "功能 / 方法测试",
+          "范围": "6 项自动化测试",
+          "结果": "6/6 通过",
+          "含义": "来源、隔离、方向、权重与路径计算"
+        },
+        {
+          "指标": "未知实体误回退",
+          "范围": "不存在的实体查询",
+          "结果": "0 个无关分子 / 0 个候选",
+          "含义": "已取消旧版回退"
+        },
+        {
+          "指标": "假设层隔离",
+          "范围": "CID 129908365",
+          "结果": "默认 0 条；显式启用后 4 条候选",
+          "含义": "待验证关联不混入文献结论"
+        }
+      ],
+      "source": {
+        "title": "实际检测与独立公式重算",
+        "provider": "Local reproducible analysis + primary sources",
+        "files": [
+          "D:\\UserFiles\\Desktop\\new\\evidence\\evaluation.json",
+          "D:\\UserFiles\\Desktop\\new\\evidence\\test_output.txt"
+        ],
+        "caveats": [
+          "固定规则排序；分数不是概率或模型精度。"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "复现",
+            "detail": "scripts/build_literature_kg.py 构图；scripts/evaluate_and_export.py 运行当前 API、NetworkX 参考计算和测试；原始来源快照位于 evidence/raw。"
+          }
+        ],
+        "metricDefinitions": [
+          {
+            "label": "分数重算一致性",
+            "definition": "对当前文献层 22 条候选，比较接口输出与独立有向路径枚举、权重乘积及 0.82 跳数衰减的四位小数结果。",
+            "componentIds": [
+              "validation",
+              "metric-table"
+            ],
+            "formula": "匹配数 / 22"
+          }
+        ]
+      }
+    },
+    "sources": {
+      "rows": [
+        {
+          "id": "29967008",
+          "title": "Aspirin Induces Lysosomal Biogenesis and Attenuates Amyloid Plaque Pathology in a Mouse Model of Alzheimer's Disease via PPARα.",
+          "year": "2018",
+          "doi": "10.1523/JNEUROSCI.0054-18.2018",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/29967008/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "21081844",
+          "title": "Caffeine induces apoptosis by enhancement of autophagy via PI3K/Akt/mTOR/p70S6K inhibition.",
+          "year": "2011",
+          "doi": "10.4161/auto.7.2.14074",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21081844/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "20838929",
+          "title": "Caffeine modulates tau phosphorylation and affects Akt signaling in postmitotic neurons.",
+          "year": "2011",
+          "doi": "10.1007/s12031-010-9444-8",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/20838929/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "30108137",
+          "title": "TFEB enhances astroglial uptake of extracellular tau species and reduces tau spreading.",
+          "year": "2018",
+          "doi": "10.1084/jem.20172158",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/30108137/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "21617040",
+          "title": "TFEB links autophagy to lysosomal biogenesis.",
+          "year": "2011",
+          "doi": "10.1126/science.1204592",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21617040/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "22343943",
+          "title": "A lysosome-to-nucleus signalling mechanism senses and regulates the lysosome via mTOR and TFEB.",
+          "year": "2012",
+          "doi": "10.1038/emboj.2012.32",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/22343943/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "21258367",
+          "title": "AMPK and mTOR regulate autophagy through direct phosphorylation of Ulk1.",
+          "year": "2011",
+          "doi": "10.1038/ncb2152",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/21258367/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "32366951",
+          "title": "TFEB regulates lysosomal exocytosis of tau and its loss of function exacerbates tau pathology and spreading.",
+          "year": "2021",
+          "doi": "10.1038/s41380-020-0738-0",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/32366951/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "39009859",
+          "title": "Truncated tau interferes with the autophagy and endolysosomal pathway and results in lipid accumulation.",
+          "year": "2024",
+          "doi": "10.1007/s00018-024-05337-6",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/39009859/",
+          "source_type": "primary_research"
+        },
+        {
+          "id": "41399158",
+          "title": "Proteomic analysis links truncated tau to lysosome motility, autophagy, and endo-lysosomal dysfunction.",
+          "year": "2025",
+          "doi": "10.1002/alz.70977",
+          "url": "https://pubmed.ncbi.nlm.nih.gov/41399158/",
+          "source_type": "primary_research"
+        }
+      ],
+      "source": {
+        "title": "原始研究注册记录",
+        "provider": "Local reproducible analysis + primary sources",
+        "files": [
+          "D:\\UserFiles\\Desktop\\new\\evidence\\sources.json",
+          "D:\\UserFiles\\Desktop\\new\\evidence\\raw\\pubmed_selected.xml"
+        ],
+        "caveats": [
+          "固定规则排序；分数不是概率或模型精度。"
+        ],
+        "evidenceFlow": [
+          {
+            "title": "复现",
+            "detail": "scripts/build_literature_kg.py 构图；scripts/evaluate_and_export.py 运行当前 API、NetworkX 参考计算和测试；原始来源快照位于 evidence/raw。"
+          }
+        ]
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "summary",
+      "title": "研究摘要",
+      "query": "overview",
+      "text": "针对阿司匹林、咖啡因与 CID 129908365，依据所选原始研究和标准数据库重新整理知识图谱，并开展有向证据路径筛选。新版 KG 包含 40 个实体、51 条关系，其中 49 条为可定位来源的正式关系，2 条为隔离保存的旧版待验证关联。纳入 10 篇原始研究，包含 2024、2025 年 Tau35 相关研究。\n\n文献证据层共形成 22 条候选实体关联，其中 9 条为通路 / 生物过程：阿司匹林 5 条、咖啡因 4 条。CID 129908365 的化学身份已核实，其现有机制关系按探索性假设解释。\n\n独立参考实现对全部 22 条候选分数的重算结果一致，最大绝对误差为 0.0000；6 项功能与方法测试通过。上述指标评价软件与数据一致性，不代表生物学有效率或训练型模型预测准确率。"
+    },
+    {
+      "id": "kg",
+      "title": "文献知识图谱与版本修订",
+      "query": "graph",
+      "text": "KG 采用文献定向整理，保留化合物、蛋白 / 复合体、基因、通路 / 生物过程和实验终点五类实体。正式关系绑定 PMID、KEGG 或 UniProt 标识，记录模型与处理条件；PubChem 仅用于化学身份核对，不作为药效证据。\n\n新版以所选文献重建核心网络，未直接继承旧图中未经逐条校核的广泛疾病关联。阿司匹林补入 PPARα–TFEB 机制；咖啡因区分 Akt/mTOR 信号、自噬变化及 Tau 磷酸化；TFEB 相关关系区分 Tau 摄取、传播与特定 Tau 物种的溶酶体外排。\n\n2024 年研究补入 Tau35 对 TFEB 核转位、内体–溶酶体功能和脂滴读数的影响；2025 年研究补入 Tau35 与溶酶体运动及自噬 / 蛋白降解异常的关系。其结论保持模型特异性，不推广至所有 Tau 物种。"
+    },
+    {
+      "id": "method",
+      "title": "筛选方法与评分定义",
+      "query": "candidates",
+      "text": "原系统 GNN 接口兼容层改用 EvidenceGraphRank-v2：沿有向边枚举不超过四跳的简单路径，使用最佳路径评分进行候选排序。该实现为固定规则证据传播，不属于训练型图神经网络。\n\n`S(v) = max_path [ ∏ w(e) × 0.82^(h−1) ]，1 ≤ h ≤ 4`\n\n实验关系的权重为 1.00，标准功能 / 结构注释关系为 0.85；待验证关系的展示权重为 0.25，但默认排除在文献层筛选之外。权重为预先定义的排序参数，不是实验可靠性概率或统计置信度。相同分数按并列解释；显示顺序采用稳定排序。\n\n每条结果保留实际路径、跳数及来源。多跳连接可能跨越不同研究或实验条件，不能自动解释为已验证的完整药物作用链；算法也不将抑制边组成的路径直接推导为药效方向。"
+    },
+    {
+      "id": "results",
+      "title": "三个化合物的通路筛选结果",
+      "query": "pathways",
+      "text": "下表列示默认文献证据层的全部通路 / 生物过程，并为 CID 129908365 保留明确的候选状态。其零候选表示当前网络未建立正式机制路径，不表示化合物无生物学作用。\n\n阿司匹林的溶酶体生物发生关联来自该化合物的原始实验；自噬、胞外 Tau 摄取、Tau 外排及清除相关关联为经 TFEB 连接的跨关系机制推断。咖啡因的自噬关联有原始细胞实验支持；mTOR、PI3K–AKT 和溶酶体生物发生须结合中间节点与研究条件解释。\n\n本方法属于证据网络排序，不属于 GO / KEGG 富集检验，因此不赋予 P 值或 FDR。标准通路编号与文献定义的功能过程分别标注。"
+    },
+    {
+      "id": "interpretation",
+      "title": "机制解释与证据边界",
+      "query": "overview",
+      "text": "**阿司匹林：** 原始研究支持 PPARα 依赖的 TFEB 上调和溶酶体生物发生，其病理终点主要为 Aβ [29967008]。TFEB 对星形胶质细胞 Tau 摄取及传播的研究 [30108137] 提供机制联系；二者不能拼接为同一实验中阿司匹林清除 Tau 的直接结论。\n\n**咖啡因：** Akt/mTOR、自噬和下游磷酸化变化来自细胞研究 [21081844]，Tau 磷酸化及 Akt 变化由神经元研究支持 [20838929]。高浓度、细胞类型和具体读数均写入关系背景；信号变化不等同于直接靶点结合。\n\n**CID 129908365：** 分子式 C48H69N3O7、InChIKey MQIIKWKWTUJJCM-FFAIWJBMSA-N 与 PubChem 登记一致。旧版“ULK1 激活 / Tau 清除”两条关系在新版标为假设，默认不生成文献层候选。显式开启假设层后的分数不与正式证据结论混用。"
+    },
+    {
+      "id": "validation",
+      "title": "系统检测与数值验证",
+      "query": "metrics",
+      "text": "功能测试覆盖来源绑定、实体检索、假设隔离、方向与权重响应、路径分数和标准通路标识。独立数值验证采用 NetworkX 枚举有向简单路径，重新计算路径乘积与衰减项，再与当前接口结果逐项比较。\n\n未知实体查询不再回退到无关化合物。反转所有关系方向或将权重清零时，指定化合物的候选相应消失，验证现行实现使用方向与权重。图谱源文件及关键服务代码记录 SHA-256，用于版本追踪。\n\n**生物学预测 Accuracy、Precision、Recall、F1、ROC-AUC、PR-AUC 未开展独立效能测试，不作性能声明。** 表中百分比仅指限定集合的软件或来源对应一致性。"
+    },
+    {
+      "id": "references",
+      "title": "原始研究与数据来源",
+      "query": "sources",
+      "text": "图谱关系依据以下所选原始研究整理，统一按实验对象和具体终点记录。标准注释来自 KEGG hsa04140、hsa04142、hsa04150、hsa04151、hsa04152，以及 UniProt 的 PPARA、TFEB、MTOR、MAPT、ULK1 基因–蛋白登记。三个化合物采用 PubChem CID 核对。检索与版本记录日期：2026-10-16。"
+    }
+  ],
+  "report": {},
+  "kg_meta": {
+    "project": "TauClear Literature KG",
+    "version": "2.0.0",
+    "as_of": "2026-10-16",
+    "scope": "selected_primary_literature_and_standard_annotations",
+    "literature_pmids": [
+      "29967008",
+      "21081844",
+      "20838929",
+      "30108137",
+      "21617040",
+      "22343943",
+      "21258367",
+      "32366951",
+      "39009859",
+      "41399158"
+    ],
+    "node_count": 40,
+    "edge_count": 51,
+    "hypothesis_edges": 2,
+    "manual_curation": true
+  }
+}

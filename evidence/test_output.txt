@@ -1,0 +1,11 @@
+test_direction_and_weight_are_effective (test_literature_graph.LiteratureKGTest.test_direction_and_weight_are_effective) ... ok
+test_hypothesis_isolation (test_literature_graph.LiteratureKGTest.test_hypothesis_isolation) ... ok
+test_independent_path_reference (test_literature_graph.LiteratureKGTest.test_independent_path_reference) ... ok
+test_known_and_unknown_entities (test_literature_graph.LiteratureKGTest.test_known_and_unknown_entities) ... ok
+test_pathway_labels_and_static_entry (test_literature_graph.LiteratureKGTest.test_pathway_labels_and_static_entry) ... ok
+test_source_integrity (test_literature_graph.LiteratureKGTest.test_source_integrity) ... ok
+
+----------------------------------------------------------------------
+Ran 6 tests in 0.134s
+
+OK

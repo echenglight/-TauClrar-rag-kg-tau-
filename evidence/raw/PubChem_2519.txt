@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 2519,
+        "MolecularFormula": "C8H10N4O2",
+        "InChIKey": "RYYVLZVUVIJVGH-UHFFFAOYSA-N",
+        "Title": "Caffeine"
+      }
+    ]
+  }
+}
+

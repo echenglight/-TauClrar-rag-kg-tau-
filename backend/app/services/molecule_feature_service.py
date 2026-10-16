@@ -31,6 +31,7 @@ class MoleculeFeatureService:
 
     def search(self, keyword: str, limit: int = 5) -> list[MoleculeProfile]:
         keyword = keyword.strip().lower()
+        keyword = {"阿司匹林":"2244","aspirin":"2244","咖啡因":"2519","caffeine":"2519","cid 129908365":"129908365"}.get(keyword,keyword)
         profiles = self._load_profiles()
 
         if not keyword:
@@ -45,7 +46,7 @@ class MoleculeFeatureService:
         ]
         if hits:
             return hits[:limit]
-        return profiles[:limit]
+        return []
 
     def _load_profiles(self) -> list[MoleculeProfile]:
         if self._cached_profiles is not None:

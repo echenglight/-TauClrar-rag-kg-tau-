@@ -1,0 +1,11 @@
+﻿化合物,PubChem CID,通路 / 生物过程,规则分数,跳数,标准条目,证据属性,有向路径,来源,研究定位
+阿司匹林,2244,溶酶体生物发生,1.0000,1,hsa04142,直接文献关系,阿司匹林 → 溶酶体生物发生,https://pubmed.ncbi.nlm.nih.gov/29967008/,原始研究条件下的机制依据
+阿司匹林,2244,Tau 清除相关过程,0.8200,2,文献功能过程；非单一 KEGG 编号,跨关系机制推断,阿司匹林 → TFEB → Tau 清除相关过程,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/,跨关系推断；需按实验背景解释
+阿司匹林,2244,Tau 溶酶体外排,0.8200,2,文献功能过程；非单一 KEGG 编号,跨关系机制推断,阿司匹林 → TFEB → Tau 溶酶体外排,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/32366951/,跨关系推断；需按实验背景解释
+阿司匹林,2244,胞外 Tau 摄取,0.8200,2,文献功能过程；非单一 KEGG 编号,跨关系机制推断,阿司匹林 → TFEB → 胞外 Tau 摄取,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/,跨关系推断；需按实验背景解释
+阿司匹林,2244,自噬过程,0.8200,2,hsa04140,跨关系机制推断,阿司匹林 → TFEB → 自噬过程,https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/29967008/,跨关系推断；需按实验背景解释
+咖啡因,2519,自噬过程,1.0000,1,hsa04140,直接文献关系,咖啡因 → 自噬过程,https://pubmed.ncbi.nlm.nih.gov/21081844/,原始研究条件下的机制依据
+咖啡因,2519,PI3K–AKT 信号,0.6970,2,hsa04151,跨关系机制推断,咖啡因 → AKT → PI3K–AKT 信号,https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04151,跨关系推断；需按实验背景解释
+咖啡因,2519,mTOR 信号,0.6970,2,hsa04150,跨关系机制推断,咖啡因 → mTORC1 → mTOR 信号,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04150,跨关系推断；需按实验背景解释
+咖啡因,2519,溶酶体生物发生,0.6724,3,hsa04142,跨关系机制推断,咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/22343943/,跨关系推断；需按实验背景解释
+CID 129908365,129908365,文献证据层未建立机制路径,,,,探索性候选,,https://pubchem.ncbi.nlm.nih.gov/compound/129908365,结构登记不作为 Tau 清除或 ULK1 激活证据

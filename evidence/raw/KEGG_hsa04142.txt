@@ -1,0 +1,433 @@
+ENTRY       hsa04142                    Pathway
+NAME        Lysosome biogenesis - Homo sapiens (human)
+DESCRIPTION Lysosomes are membrane-delimited organelles in animal cells serving as the cell's main digestive compartment to which all sorts of macromolecules are delivered for degradation. They contain more than 40 hydrolases in an acidic environment (pH of about 5). After synthesis in the ER, lysosomal enzymes are decorated with mannose-6-phosphate residues, which are recognized by mannose-6-phosphate receptors in the trans-Golgi network. They are packaged into clathrin-coated vesicles and are transported to late endosomes. Substances for digestion are acquired by the lysosomes via a series of processes including endocytosis, phagocytosis, and autophagy.
+CLASS       Cellular Processes; Transport and catabolism
+PATHWAY_MAP hsa04142  Lysosome biogenesis
+NETWORK     nt06012  Glycosaminoglycan degradation
+            nt06014  Sphingolipid degradation
+            nt06535  Efferocytosis
+            nt06550  Lysosome biogenesis
+            nt06551  Lysosome
+  ELEMENT   N00610  Dermatan sulfate degradation
+            N00615  Heparan sulfate degradation
+            N00623  Keratan sulfate degradation
+            N00640  Hydrolysis of lactosylceramide
+            N00644  Hydrolysis of galabiosylceramide
+            N00647  Hydrolysis of galactosylceramide sulfate
+            N00649  Hydrolysis of sphingomyelin
+            N01709  Hydrolysis of globoside
+            N01710  Hydrolysis of ganglioside
+            N01711  Hydrolysis of GA1
+            N01713  GM2A activation of HEXA and HEXB
+            N01780  Hydrolyzing AC-derived cholesterol esters in the lysosome
+            N02013  Lysosomal enzyme (LE) trafficking from ER-to-Golgi and retrieval of CLN8
+            N02014  M6P modification of lysosomal enzyme (LE) and binding to M6P-specific receptors
+            N02015  Lysosomal enzyme (LE) transport from the TGN to endosome
+            N02016  Retrieval of the lysosomal sorting receptors from the endosome
+            N02017  Retrieval of the lysosomal sorting receptor (CIMPR) from the endosome
+            N02018  LAMP1 transport from the endosome to the lysosome
+            N02019  CD63 or TYRP1 transport from the endosome to the lysosome-related organelles (LROs)
+            N02020  GCase transport from the ER to the lysosome
+            N02021  Autophagosome-lysosome fusion
+            N02022  Autophagosome-lysosome fusion (SNARE)
+            N02024  Recruitment of V-ATPase to lysosome
+            N02025  Lysosomal acidification
+            N02026  Transfer of cholesterol from NPC2 to NPC1
+            N02027  Export of Cholesterol from Lysosome
+            N02028  Import of Cholesterol to Lysosome
+            N02029  Export of Ca2+ from Lysosome
+            N02030  Export of Cl- from Lysosome
+            N02031  Export of Fe2+ from Lysosome
+            N02032  Export of nucleoside from Lysosome
+            N02033  Export of sialic acid from Lysosome
+            N02034  Export of cystine from Lysosome
+            N02035  PI(3,5)P2 regulation by the PIKfyve complex
+            N02036  Prosaposin (PSAP) cleavage into saposins
+            N02037  PGRN activation of cathepsin D
+            N02038  Cathepsin A activation of beta-galactosidase and neuraminidase
+            N02039  Saposin C stimulation of GBA
+            N02040  Saposin A stimulation of GALC
+            N02041  Saposin B stimulation of ARSA
+            N02042  Lysosomal glycogen degradation
+            N02043  SUMF1 activation of sulfatase
+            N02044  N-glycan degradation
+DRUG        D02784  Agalsidase alfa (USAN/INN)
+            D02810  Alglucerase (JAN/USAN/INN)
+            D03020  Imiglucerase (USAN/INN)
+            D03207  Alglucosidase alfa (USAN/INN)
+            D03228  Agalsidase beta (INN)
+            D04499  Idursulfase (USAN/INN)
+            D04670  Laronidase (USAN)
+            D05031  Migalastat hydrochloride (JAN/USAN)
+            D06565  Galsulfase (USAN/INN)
+            D08955  Odanacatib (JAN/USAN)
+            D09029  Velaglucerase alfa (USAN)
+            D09605  Duvoglustat (USAN/INN)
+            D09606  Duvoglustat hydrochloride (USAN)
+            D09675  Taliglucerase alfa (USAN/INN)
+            D10333  Elosulfase alfa (USAN)
+            D10377  Sebelipase alfa (USAN)
+            D10813  Cerliponase alfa (USAN/INN)
+            D10820  Olipudase alfa (USAN/INN)
+            D11004  Vestronidase alfa (USAN/INN)
+            D11024  Velmanase alfa (USAN/INN)
+            D11025  Idursulfase beta (INN)
+            D11685  Pegunigalsidase alfa (USAN/INN)
+            D11744  Avalglucosidase alfa (USAN/INN)
+            D11798  Cipaglucosidase alfa (USAN)
+            D11812  Pabinafusp alfa (genetical recombination) (JAN)
+            D11828  Clervonafusp alfa (USAN/INN)
+            D12120  Brensocatib (USAN/INN)
+            D12462  Cebsulfase alfa (USAN/INN)
+            D12580  Sudotaxel zendusortide (USAN/INN)
+            D12581  Zendusortide (USAN/INN)
+            D12746  Brensocatib hydrate (JAN)
+            D12806  Tividenofusp alfa (USAN/INN)
+            D12877  Atidarsagene autotemcel (USAN/INN)
+            D13242  Verenafusp alfa (INN)
+            D13278  Florensocatib (USAN/INN)
+DBLINKS     GO: 0005764
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        10053  AP1M2; AP-1 complex subunit mu-2 isoform 2 [KO:K12393]
+            101927180  ATP6V1FP2; V-type proton ATPase subunit F-like [KO:K02151]
+            10239  AP3S2; AP-3 complex subunit sigma-2 [KO:K12399]
+            10312  TCIRG1; V-type proton ATPase 116 kDa subunit a 3 isoform a [KO:K02154]
+            10325  RRAGB; ras-related GTP-binding protein B long isoform [KO:K16185]
+            10542  LAMTOR5; ragulator complex protein LAMTOR5 isoform 2 [KO:K16344]
+            10577  NPC2; NPC intracellular cholesterol transporter 2 isoform 2 precursor [KO:K13443]
+            10670  RRAGA; ras-related GTP-binding protein A [KO:K16185]
+            10717  AP4B1; AP-4 complex subunit beta-1 isoform 1 [KO:K12401]
+            1075  CTSC; dipeptidyl peptidase 1 isoform a preproprotein [KO:K01275] [EC:3.4.14.1]
+            10947  AP3M2; AP-3 complex subunit mu-2 [KO:K12398]
+            11154  AP4S1; AP-4 complex subunit sigma-1 isoform 2 [KO:K12403]
+            11182  SLC2A6; solute carrier family 2, facilitated glucose transporter member 6 isoform 1 [KO:K08144]
+            112936  VPS26B; vacuolar protein sorting-associated protein 26B [KO:K18466]
+            114876  OSBPL1A; oxysterol-binding protein-related protein 1 isoform 2 [KO:K20174]
+            114879  OSBPL5; oxysterol-binding protein-related protein 5 isoform a [KO:K20464]
+            114880  OSBPL6; oxysterol-binding protein-related protein 6 isoform a [KO:K20463]
+            114881  OSBPL7; oxysterol-binding protein-related protein 7 [KO:K20463]
+            1173  AP2M1; AP-2 complex subunit mu isoform a [KO:K11826]
+            1174  AP1S1; AP-1 complex subunit sigma-1A [KO:K12394]
+            1175  AP2S1; AP-2 complex subunit sigma isoform AP17 [KO:K11827]
+            1176  AP3S1; AP-3 complex subunit sigma-1 isoform 1 [KO:K12399]
+            118426  BORCS5; BLOC-1-related complex subunit 5 isoform 1 [KO:K20819]
+            1186  CLCN7; H(+)/Cl(-) exchange transporter 7 isoform a [KO:K05016]
+            119032  BORCS7; BLOC-1-related complex subunit 7 [KO:K20821]
+            1200  TPP1; tripeptidyl-peptidase 1 preproprotein [KO:K01279] [EC:3.4.14.9]
+            1201  CLN3; battenin isoform a [KO:K12389]
+            120103  SLC36A4; neutral amino acid uniporter 4 isoform 1 [KO:K14209]
+            1203  CLN5; bis(monoacylglycero)phosphate synthase CLN5 isoform 1 [KO:K12390]
+            1211  CLTA; clathrin light chain A isoform b [KO:K04644]
+            1212  CLTB; clathrin light chain B isoform b [KO:K04645]
+            121260  SLC15A4; solute carrier family 15 member 4 [KO:K14638]
+            1213  CLTC; clathrin heavy chain 1 isoform 1 [KO:K04646]
+            127124  ATP6V1G3; V-type proton ATPase subunit G 3 isoform a [KO:K02152]
+            127829  ARL8A; ADP-ribosylation factor-like protein 8A isoform 1 [KO:K07955]
+            130340  AP1S3; AP-1 complex subunit sigma-3 [KO:K12395]
+            135112  NCOA7; nuclear receptor coactivator 7 isoform 1 [KO:K25442]
+            138050  HGSNAT; heparan-alpha-glucosaminide N-acetyltransferase isoform 2 precursor [KO:K10532] [EC:2.3.1.78]
+            1486  CTBS; di-N-acetylchitobiase precursor [KO:K12310] [EC:3.2.1.-]
+            1497  CTNS; cystinosin isoform 2 precursor [KO:K12386]
+            1508  CTSB; cathepsin B isoform 1 preproprotein [KO:K01363] [EC:3.4.22.1]
+            1509  CTSD; cathepsin D preproprotein [KO:K01379] [EC:3.4.23.5]
+            1510  CTSE; cathepsin E isoform a preproprotein [KO:K01382] [EC:3.4.23.34]
+            1511  CTSG; cathepsin G preproprotein [KO:K01319] [EC:3.4.21.20]
+            1512  CTSH; pro-cathepsin H isoform a preproprotein [KO:K01366] [EC:3.4.22.16]
+            1513  CTSK; cathepsin K preproprotein [KO:K01371] [EC:3.4.22.38]
+            1514  CTSL; procathepsin L isoform 1 preproprotein [KO:K01365] [EC:3.4.22.15]
+            1515  CTSV; cathepsin L2 preproprotein [KO:K01375] [EC:3.4.22.43]
+            151556  GPR155; lysosomal cholesterol signaling protein isoform 1 [KO:K28455]
+            1519  CTSO; cathepsin O preproprotein [KO:K01374] [EC:3.4.22.42]
+            1520  CTSS; cathepsin S isoform 1 preproprotein [KO:K01368] [EC:3.4.22.27]
+            1521  CTSW; cathepsin W preproprotein [KO:K08569] [EC:3.4.22.-]
+            1522  CTSZ; cathepsin Z preproprotein [KO:K08568] [EC:3.4.18.1]
+            153129  SLC38A9; neutral amino acid transporter 9 isoform 1 [KO:K14995]
+            153201  SLC36A2; proton-coupled amino acid transporter 2 [KO:K14209]
+            155066  ATP6V0E2; V-type proton ATPase subunit e 2 isoform 1 [KO:K02153]
+            160  AP2A1; AP-2 complex subunit alpha-1 isoform 1 [KO:K11824]
+            161  AP2A2; AP-2 complex subunit alpha-2 isoform 2 [KO:K11824]
+            162  AP1B1; AP-1 complex subunit beta-1 isoform a [KO:K12392]
+            163  AP2B1; AP-2 complex subunit beta isoform b [KO:K11825]
+            164  AP1G1; AP-1 complex subunit gamma-1 isoform b [KO:K12391]
+            1657  DMXL1; dmX-like protein 1 isoform 2 [KO:K24155]
+            175  AGA; N(4)-(beta-N-acetylglucosaminyl)-L-asparaginase isoform 1 preproprotein [KO:K01444] [EC:3.5.1.26]
+            1777  DNASE2; deoxyribonuclease-2-alpha precursor [KO:K01158] [EC:3.1.22.1]
+            20  ABCA2; ATP-binding cassette sub-family A member 2 isoform c [KO:K05642]
+            200576  PIKFYVE; 1-phosphatidylinositol 3-phosphate 5-kinase isoform 2 [KO:K00921] [EC:2.7.1.150]
+            2030  SLC29A1; equilibrative nucleoside transporter 1 isoform 1 [KO:K15014]
+            2055  CLN8; protein CLN8 [KO:K12360]
+            206358  SLC36A1; proton-coupled amino acid transporter 1 isoform a [KO:K14209]
+            219931  TPCN2; two pore channel protein 2 [KO:K14077]
+            22901  ARSG; arylsulfatase G isoform 1 precursor [KO:K12381] [EC:3.1.6.-]
+            23062  GGA2; ADP-ribosylation factor-binding protein GGA2 [KO:K12404]
+            23163  GGA3; ADP-ribosylation factor-binding protein GGA3 isoform long [KO:K12404]
+            23230  VPS13A; intermembrane lipid transfer protein VPS13A isoform A [KO:K19525]
+            23312  DMXL2; dmX-like protein 2 isoform 2 [KO:K24155]
+            23335  WDR7; WD repeat-containing protein 7 isoform 1 [KO:K24738]
+            23339  VPS39; vam6/Vps39-like protein isoform a [KO:K20183]
+            23431  AP4E1; AP-4 complex subunit epsilon-1 isoform 1 [KO:K12400]
+            23457  ABCB9; ABC-type oligopeptide transporter ABCB9 isoform 1 [KO:K05656]
+            23461  ABCA5; cholesterol transporter ABCA5 [KO:K05648]
+            23503  ZFYVE26; zinc finger FYVE domain-containing protein 26 [KO:K19027]
+            23545  ATP6V0A2; V-type proton ATPase 116 kDa subunit a 2 [KO:K02154]
+            23553  HYAL4; hyaluronidase-4 [KO:K01197] [EC:3.2.1.35]
+            23557  SNAPIN; SNARE-associated protein Snapin [KO:K20002]
+            23659  PLA2G15; lysosomal phospholipase A and acyltransferase isoform 1 precursor [KO:K06129] [EC:3.1.1.5]
+            24141  LAMP5; lysosome-associated membrane glycoprotein 5 isoform 1 precursor [KO:K28774]
+            245972  ATP6V0D2; V-type proton ATPase subunit d 2 [KO:K02146]
+            245973  ATP6V1C2; V-type proton ATPase subunit C 2 isoform a [KO:K02148]
+            2475  MTOR; serine/threonine-protein kinase mTOR isoform 1 [KO:K07203] [EC:2.7.11.1]
+            2517  FUCA1; tissue alpha-L-fucosidase precursor [KO:K01206] [EC:3.2.1.51]
+            2519  FUCA2; plasma alpha-L-fucosidase precursor [KO:K01206] [EC:3.2.1.51]
+            2548  GAA; lysosomal alpha-glucosidase preproprotein [KO:K12316] [EC:3.2.1.20]
+            255231  MCOLN2; mucolipin-2 isoform 1 [KO:K04993]
+            256471  MFSD8; major facilitator superfamily domain-containing protein 8 isoform 1 [KO:K12307]
+            2581  GALC; galactocerebrosidase isoform a precursor [KO:K01202] [EC:3.2.1.46]
+            2588  GALNS; N-acetylgalactosamine-6-sulfatase isoform 1 precursor [KO:K01132] [EC:3.1.6.4]
+            26031  OSBPL3; oxysterol-binding protein-related protein 3 isoform a [KO:K20463]
+            26088  GGA1; ADP-ribosylation factor-binding protein GGA1 isoform 1 [KO:K12404]
+            26175  LYSET; lysosomal enzyme trafficking factor isoform 1 [KO:K26747]
+            26258  BLOC1S6; biogenesis of lysosome-related organelles complex 1 subunit 6 isoform 2 [KO:K20188]
+            2629  GBA1; lysosomal acid glucosylceramidase isoform 1 precursor [KO:K01201] [EC:3.2.1.45]
+            2647  BLOC1S1; biogenesis of lysosome-related organelles complex 1 subunit 1 [KO:K20185]
+            26503  SLC17A5; sialin isoform 1 [KO:K12301]
+            26985  AP3M1; AP-3 complex subunit mu-1 isoform a [KO:K12398]
+            27072  VPS41; vacuolar protein sorting-associated protein 41 homolog isoform 1 [KO:K20184]
+            27074  LAMP3; lysosome-associated membrane glycoprotein 3 precursor [KO:K06562]
+            2717  GLA; alpha-galactosidase A isoform b precursor [KO:K01189] [EC:3.2.1.22]
+            2720  GLB1; beta-galactosidase isoform a preproprotein [KO:K12309] [EC:3.2.1.23]
+            2760  GM2A; ganglioside GM2 activator isoform 1 precursor [KO:K12383]
+            2799  GNS; N-acetylglucosamine-6-sulfatase precursor [KO:K01137] [EC:3.1.6.14]
+            282991  BLOC1S2; biogenesis of lysosome-related organelles complex 1 subunit 2 isoform 1 [KO:K16750]
+            285362  SUMF1; formylglycine-generating enzyme isoform 1 precursor [KO:K13444] [EC:1.8.3.7]
+            285641  SLC36A3; proton-coupled amino acid transporter 3 isoform 2 [KO:K14209]
+            28956  LAMTOR2; ragulator complex protein LAMTOR2 isoform 1 [KO:K20398]
+            28962  OSTM1; osteopetrosis-associated transmembrane protein 1 precursor [KO:K23863]
+            2990  GUSB; beta-glucuronidase isoform 1 precursor [KO:K01195] [EC:3.2.1.31]
+            3073  HEXA; beta-hexosaminidase subunit alpha isoform 2 preproprotein [KO:K12373] [EC:3.2.1.52]
+            3074  HEXB; beta-hexosaminidase subunit beta isoform 1 preproprotein [KO:K12373] [EC:3.2.1.52]
+            3177  SLC29A2; equilibrative nucleoside transporter 2 isoform a [KO:K15014]
+            3373  HYAL1; hyaluronidase-1 isoform 1 precursor [KO:K01197] [EC:3.2.1.35]
+            3423  IDS; iduronate 2-sulfatase isoform a preproprotein [KO:K01136] [EC:3.1.6.13]
+            3425  IDUA; alpha-L-iduronidase isoform a precursor [KO:K01217] [EC:3.2.1.76]
+            3482  IGF2R; cation-independent mannose-6-phosphate receptor precursor [KO:K06564]
+            388552  BLOC1S3; biogenesis of lysosome-related organelles complex 1 subunit 3 [KO:K20186]
+            389541  LAMTOR4; ragulator complex protein LAMTOR4 isoform 1 [KO:K20399]
+            3916  LAMP1; lysosome-associated membrane glycoprotein 1 precursor [KO:K06528]
+            3920  LAMP2; lysosome-associated membrane glycoprotein 2 isoform A precursor [KO:K06528]
+            3988  LIPA; lysosomal acid lipase/cholesteryl ester hydrolase isoform 1 precursor [KO:K01052] [EC:3.1.1.13]
+            4074  M6PR; cation-dependent mannose-6-phosphate receptor isoform 1 precursor [KO:K10089]
+            410  ARSA; arylsulfatase A isoform a precursor [KO:K01134] [EC:3.1.6.8]
+            411  ARSB; arylsulfatase B isoform 1 precursor [KO:K01135] [EC:3.1.6.12]
+            4125  MAN2B1; lysosomal alpha-mannosidase isoform 1 precursor [KO:K12311] [EC:3.2.1.24]
+            4126  MANBA; beta-mannosidase precursor [KO:K01192] [EC:3.2.1.25]
+            427  ASAH1; acid ceramidase isoform a preproprotein [KO:K12348] [EC:3.5.1.23]
+            4286  MITF; microphthalmia-associated transcription factor isoform 9 [KO:K09455]
+            4668  NAGA; alpha-N-acetylgalactosaminidase precursor [KO:K01204] [EC:3.2.1.49]
+            4669  NAGLU; alpha-N-acetylglucosaminidase precursor [KO:K01205] [EC:3.2.1.50]
+            4758  NEU1; sialidase-1 precursor [KO:K01186] [EC:3.2.1.18]
+            4864  NPC1; NPC intracellular cholesterol transporter 1 precursor [KO:K12385]
+            4891  SLC11A2; natural resistance-associated macrophage protein 2 isoform 2 [KO:K21398]
+            5007  OSBP; oxysterol-binding protein 1 [KO:K20456]
+            50617  ATP6V0A4; V-type proton ATPase 116 kDa subunit a 4 [KO:K02154]
+            51172  NAGPA; N-acetylglucosamine-1-phosphodiester alpha-N-acetylglucosaminidase precursor [KO:K01125] [EC:3.1.4.45]
+            51284  TLR7; toll-like receptor 7 precursor [KO:K05404]
+            51296  SLC15A3; solute carrier family 15 member 3 [KO:K14638]
+            51311  TLR8; toll-like receptor 8 isoform 2 precursor [KO:K10170]
+            51382  ATP6V1D; V-type proton ATPase subunit D [KO:K02149]
+            51606  ATP6V1H; V-type proton ATPase subunit H isoform 1 [KO:K02144]
+            51699  VPS29; vacuolar protein sorting-associated protein 29 isoform 1 [KO:K18467]
+            523  ATP6V1A; V-type proton ATPase catalytic subunit A [KO:K02145] [EC:7.1.2.2]
+            525  ATP6V1B1; V-type proton ATPase subunit B, kidney isoform [KO:K02147]
+            526  ATP6V1B2; V-type proton ATPase subunit B, brain isoform [KO:K02147]
+            527  ATP6V0C; V-type proton ATPase 16 kDa proteolipid subunit c [KO:K02155]
+            528  ATP6V1C1; V-type proton ATPase subunit C 1 [KO:K02148]
+            529  ATP6V1E1; V-type proton ATPase subunit E 1 isoform a [KO:K02150]
+            53  ACP2; lysosomal acid phosphatase isoform 1 precursor [KO:K14410] [EC:3.1.3.2]
+            533  ATP6V0B; V-type proton ATPase 21 kDa proteolipid subunit c'' isoform 1 [KO:K03661]
+            53373  TPCN1; two pore channel protein 1 isoform 2 [KO:K16896]
+            534  ATP6V1G2; V-type proton ATPase subunit G 2 isoform a [KO:K02152]
+            535  ATP6V0A1; V-type proton ATPase 116 kDa subunit a 1 isoform 1 [KO:K02154]
+            537  ATP6AP1; V-type proton ATPase subunit S1 precursor [KO:K03662]
+            54  ACP5; tartrate-resistant acid phosphatase type 5 precursor [KO:K14379] [EC:3.1.3.2]
+            54106  TLR9; toll-like receptor 9 precursor [KO:K10161]
+            5476  CTSA; lysosomal protective protein isoform b preproprotein [KO:K13289] [EC:3.4.16.5]
+            54785  BORCS6; BLOC-1-related complex subunit 6 [KO:K20820]
+            54832  VPS13C; intermembrane lipid transfer protein VPS13C isoform 2A [KO:K19525]
+            54982  CLN6; ceroid-lipofuscinosis neuronal protein 6 isoform 1 [KO:K12359]
+            55004  LAMTOR1; ragulator complex protein LAMTOR1 [KO:K20397]
+            55014  STX17; syntaxin-17 [KO:K08491]
+            55207  ARL8B; ADP-ribosylation factor-like protein 8B [KO:K07955]
+            55283  MCOLN3; mucolipin-3 isoform 1 [KO:K04994]
+            55315  SLC29A3; equilibrative nucleoside transporter 3 isoform a [KO:K15014]
+            55317  AP5S1; AP-5 complex subunit sigma-1 [KO:K19024]
+            55330  BLOC1S4; biogenesis of lysosome-related organelles complex 1 subunit 4 [KO:K08366]
+            55353  LAPTM4B; lysosomal-associated transmembrane protein 4B [KO:K12387]
+            5538  PPT1; palmitoyl-protein thioesterase 1 isoform 1 precursor [KO:K01074] [EC:3.1.2.22]
+            55737  VPS35; vacuolar protein sorting-associated protein 35 [KO:K18468]
+            55745  AP5M1; AP-5 complex subunit mu-1 [KO:K19023]
+            55823  VPS11; vacuolar protein sorting-associated protein 11 homolog isoform 1 [KO:K20179]
+            5641  LGMN; legumain isoform 1 preproprotein [KO:K01369] [EC:3.4.22.34]
+            5660  PSAP; prosaposin isoform a preproprotein [KO:K12382]
+            57192  MCOLN1; mucolipin-1 [KO:K04992]
+            57521  RPTOR; regulatory-associated protein of mTOR isoform 1 [KO:K07204]
+            57617  VPS18; vacuolar protein sorting-associated protein 18 homolog [KO:K20181]
+            57707  MEAK7; MTOR-associated protein MEAK7 [KO:K27947]
+            58511  DNASE2B; deoxyribonuclease-2-beta isoform 1 precursor [KO:K01158] [EC:3.1.22.1]
+            58528  RRAGD; ras-related GTP-binding protein D [KO:K16186]
+            6272  SORT1; sortilin isoform 1 preproprotein [KO:K12388]
+            63915  BLOC1S5; biogenesis of lysosome-related organelles complex 1 subunit 5 isoform 1 [KO:K20187]
+            64121  RRAGC; ras-related GTP-binding protein C isoform 1 [KO:K16186]
+            64223  MLST8; target of rapamycin complex subunit LST8 isoform a [KO:K08266]
+            6448  SGSH; N-sulphoglucosamine sulphohydrolase isoform 1 precursor [KO:K01565] [EC:3.10.1.1]
+            64601  VPS16; vacuolar protein sorting-associated protein 16 homolog isoform 1 [KO:K20180]
+            64798  DEPTOR; DEP domain-containing mTOR-interacting protein isoform 1 [KO:K20402]
+            65082  VPS33A; vacuolar protein sorting-associated protein 33A isoform 1 [KO:K20182]
+            6556  SLC11A1; natural resistance-associated macrophage protein 1 [KO:K12347]
+            6609  SMPD1; sphingomyelin phosphodiesterase isoform 1 precursor [KO:K12350] [EC:3.1.4.12]
+            6677  SPAM1; hyaluronidase PH-20 isoform 2 [KO:K01197] [EC:3.2.1.35]
+            6845  VAMP7; vesicle-associated membrane protein 7 isoform 1 [KO:K08515]
+            7030  TFE3; transcription factor E3 isoform 1 [KO:K09105]
+            7098  TLR3; toll-like receptor 3 precursor [KO:K05401]
+            729991  BORCS8; BLOC-1-related complex subunit 8 isoform 1 [KO:K20822]
+            768239  PSAPL1; proactivator polypeptide-like 1 preproprotein [KO:K12382]
+            7805  LAPTM5; lysosomal-associated transmembrane protein 5 [KO:K12387]
+            7879  RAB7A; ras-related protein Rab-7a [KO:K07897]
+            79036  KXD1; kxDL motif-containing protein 1 [KO:K20818]
+            79158  GNPTAB; N-acetylglucosamine-1-phosphotransferase subunits alpha/beta precursor [KO:K08239] [EC:2.7.8.17]
+            7942  TFEB; transcription factor EB isoform 1 [KO:K15590]
+            79641  ROGDI; protein rogdi homolog [KO:K24628]
+            80208  SPG11; spatacsin isoform 1 [KO:K19026]
+            8120  AP3B2; AP-3 complex subunit beta-2 isoform 2 [KO:K12397]
+            8218  CLTCL1; clathrin heavy chain 2 isoform 1 [KO:K04646]
+            8372  HYAL3; hyaluronidase-3 isoform 1 precursor [KO:K01197] [EC:3.2.1.35]
+            84062  DTNBP1; dysbindin isoform a [KO:K20189]
+            84286  TMEM175; endosomal/lysosomal proton channel TMEM175 isoform 1 [KO:K24915]
+            84335  AKT1S1; proline-rich AKT1 substrate 1 isoform b [KO:K16184]
+            84572  GNPTG; N-acetylglucosamine-1-phosphotransferase subunit gamma precursor [KO:K10087]
+            8546  AP3B1; AP-3 complex subunit beta-1 isoform 1 [KO:K12397]
+            8649  LAMTOR3; ragulator complex protein LAMTOR3 isoform 1 [KO:K04370]
+            8673  VAMP8; vesicle-associated membrane protein 8 [KO:K08512]
+            8692  HYAL2; hyaluronidase-2 precursor [KO:K01197] [EC:3.2.1.35]
+            8722  CTSF; cathepsin F precursor [KO:K01373] [EC:3.4.22.41]
+            8763  CD164; sialomucin core protein 24 isoform 1 precursor [KO:K06546]
+            8905  AP1S2; AP-1 complex subunit sigma-2 isoform 2 [KO:K12394]
+            8906  AP1G2; AP-1 complex subunit gamma-like 2 isoform 1 [KO:K12391]
+            8907  AP1M1; AP-1 complex subunit mu-1 isoform 2 [KO:K12393]
+            8943  AP3D1; AP-3 complex subunit delta-1 isoform 2 [KO:K12396]
+            8992  ATP6V0E1; V-type proton ATPase subunit e 1 [KO:K02153]
+            90423  ATP6V1E2; V-type proton ATPase subunit E 2 [KO:K02150]
+            91056  AP5B1; AP-5 complex subunit beta-1 [KO:K19022]
+            9114  ATP6V0D1; V-type proton ATPase subunit d 1 [KO:K02146]
+            9179  AP4M1; AP-4 complex subunit mu-1 isoform 1 [KO:K12402]
+            9296  ATP6V1F; V-type proton ATPase subunit F isoform 1 [KO:K02151]
+            9342  SNAP29; synaptosomal-associated protein 29 [KO:K08509]
+            9374  PPT2; lysosomal thioesterase PPT2 isoform a precursor [KO:K01074] [EC:3.1.2.22]
+            9476  NAPSA; napsin-A isoform 1 preproprotein [KO:K08565] [EC:3.4.23.-]
+            950  SCARB2; lysosome membrane protein 2 isoform 1 [KO:K12384]
+            9516  LITAF; lipopolysaccharide-induced tumor necrosis factor-alpha factor isoform 1 [KO:K19363]
+            9550  ATP6V1G1; V-type proton ATPase subunit G 1 [KO:K02152]
+            9559  VPS26A; vacuolar protein sorting-associated protein 26A isoform 1 [KO:K18466]
+            9583  ENTPD4; ectonucleoside triphosphate diphosphohydrolase 4 isoform a [KO:K12305] [EC:3.6.1.6]
+            967  CD63; CD63 antigen isoform A [KO:K06497]
+            9675  TTI1; TELO2-interacting protein 1 homolog [KO:K20403]
+            968  CD68; macrosialin isoform A precursor [KO:K06501]
+            9741  LAPTM4A; lysosomal-associated transmembrane protein 4A [KO:K12387]
+            9842  PLEKHM1; pleckstrin homology domain-containing family M member 1 isoform 1 [KO:K23282]
+            9885  OSBPL2; oxysterol-binding protein-related protein 2 isoform 2 [KO:K20174]
+            9894  TELO2; telomere length regulation protein TEL2 homolog [KO:K11137]
+            9896  FIG4; polyphosphoinositide phosphatase [KO:K22913] [EC:3.1.3.-]
+            9907  AP5Z1; AP-5 complex subunit zeta-1 isoform 1 [KO:K19025]
+COMPOUND    C00002  ATP
+            C00008  ADP
+REFERENCE   PMID:12628346
+  AUTHORS   Eskelinen EL, Tanaka Y, Saftig P
+  TITLE     At the acidic edge: emerging functions for lysosomal membrane proteins.
+  JOURNAL   Trends Cell Biol 13:137-45 (2003)
+            DOI:10.1016/S0962-8924(03)00005-9
+REFERENCE   PMID:1883197
+  AUTHORS   Neufeld EF
+  TITLE     Lysosomal storage diseases.
+  JOURNAL   Annu Rev Biochem 60:257-80 (1991)
+            DOI:10.1146/annurev.bi.60.070191.001353
+REFERENCE   PMID:2943218
+  AUTHORS   von Figura K, Hasilik A
+  TITLE     Lysosomal enzymes and their receptors.
+  JOURNAL   Annu Rev Biochem 55:167-93 (1986)
+            DOI:10.1146/annurev.bi.55.070186.001123
+REFERENCE   PMID:15987739
+  AUTHORS   Janvier K, Bonifacino JS
+  TITLE     Role of the endocytic machinery in the sorting of lysosome-associated membrane proteins.
+  JOURNAL   Mol Biol Cell 16:4231-42 (2005)
+            DOI:10.1091/mbc.E05-03-0213
+REFERENCE   PMID:18635948
+  AUTHORS   Vergarajauregui S, Puertollano R
+  TITLE     Mucolipidosis type IV: the importance of functional lysosomes for efficient autophagy.
+  JOURNAL   Autophagy 4:832-4 (2008)
+            DOI:10.4161/auto.6567
+REFERENCE   PMID:34249946
+  AUTHORS   Jaskolka MC, Winkley SR, Kane PM
+  TITLE     RAVE and Rabconnectin-3 Complexes as Signal Dependent Regulators of Organelle Acidification.
+  JOURNAL   Front Cell Dev Biol 9:698190 (2021)
+            DOI:10.3389/fcell.2021.698190
+REFERENCE   PMID:34646033
+  AUTHORS   Majdoul S, Compton AA
+  TITLE     Lessons in self-defence: inhibition of virus entry by intrinsic immunity.
+  JOURNAL   Nat Rev Immunol 22:339-352 (2022)
+            DOI:10.1038/s41577-021-00626-8
+REFERENCE   PMID:19672277
+  AUTHORS   Saftig P, Klumperman J
+  TITLE     Lysosome biogenesis and lysosomal membrane proteins: trafficking meets function.
+  JOURNAL   Nat Rev Mol Cell Biol 10:623-35 (2009)
+            DOI:10.1038/nrm2745
+REFERENCE   PMID:31611045
+  AUTHORS   Savini M, Zhao Q, Wang MC
+  TITLE     Lysosomes: Signaling Hubs for Metabolic Sensing and Longevity.
+  JOURNAL   Trends Cell Biol 29:876-887 (2019)
+            DOI:10.1016/j.tcb.2019.08.008
+REFERENCE   PMID:33433692
+  AUTHORS   Meyer-Schwesinger C
+  TITLE     Lysosome function in glomerular health and disease.
+  JOURNAL   Cell Tissue Res 385:371-392 (2021)
+            DOI:10.1007/s00441-020-03375-7
+REFERENCE   PMID:34345172
+  AUTHORS   Allemailem KS, Almatroudi A, Alrumaihi F, Almatroodi SA, Alkurbi MO, Basfar GT, Rahmani AH, Khan AA
+  TITLE     Novel Approaches of Dysregulating Lysosome Functions in Cancer Cells by Specific Drugs and Its Nanoformulations: A Smart Approach of Modern Therapeutics.
+  JOURNAL   Int J Nanomedicine 16:5065-5098 (2021)
+            DOI:10.2147/IJN.S321343
+REFERENCE   PMID:36096887
+  AUTHORS   Zhang W, Yang X, Li Y, Yu L, Zhang B, Zhang J, Cho WJ, Venkatarangan V, Chen L, Burugula BB, Bui S, Wang Y, Duan C, Kitzman JO, Li M
+  TITLE     GCAF(TMEM251) regulates lysosome biogenesis by activating the mannose-6-phosphate pathway.
+  JOURNAL   Nat Commun 13:5351 (2022)
+            DOI:10.1038/s41467-022-33025-1
+REFERENCE   PMID:38357444
+  AUTHORS   Liu Q, Wang W, Xu L, Zhang Q, Wang H
+  TITLE     The host mannose-6-phosphate pathway and viral infection.
+  JOURNAL   Front Cell Infect Microbiol 14:1349221 (2024)
+            DOI:10.3389/fcimb.2024.1349221
+REFERENCE   PMID:38711187
+  AUTHORS   He Y, Fan Y, Ahmadpoor X, Wang Y, Li ZA, Zhu W, Lin H
+  TITLE     Targeting lysosomal quality control as a therapeutic strategy against aging and diseases.
+  JOURNAL   Med Res Rev 44:2472-2509 (2024)
+            DOI:10.1002/med.22047
+REFERENCE   PMID:40759742
+  AUTHORS   Radulovic M, Yang C, Stenmark H
+  TITLE     Lysosomal membrane homeostasis and its importance in physiology and disease.
+  JOURNAL   Nat Rev Mol Cell Biol 27:71-87 (2026)
+            DOI:10.1038/s41580-025-00873-w
+REFERENCE   PMID:41214333
+  AUTHORS   Watson ET, Wegeng WR, Aravani S, Ernst AM, von Blume J
+  TITLE     Mechanistic insights into cargo sorting and export from the Golgi apparatus.
+  JOURNAL   Nat Rev Mol Cell Biol 26:940-956 (2025)
+            DOI:10.1038/s41580-025-00907-3
+REL_PATHWAY hsa00511  Other glycan degradation
+            hsa00531  Glycosaminoglycan degradation
+            hsa04130  SNARE interactions in vesicular transport
+            hsa04140  Autophagy - animal
+            hsa04144  Endocytosis
+            hsa04145  Phagocytosis
+            hsa04150  mTOR signaling pathway
+            hsa04620  Toll-like receptor signaling pathway
+KO_PATHWAY  ko04142
+///
+

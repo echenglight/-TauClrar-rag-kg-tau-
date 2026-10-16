@@ -1,0 +1,24 @@
+﻿化合物,PubChem CID,候选实体,实体类型,规则分数,跳数,证据属性,有向路径,来源,模型模块,解释范围
+阿司匹林,2244,Aβ 斑块负荷,实验终点,1.0000,1,直接文献关系,阿司匹林 → Aβ 斑块负荷,https://pubmed.ncbi.nlm.nih.gov/29967008/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,PPARα,蛋白 / 复合体,1.0000,1,直接文献关系,阿司匹林 → PPARα,https://pubmed.ncbi.nlm.nih.gov/29967008/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,TFEB,蛋白 / 复合体,1.0000,1,直接文献关系,阿司匹林 → TFEB,https://pubmed.ncbi.nlm.nih.gov/29967008/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,溶酶体生物发生,通路 / 生物过程,1.0000,1,直接文献关系,阿司匹林 → 溶酶体生物发生,https://pubmed.ncbi.nlm.nih.gov/29967008/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,Tau 清除相关过程,通路 / 生物过程,0.8200,2,跨关系机制推断,阿司匹林 → TFEB → Tau 清除相关过程,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,Tau 溶酶体外排,通路 / 生物过程,0.8200,2,跨关系机制推断,阿司匹林 → TFEB → Tau 溶酶体外排,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/32366951/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,Tau 病理传播,实验终点,0.8200,2,跨关系机制推断,阿司匹林 → TFEB → Tau 病理传播,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,胞外 Tau 摄取,通路 / 生物过程,0.8200,2,跨关系机制推断,阿司匹林 → TFEB → 胞外 Tau 摄取,https://pubmed.ncbi.nlm.nih.gov/29967008/; https://pubmed.ncbi.nlm.nih.gov/30108137/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+阿司匹林,2244,自噬过程,通路 / 生物过程,0.8200,2,跨关系机制推断,阿司匹林 → TFEB → 自噬过程,https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/29967008/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,4E-BP1,蛋白 / 复合体,1.0000,1,直接文献关系,咖啡因 → 4E-BP1,https://pubmed.ncbi.nlm.nih.gov/21081844/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,AKT,蛋白 / 复合体,1.0000,1,直接文献关系,咖啡因 → AKT,https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,S6,蛋白 / 复合体,1.0000,1,直接文献关系,咖啡因 → S6,https://pubmed.ncbi.nlm.nih.gov/21081844/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,Tau 磷酸化,实验终点,1.0000,1,直接文献关系,咖啡因 → Tau 磷酸化,https://pubmed.ncbi.nlm.nih.gov/20838929/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,mTORC1,蛋白 / 复合体,1.0000,1,直接文献关系,咖啡因 → mTORC1,https://pubmed.ncbi.nlm.nih.gov/21081844/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,p70S6K,蛋白 / 复合体,1.0000,1,直接文献关系,咖啡因 → p70S6K,https://pubmed.ncbi.nlm.nih.gov/21081844/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,自噬过程,通路 / 生物过程,1.0000,1,直接文献关系,咖啡因 → 自噬过程,https://pubmed.ncbi.nlm.nih.gov/21081844/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,TFEB 核转位,实验终点,0.8200,2,跨关系机制推断,咖啡因 → mTORC1 → TFEB 核转位,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/22343943/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,ULK1,蛋白 / 复合体,0.8200,2,跨关系机制推断,咖啡因 → mTORC1 → ULK1,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21258367/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,PI3K–AKT 信号,通路 / 生物过程,0.6970,2,跨关系机制推断,咖啡因 → AKT → PI3K–AKT 信号,https://pubmed.ncbi.nlm.nih.gov/20838929/; https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04151,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,mTOR 信号,通路 / 生物过程,0.6970,2,跨关系机制推断,咖啡因 → mTORC1 → mTOR 信号,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://www.kegg.jp/entry/hsa04150,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,溶酶体生物发生,通路 / 生物过程,0.6724,3,跨关系机制推断,咖啡因 → mTORC1 → TFEB 核转位 → 溶酶体生物发生,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21617040/; https://pubmed.ncbi.nlm.nih.gov/22343943/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+咖啡因,2519,自噬体形成,实验终点,0.6724,3,跨关系机制推断,咖啡因 → mTORC1 → ULK1 → 自噬体形成,https://pubmed.ncbi.nlm.nih.gov/21081844/; https://pubmed.ncbi.nlm.nih.gov/21258367/,EvidenceGraphRank-v2,机制关联排序；不代表药效、概率或训练型 GNN 精度
+CID 129908365,129908365,文献证据层未建立机制路径,候选状态,,,化学身份已核实；机制为待验证假设,,https://pubchem.ncbi.nlm.nih.gov/compound/129908365,EvidenceGraphRank-v2,旧版两条预测关系隔离在假设层，不纳入文献排序

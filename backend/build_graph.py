@@ -1,7 +1,7 @@
-"""将 mock_data.json 导入 Neo4j（优化版）。
+"""将 literature_graph.json 导入 Neo4j（优化版）。
 
 用法：
-    python build_graph.py --data data/mock_data.json --wipe
+    python build_graph.py --data data/literature_graph.json --wipe
 """
 
 from __future__ import annotations
@@ -44,7 +44,11 @@ def upsert_edges(tx, edges: list[dict]) -> None:
     MERGE (s)-[r:RELATED_TO {id: e.id}]->(t)
     SET r.rel_type = e.type,
         r.weight = e.weight,
-        r.evidence = e.evidence
+        r.evidence = e.evidence,
+        r.source_ids = e.source_ids,
+        r.evidence_status = e.evidence_status,
+        r.context = e.context,
+        r.label = e.label
     RETURN count(r) AS c
     """
     tx.run(query, edges=edges)
@@ -60,11 +64,11 @@ def clear_graph(tx) -> None:
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Mock 图谱导入 Neo4j")
+    parser = argparse.ArgumentParser(description="文献图谱导入 Neo4j")
     parser.add_argument("--uri", default="bolt://localhost:7687")
     parser.add_argument("--user", default="neo4j")
     parser.add_argument("--password", default="change_me")
-    parser.add_argument("--data", default="data/mock_data.json")
+    parser.add_argument("--data", default="data/literature_graph.json")
     parser.add_argument("--wipe", action="store_true", help="导入前清空图数据库")
     args = parser.parse_args()
 

@@ -28,12 +28,19 @@ class GNNPrediction(BaseModel):
     node_type: str
     score: float
     explanation: str
+    path_node_ids: list[str] = Field(default_factory=list)
+    path_edge_ids: list[str] = Field(default_factory=list)
+    source_ids: list[str] = Field(default_factory=list)
+    evidence_status: str = "cross_study_inference"
+    hops: int = 0
 
 
 class GNNResult(BaseModel):
     model_name: str
     top_k: int
     predictions: list[GNNPrediction] = Field(default_factory=list)
+    method: str = "directed_evidence_weighted_graph_ranking"
+    trained_neural_network: bool = False
 
 
 class IntegratedSearchResponse(BaseModel):

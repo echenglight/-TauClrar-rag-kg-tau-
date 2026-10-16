@@ -1,0 +1,13 @@
+{
+  "PropertyTable": {
+    "Properties": [
+      {
+        "CID": 129908365,
+        "MolecularFormula": "C48H69N3O7",
+        "InChIKey": "MQIIKWKWTUJJCM-FFAIWJBMSA-N",
+        "Title": "(1R)-3-[[(3aR,5aR,5bR,7aR,9S,11aR,11bR,13aS)-1-isopropyl-5a,5b,8,8,11a-pentamethyl-3a-[[2-methyl-2-[(6-methylpyridine-3-carbonyl)amino]propanoyl]amino]-2-oxo-4,5,6,7,7a,9,10,11,11b,12,13,13a-dodecahydro-3H-cyclopenta[a]chrysen-9-yl]oxycarbonyl]-2,2-dimethyl-cyclobutanecarboxylic acid"
+      }
+    ]
+  }
+}
+
